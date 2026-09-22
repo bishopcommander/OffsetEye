@@ -39,7 +39,7 @@ server/services/ml_model/
 # Test coverage
 coverage/
 
-# Compressed archives & partial downloads (GitHub rejects files >100MB)
+# Compressed archives & partial downloads
 *.zip
 *.tar
 *.gz
@@ -47,13 +47,7 @@ coverage/
 *.7z
 *.crdownload
 
-# Files exceeding GitHub's 100 MB hard limit
-# Discovery_report.pdf is 182 MB (downloadable from Equinor Volve Data Village)
-Volve_Reports/Reports/Discovery_report.pdf
-# EDM.XML contains Volve F.edm.xml which is 211 MB
-**/EDM.XML/
-**/*.edm.xml
-
-# WITSML Realtime drilling data (18.0 GB / 20,087 files - exceeds GitHub repo capacity)
-# Refer to DATASETS.md for full source download instructions
+# Heavy data folders / technical datasets / reports (DO NOT commit to GitHub)
+Volve_Reports/
+Volve_Well_technical_data/
 Volve_WITSML Realtime drilling data/
