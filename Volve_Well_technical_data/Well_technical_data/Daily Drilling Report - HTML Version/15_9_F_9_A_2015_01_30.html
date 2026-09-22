@@ -1,0 +1,149 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-9 A</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2015-01-29 00:00 - 2015-01-30 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">4</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2009-06-23 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2009-07-08</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">1206</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1201</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">1012</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">L/D ESP assemblies. Performed multifinger caliper log. Installed boreprotector. RIH and set Timelock plug on DP. Attempted to pressure test casing.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Drift 9 5/8" liner. POOH with Timelock plug. R/U WL and install ME plug in 6 5/8" screens. Pull boreprotector. Run completion</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">02:30</td><td class="ColValue">0</td><td class="ColValue">workover -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out and L/D ESP assemblies. Removed power cable and instrument line to multi sensor. Disconnected power cable from motor. Recovered 4 ea Protectorlisers and 1 ea special XO-clamp - none left in hole.</td></tr><tr><td class="ColValue">02:30</td><td class="ColValue">03:00</td><td class="ColValue">0</td><td class="ColValue">workover -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed casing tong to set back area. Cleaned and cleared rig floor.</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">workover -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U recovered tubing hanger with RT from deck. B/O RT with chain tongs. Inspected seal areas on TH for damages - no damages observed. M/U RT to TH neck. L/D TH with RT to deck.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:30</td><td class="ColValue">0</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for wireline job. R/U WL equipment.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U BHA for multifinger caliper log. Performed operational check of tool string.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:30</td><td class="ColValue">439</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with WL toolstring and corrolated tool at logging depth.</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">08:15</td><td class="ColValue">18</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Opened caliper at 439 m and started logging up at 10 m/min.</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">08:30</td><td class="ColValue">18</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed caliper at 18 m. Pulled cable head to surface and hung off in C-plate.</td></tr><tr><td class="ColValue">08:30</td><td class="ColValue">10:00</td><td class="ColValue">18</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Waiting for approval of caliper log. Meanwhile performed TBT for R/D WL equipement.</td></tr><tr><td class="ColValue">10:00</td><td class="ColValue">11:00</td><td class="ColValue">0</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D WL toolstring and R/D WL equipment.</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">11:15</td><td class="ColValue">0</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and cleared rig floor.</td></tr><tr><td class="ColValue">11:15</td><td class="ColValue">11:30</td><td class="ColValue">0</td><td class="ColValue">workover -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for installing bore protector.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">13:30</td><td class="ColValue">0</td><td class="ColValue">workover -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed master bushings. M/U running tool and bore protector. RIH on 5 1/2" DP and installed boreprotector. POOH with running tool. R/B DP stand and installed master bushings.</td></tr><tr><td class="ColValue">13:30</td><td class="ColValue">13:45</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for running Timelock plug.</td></tr><tr><td class="ColValue">13:45</td><td class="ColValue">15:00</td><td class="ColValue">45</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U Timelock plug, RIH with same on 5 1/2" DP to 45 m. Installed diverter inserts.</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">17:00</td><td class="ColValue">369</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/Timelock plug on 5 7/8"  DP from 45 m to 369 m. Avg. tripping speed 162 m/hr.</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">17:15</td><td class="ColValue">369</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for washing down and setting plug.</td></tr><tr><td class="ColValue">17:15</td><td class="ColValue">18:00</td><td class="ColValue">395</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued RIH from 369 m to 395 m. Lined up to wash top of PBR, verified line up against closed IBOP. Bled off pressure.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:30</td><td class="ColValue">395</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Started to pump drill water at 300 lpm. Increased rate to 1100 lpm / 0 bar and washed top of PBR.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">20:30</td><td class="ColValue">395</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Attempted to set Timelock plug according to Archer procedures. Made 3 attempts without sucess. Archer rep contacted onshore support for advice. Performed TBT with new crew. Observed that the plug was not at the required setting depth - attempted set in 13 3/8" casing. RIH with Timelock plug from 395 m to 424 m.</td></tr><tr><td class="ColValue">20:30</td><td class="ColValue">21:30</td><td class="ColValue">425.6</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Washed plug setting area and sat Timelock plug according to Archer instructions. Top of plug at 420,8 m. Positive indication of plug set. Closed ball valve and applied 30 bar to verify same closed. P/U and released running tool from plug.</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">22:30</td><td class="ColValue">415</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up over shakers. Started pumping drill water from rig pumps. Increased pump rate to 2100 lpm / 0 bar and circulated 1 BU.</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">23:00</td><td class="ColValue">415</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up cement unit to drillstring and performed line test against TDS IBOP to 100 bar. Bled back to 10 bar and opened TDS IBOP to confirm line-up.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">23:30</td><td class="ColValue">415</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed overboard valves. Lined up rig pumps and pumped drill water down string and up above diverter packer. Closed diverter packer. Line up to cement unit and attempted to pressure up well to 10 bar from cement unit. No success.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">00:00</td><td class="ColValue">415</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Checked line up and troubleshot loss of pressure.</td></tr></tbody></table></div></div></div></section></body></html>

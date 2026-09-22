@@ -1,0 +1,164 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-9</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-06-29 00:00 - 2009-06-30 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">6</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-09 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-08-31</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">2.5</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.03</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">590</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">590</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">590</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1064</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Due to operational problems with MultiCycle By-pass Valve held meeting with service contractors and town to agree on a modified Whipstock BHA and setting procedure.
+Made up and ran in hole TrackMaster Whipstock and 12-1/4" mill BHA to final setting depth 432 m. Made two wireline/gyro runs and confirmed final toolface to be 187 deg after having worked torque out of the string.
+Pressured string up to 253 bar/10 min to set the whipstock slips, confirmed correct setting and sheared bolt for 12-1/4" FastTrack Tri Mill with 32 ton over pull.
+Milled 12-1/4" sidetrack window from 421,5 m (top) to 424 m. Note:Bottom window will be 428,2 m.
+</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Complete milling of 13-3/8" window at 421,5 - 428,2 m and drilling open hole to 436,5 m.
+Circulate hole clean and displace to 1,20 sg KCL/polymer mud
+POOH with and lay out Whipstock milling BHA.
+Make up 12-1/4" BHA and commence milling 12-1/4" hole.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:15</td><td class="ColValue">40</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 4,5bar/500 lpm, 4,5bar/1000 lpm, 12bar/1500 lpm, 26bar/2000 lpm. Tool failed to operate.
+Repeated pressure sequences a second time with no success. Made two pressure cycles with 26 bar/2000 lpm and 40bar/2500 lpm. Tool failed to operate.</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">02:00</td><td class="ColValue">40</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Decided to change to back-up tool. Changed out primary to back-up Multi Cycle Bypass Valve.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">03:30</td><td class="ColValue">40</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 4,5bar/1000 lpm, 20bar/2500 lpm. Tool failed to operate.
+Repeated pressure sequences a several times with no success.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">04:15</td><td class="ColValue">205</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole to 205,5m with Multi  Cycle Bypass Tool</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">05:30</td><td class="ColValue">205</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Attempted to cycle Multi Cycle Tool with 18 bar/2500 lpm. No go. Repeated cycles with 1 min intervals between dipping pumps rather than 3 min. Observed +10 bar pressure spike every 3 rd cycle, but tool is not closing/activating.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:00</td><td class="ColValue">205</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Discussed options with town. Carried out house keeping and PM projects.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:00</td><td class="ColValue">207</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Discussed Multi Cycle By-pass Valve (MCBV) operational problems with service companies and town.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">12:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Attempted several times to cycle MCBV. Pulled out of hole from 207 m to surface. Broke out and laid out MCBV.
+Simultaneously had discussion and meeting with town regarding modified procedure and BHA configuration. Decided to take out MCBV and orient Whipstock with gyro on wireline.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">12:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Tool box talk with crew prior to making up Whipstock assembly</td></tr><tr><td class="ColValue">12:45</td><td class="ColValue">18:15</td><td class="ColValue">266</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up 13-3/8" TrackMaster Whipstock assembly with 12-1/4" Mill BHA. Surface to 266 m.Verified UBHO toolface offset and whipstock scribe lines.</td></tr><tr><td class="ColValue">18:15</td><td class="ColValue">19:30</td><td class="ColValue">432</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with Whipstock assembly from 266 m to final setting depth 432 m. Took 2 ton weight at 274 m but dropping off.</td></tr><tr><td class="ColValue">19:30</td><td class="ColValue">19:45</td><td class="ColValue">432</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk with crew prior to rigging up wireline.</td></tr><tr><td class="ColValue">19:45</td><td class="ColValue">20:45</td><td class="ColValue">432</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged up wireline sheaves and picked up Gyro tool. Ran in hole with Gyro to 402 m (UBHO sub).
+Found tool face orientation to be 178 deg. Rotated string to 190 deg. Confirmed by Gyro.</td></tr><tr><td class="ColValue">20:45</td><td class="ColValue">21:30</td><td class="ColValue">432</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out with wireline and confirmed tell tale ok on Gyro. Moved string up/down twice to work out torque. Up/down weight 108/104 ton.</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">23:00</td><td class="ColValue">432</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with gyro on wireline to 402m. Found tool face to be 187 deg. (target =190 deg +/- 5 deg). Pulled out wireline and gyro.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">23:45</td><td class="ColValue">432</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">On final position screwed in with TDS. Pressured up the string to 253  bar/10 min to set the Whipstock slips. Observe hook load decrease from 106 t to 99 t. Proper setting confirm by setting down 10 t and applying over pull 10 ton. Pulled 140 ton  (32 ton overpull) to shear bolt for 12-1/4" FastTrack mill. Confirmed mill to be free.</td></tr><tr><td class="ColValue">23:45</td><td class="ColValue">00:00</td><td class="ColValue">416</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Laid out 2 ea 3 m pup joints and made up one stand to string
+Midnight depth 416 m.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">23:00</td><td class="ColValue">23:30</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Reserve pit</td><td class="ColValue">Reserve pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">KCl/Polymer/GEM</td><td class="ColValue">Spud Mud</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.2</td><td class="ColValue">1.05</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td><td class="ColValue">98</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">18</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">7</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

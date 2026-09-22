@@ -1,0 +1,170 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-9</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2008-09-01 00:00 - 2008-09-02 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">17</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">6</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-09 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-08-31</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">1083</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">1075.9</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">909.8</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">905.1</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">None</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Set Screen Hanger. POOH with Sceen Hanger RT. RIH swab cups. Pump citric acid and swab well. POOH and L/D BHA. RIH, retrieve bore protector. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">05:00</td><td class="ColValue">168</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">PU and RIH with 9 5/8" 13%Cr Bakerweld 250 HD screens from 36 to 168 m. Lifted screens from basket on cantilever onto HTS using soft slings. Removed screen protection on rig floor. Installed centralizer and stop collar on box end on each joint.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">06:00</td><td class="ColValue">204</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">PU and RIH with 9 5/8" blank pipe from 168 m to 204 m.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">08:00</td><td class="ColValue">218</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up Screen Hanger assembly to screen liner as per Weatherford procedure. Filled PBR with hi-vis pill. up/down 93/78 MT. Installed 5&#189;" DP slips inserts.
+</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:45</td><td class="ColValue">218</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and rigged down casing tong and cleaned rig floor.
+</td></tr><tr><td class="ColValue">08:45</td><td class="ColValue">09:45</td><td class="ColValue">365</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued RIH with Screens on 5&#189;" HWDP to 365 m.
+</td></tr><tr><td class="ColValue">09:45</td><td class="ColValue">12:30</td><td class="ColValue">1051</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued RIH Screens on 5&#189;" DP from 365m to 1051m. 
+</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">13:00</td><td class="ColValue">1064</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">At 1064 m. up/down 123/105 MT. Rigged up ball drop sub control hose and panel.
+</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">13:15</td><td class="ColValue">1064</td><td class="ColValue">completion -- sand control</td><td class="ColValue">ok</td><td class="ColValueWrapped">Spaced out and dropped ball. Lined up and circulated ball with 200 lpm. Attempeted to set Screen Hanger.
+</td></tr><tr><td class="ColValue">13:15</td><td class="ColValue">14:45</td><td class="ColValue">1064</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ball landed. Pressured up to 107 bars and held pressure for 2 min. Bled down to 70 bars. Applied 30 MT on top of liner to verify that hanger was set (70 MT on weight indicator). Attempted to set Hanger.
+Pulled up to leave 15 MT on running tool (85 MT on weight indicator) to shear ball seat. Started to pressure up to 233 bars to release running tool and shear ball seat. Ball seat sheared at 190 bars (7% below theoretical value 202 bars). Bled off pressure. Took pick up. New up weight 123 MT (peak at 130 MT). Up weight indicated that running tool still engaged to the hanger. Started emergency release procedure by first torqued up the drill pipe to 10k ftlbs while holding 15 MT on running tool (85 MT on weight indicator).
+Drill pipe started to rotate freely at approx. 2.5 kNm. Abandoned emergency release procedure.
+Pulled up weight (123 MT) plus additional 2.5 m to activate packer setting dogs. Set down weight to set packer. Weight lost within 20 cm.
+Laid down 32 MT (68 MT on weight indicator) on top of PBR to set packer. No clear indications of shear seen.
+</td></tr><tr><td class="ColValue">14:45</td><td class="ColValue">15:30</td><td class="ColValue">1057</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and laid out Ball drop assy, DPSV and the two DP pups.
+</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">16:15</td><td class="ColValue">1039</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up to TDS and pulled up 18 m. Displaced 13 3/8" casing to 1.03 SG. 67m&#179; and 2500 lpm, 48 bars.
+</td></tr><tr><td class="ColValue">16:15</td><td class="ColValue">19:00</td><td class="ColValue">218</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with landing string. Having Screens and Screen Hanger still attached.   
+</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">20:15</td><td class="ColValue">204</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled up Hanger RT/ Screen Hanger and inspected same, RT sheared, no visible marks or damage.
+</td></tr><tr><td class="ColValue">20:15</td><td class="ColValue">22:15</td><td class="ColValue">204</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and rigged up casing tong and picked up and laid out Screen Hanger with Hanger RT.
+</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">23:00</td><td class="ColValue">204</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up back-up Screen Hanger and waited for go ahead. Simultaneously cleared and cleaned rig floor.
+</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">218</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and picked up and made up Screen Hanger. Rigged down casing tong.
+</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">22:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Reserve pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">1083</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">NaCl Brine</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

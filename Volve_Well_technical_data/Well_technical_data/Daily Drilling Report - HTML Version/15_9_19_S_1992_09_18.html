@@ -1,0 +1,155 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-19 S</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>1992-09-17 00:00 - 1992-09-18 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">10</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">TREASURE PROSPECT</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">UNKNOWN</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">1992-09-18 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">22</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">84</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">1992-12-18</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue">562</td></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">-PULLED OUT WITH CTS LANDING STRING.
+-MAKE UP 9 7/8" BHA.
+-POSITIONED RIG OVER WELL.
+-DRILLED 9 7/8" PILOTHOLE FROM 109 M TO 134 M.
+-POOH TO CTS PUMP DUE TO MWD DEPTH FAILURE.
+-RIH, DRILLED 9 7/8" PILOTHOLE FROM 134 M TO 180 M.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">-DRILL 9 7/8" PILOT HOLE TO 547M.
+-DISPLACE HOLE TO 1,25 SG MUD AND POOH.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">02:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">RAN CTS. HAD PROBLEMS STABBING INTO PGB AND USED SCORPION TO HELP STABBING. STABBED IN WITH CTS 01:40 HRS.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">03:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">TOOK WEIGHT WHEN CTS WAS 1.20M ABOVE PGB. CHECKED CTS HOSE, HYDRAULIC HOSE, OK. SLACKED OFF CTS WEIGHT (5-6 TONS). CTS STILL AT THE SAME PLACE.</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">STARTED CTS PUMP. MAX. RATE APPROX. 7000 L/MIN. WITH 160 BAR PRESSURE, WHILE OBSERVING OUTLET CTS HOSE WITH ROV.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">SET BIT ON BOTTOM AT 108,5M. JETTED FROM 108,5M TO 110M. MAX RATE 1650 L/MIN. CTS PUMP LANDED ON PGB.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">05:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">OPENED RAM ON CTS. PULLED 26" BIT ABOVE TEMPLATE.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">MOVED RIG 25M, DIRECTION 110 DEG..</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">PULLED OUT OF HOLE WITH CTS LANDING STRING.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">PULLED OUT OF HOLE WITH CTS LANDING STRING. LAID DOWN BIT AND SUBS.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">MADE UP AND RACKED BACK 10 STANDS 5" DP.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">18:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">PICKED UP BOTTOM HOLE ASSEMBLY NO.1. SET MEMORY ON MWD AND FUNCTIONED SAME, OK.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">20:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">MADE UP JAR, 2 X 8" DC, CROSSED OVER TO HWDP AND RAN IN TO 91M.</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">21:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">MOVED RIG TO 15M OFF LOCATION.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">21:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">INSTALLED AND RAN GUIDE FRAME. FOUND WIRE FOR CTS HOSE TWISTED. UNTWISTED SAME.</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">22:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">MOVED RIG IN POSITION OVER TEMPLATE.</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">22:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">UNTWISTED WIRE FOR CTS HOSE.</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">HELD SHALLOW GAS MEETING WITH THE CREW.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">23:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">STAB INTO CTS PUMP AT 2315 HRS. RIH TO 107M. PULLED GUIDE FRAME TO SURFACE.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">CLOSED RAM ON CTS PUMP AND TOOK SURVEY WITH MWD TOOL. INSPECTED CTS HOSE.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Survey Station</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table info="surveystationInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Inclination (dega)</th><th class="ColHead">Azimuth (dega)</th><th class="ColHead">Comment</th></tr></thead><tbody><tr><td class="ColValue">106</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">120.4</td><td class="ColValue">-999.99</td><td class="ColValue">.2</td><td class="ColValue">96.18</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">136.1</td><td class="ColValue">-999.99</td><td class="ColValue">.2</td><td class="ColValue">31.13</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">163.1</td><td class="ColValue">-999.99</td><td class="ColValue">.1</td><td class="ColValue">333.63</td><td class="ColValueWrapped"/></tr></tbody></table></div></div></div></section></body></html>

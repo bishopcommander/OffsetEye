@@ -1,0 +1,235 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-11</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2013-03-19 00:00 - 2013-03-20 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">13</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-03-07 17:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">66</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia (in):</td><td class="ColValue">26</td></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">347</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">347</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">202.3</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">202</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Orientated drilled 26" hole from bottom at 281 m to 347 m and recorded OnTrack/GyroTrack and wireline gyro survey data. 
+Next 24 hours: POOH, L/D and racked back BHA. RIH 5 1/2" DP cement stinger and plug back 26" OH from bottom at 347 m to 30" conductor shoe at 202 m.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">POOH and racked back 26"  BHA. RIH 5 1/2" DP cement stinger and plug back 26" OH to 30" conductor shoe at 202 m.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:30</td><td class="ColValue">250</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Recorded MWD OnTrack inclination survey data while pulling back from 281 m to 250 m.
+
+Inclination Survey (OnTrack):
+Survey station (m)   Inclination (deg)
+          261                      0.90
+          251                      0.67
+          231                      0.58</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">02:00</td><td class="ColValue">250</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Racked back 5 1/2" DP stand. Inspected Top drive and Travelling block.
+
+Meanwhile: Held DOP meeting.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">04:30</td><td class="ColValue">279</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">B/O and L/D 5 1/2" DP single. R/U and ran wireline gyro. Orientated tool face and POOH recording wireline gyro surveys. R/D wireline lower sheave. Re-calculated projected well path.
+
+Wireline Gyro Inclination Survey:
+Survey station (m)   Inclination (deg)  Azi (deg)
+        239                      0.49                  217.49           
+        228                      0.48                  202.49
+        218                      0.25                  195.59
+        208                      0.21                  181.56
+        202                      0.26                  233.95</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">05:30</td><td class="ColValue">292</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Established drilling parameters. Orientated drilled 26" hole from bottom at 281 m to 292 m and recorded OnTrack survey data.
+Unable to record GyroTrack Survey data.
+
+Inclination Survey (OnTrack):
+Survey station (m)   Inclination (deg)
+        270                      0.85
+</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:00</td><td class="ColValue">292</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U wireline lower sheave and ran wireline gyro.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">06:30</td><td class="ColValue">292</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Verified 26" mud motor toolface and recorded wireline single shoot survey.
+Re-calculated projected well path.
+
+Wireline Gyro Inclination Survey:
+Survey station (m)   Inclination (deg)  Azi (deg)
+         251.3                      0.57              204.82          
+</td></tr><tr><td class="ColValue">06:30</td><td class="ColValue">07:00</td><td class="ColValue">301</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Orientated drilled 26" hole from bottom at 292 m to 301 m and recorded OnTrack survey data.
+Re-calculated projected well path.
+
+Inclination Survey (OnTrack):
+Survey station (m)   Inclination (deg)
+        289                      0.85</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:30</td><td class="ColValue">306</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Orientated drilled 26" hole from bottom at 301 m to 306 m.</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">08:30</td><td class="ColValue">306</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U wireline lower sheave, ran wireline gyro and recorded wireline single shoot survey.
+Re-calculated projected well path.
+
+Wireline Gyro Inclination Survey:
+Survey station (m)   Inclination (deg)  Azi (deg)
+         261.3                      0.6                167.13</td></tr><tr><td class="ColValue">08:30</td><td class="ColValue">09:00</td><td class="ColValue">320</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Orientated drilled 26" hole from bottom at 306 m to 320 m and recorded OnTrack survey data.
+Re-calculated projected well path.
+
+Inclination Survey (OnTrack):
+Survey station (m)   Inclination (deg)  Azi (deg)
+         300.00                      0.53               135</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">10:30</td><td class="ColValue">318</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up off bottom at 320 m to 318 m. B/O 5 1/2" DP single and R/U wireline lower sheave. Ran wireline gyro and recorded wireline single shoot survey.
+Re-calculated projected well path.
+
+Wireline Gyro Inclination Survey:
+Survey station (m)   Inclination (deg)  Azi (deg)
+         278.3                      0.56               198.61</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">11:30</td><td class="ColValue">332</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Orientated drilled 26" hole from bottom at 320 m to 332 m and recorded OnTrack survey data.
+Re-calculated projected well path.
+
+Inclination Survey (OnTrack):
+Survey station (m)   Inclination (deg)  Azi (deg)
+         312.37                      0.77               186</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">12:00</td><td class="ColValue">332</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U wireline lower sheave, ran wireline gyro and recorded wireline single shoot survey.
+Re-calculated projected well path.
+
+Wireline Gyro Inclination Survey:
+Survey station (m)   Inclination (deg)  Azi (deg)
+         291.7                      0.57                185</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">15:30</td><td class="ColValue">332</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Evaluated survey data and projected well path and discussed same with town
+
+Meanwhile: R/U and ran down tugger from moon pool to tension deck to enable 5 1/2" DP drill string to be pulled securely against slot opening in tension deck to reduce string movement and attempt to take GyroTrack survey.</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">18:00</td><td class="ColValue">332</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Tagged bottom at 332 m and recorded OnTrack/GyroTrack survey data while securing 5 1/2" DP drill string in moon pool and at tension deck.
+Re-calculated projected well path.
+
+Inclination Survey (OnTrack/GyroTrack):
+Survey station (m)   Inclination (deg)  Azi (deg)
+        OTR/GRT               OTR/GRT       OTR/GRT
+  312.00 /304.10           0.77 /0.52     185.07 /245.99     
+  312.00 /304.10           0.77 /0.70     182.41 /199.93   
+  312.21 /304.22           0.80 /0.62         FAIL /175.68   
+  312.04 /304.05           0.77 /0.70         FAIL /113.45</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">19:00</td><td class="ColValue">347</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Orientated drilled 26" hole from bottom at 332 m to 347 m and recorded OnTrack/GyroTrack survey data.
+Re-calculated projected well path.
+
+Inclination Survey (OnTrack/GyroTrack):
+Survey station (m)   Inclination (deg)  Azi (deg)
+        OTR/GRT               OTR/GRT       OTR/GRT
+  327.21 /319.22           0.58 /0.70     FAIL /194.06</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">20:00</td><td class="ColValue">347</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U wireline lower sheave, ran wireline gyro and recorded wireline single shoot survey.
+Re-calculated projected well path. Discussed survey data and projected well path with town. Decision made to plug back 26" open hole from bottom at 347 m to 30" conductor shoe at 202 m, run alternative 26" BHA configuration mud motor assembly and kick off below 30" conductor shoe.
+
+Wireline Gyro Inclination Survey:
+Survey station (m)   Inclination (deg)  Azi (deg)
+         301.7                    0.58                 167
+         305.5                    0.68                 162</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">21:30</td><td class="ColValue">347</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole clean, 3500 lpm, 93 bar. Displaced well with 60 m3, 1.35 sg spud mud, 4000 lpm, 115 bar.
+3 hrs advance notice given to Production to shut-in well F-14</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">23:00</td><td class="ColValue">142</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH 26" BHA from bottom at 347 m inside 30" conductor at 202 m to 142 m.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">142</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Isolated rig floor equipment. R/D Wireline equipment and inspected top drive and travelling block.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">10:00</td><td class="ColValue">20:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Reserve pit</td><td class="ColValue">Active pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">347</td><td class="ColValue">347</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Spud Mud</td><td class="ColValue">Spud mud</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.4</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">100</td><td class="ColValue">120</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Survey Station</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table info="surveystationInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Inclination (dega)</th><th class="ColHead">Azimuth (dega)</th><th class="ColHead">Comment</th></tr></thead><tbody><tr><td class="ColValue">167.7</td><td class="ColValue">167.7</td><td class="ColValue">.29</td><td class="ColValue">246.72</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">180</td><td class="ColValue">180</td><td class="ColValue">.2</td><td class="ColValue">214.07</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">193</td><td class="ColValue">193</td><td class="ColValue">.34</td><td class="ColValue">211.45</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">202</td><td class="ColValue">202</td><td class="ColValue">.26</td><td class="ColValue">233.95</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">208</td><td class="ColValue">208</td><td class="ColValue">.21</td><td class="ColValue">181.56</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">218</td><td class="ColValue">218</td><td class="ColValue">.25</td><td class="ColValue">195.59</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">228</td><td class="ColValue">228</td><td class="ColValue">.48</td><td class="ColValue">202.49</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">238.5</td><td class="ColValue">238.5</td><td class="ColValue">.49</td><td class="ColValue">217.49</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">251.3</td><td class="ColValue">251.3</td><td class="ColValue">.57</td><td class="ColValue">204.82</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">261.3</td><td class="ColValue">261.3</td><td class="ColValue">.6</td><td class="ColValue">167.13</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">263.5</td><td class="ColValue">263.5</td><td class="ColValue">.66</td><td class="ColValue">165.04</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">275.3</td><td class="ColValue">275.3</td><td class="ColValue">.56</td><td class="ColValue">208.46</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">278.3</td><td class="ColValue">278.3</td><td class="ColValue">.56</td><td class="ColValue">198.61</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">288.3</td><td class="ColValue">288.3</td><td class="ColValue">.49</td><td class="ColValue">195.01</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">291.7</td><td class="ColValue">291.7</td><td class="ColValue">.57</td><td class="ColValue">184.79</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">341.7</td><td class="ColValue">341.7</td><td class="ColValue">.5</td><td class="ColValue">190</td><td class="ColValueWrapped"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Log Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="logInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Run No</th><th class="ColHead">Service Company</th><th class="ColHead">Depth Top mMD</th><th class="ColHead">Depth Bottom mTVD</th><th class="ColHead">Tool</th><th class="ColHead">BHST (degC)</th></tr></thead><tbody><tr><td class="ColValue">101</td><td class="ColValue">Baker Hughes Inteq</td><td class="ColValue">224</td><td class="ColValue">347</td><td class="ColValue">OnTrak</td><td class="ColValue">-999.99</td></tr></tbody></table></div></div></div></section></body></html>

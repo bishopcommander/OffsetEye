@@ -1,0 +1,169 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 D</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2016-09-15 00:00 - 2016-09-16 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">22</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-11-10 14:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2013-12-02</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">2894</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1368.4</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Skidded cantilever to F-15 D
+- N/U BOP
+- Retrieved RTTS packer
+- Attempted to pressure test OH to surface cement plug
+- Cut 13 3/8" casing at 700m
+- RIH with 13 3/8" EZSV plug</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Pressure test annulus cement
+- Spot cement on top of 13 3/8" EZSV
+- N/D BOP
+- Skid rig to F-1 C</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:30</td><td class="ColValue">01:00</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Completed pre-skid checks.
+Prepared to skid cantilever</td></tr><tr><td class="ColValue">01:00</td><td class="ColValue">01:15</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for skidding cantilever</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">02:00</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Skidded cantilever to F-15 D.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">03:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed hatch on F-15. Installed halfmoon hatch.
+Checked alignment.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed hi-pressure riser and M/U connector on WH.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">06:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Built scaffolding in moonpool.</td></tr><tr><td class="ColValue">06:15</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Moved BOP to well center. Landed same on HP riser.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for N/U BOP with ongoing crew</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">09:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">N/U BOP.
+Meanwhile: Prepared tension cylinders. Installed tension cylinders.</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">09:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed slipjoint.</td></tr><tr><td class="ColValue">09:30</td><td class="ColValue">10:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed diverter</td></tr><tr><td class="ColValue">10:00</td><td class="ColValue">10:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U slipjoint to BOP.
+Meanwhile: Filled well from trip tank. R/D chains and installed BX elevator and rotator.</td></tr><tr><td class="ColValue">10:45</td><td class="ColValue">11:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for connector test
+Meanwhile: Lined up to cement unit.</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">11:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed connector test to 20/115 bar for 5/10 min.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">11:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for P/U and RIH with RTTS RT</td></tr><tr><td class="ColValue">11:45</td><td class="ColValue">12:15</td><td class="ColValue">4</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U and M/U the RTTS RT BHA. Checked and greased tool.</td></tr><tr><td class="ColValue">12:15</td><td class="ColValue">12:30</td><td class="ColValue">130</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ RTTS RT on 5 1/2" DP from surface to 130 m.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">13:00</td><td class="ColValue">130</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U TDS and pumped 150 lpm / 5 bar. Recorded up/down weight 71/68 ton, set down 1 ton on RTTS
+Rotate 22 turns. No pressure observed below RTTS.</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">13:15</td><td class="ColValue">130</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Released RTTS packer. Waited 10 min for packer elements to retract.
+Observed trip tank slowly decreasing, then leveling out.</td></tr><tr><td class="ColValue">13:15</td><td class="ColValue">13:30</td><td class="ColValue">130</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flowchecked well, 90 ltr loss over 15 min.</td></tr><tr><td class="ColValue">13:30</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH w/ RTTS packer on 5 1/2"  DP from 130 m to surface.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">14:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D storm valve, RTTS RT and packer.</td></tr><tr><td class="ColValue">14:30</td><td class="ColValue">16:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D 4 stands 8 1/4" DC, high torque needed to break connection, 130kNm.</td></tr><tr><td class="ColValue">16:45</td><td class="ColValue">17:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and cleared drill floor.
+Meanwhile: Performed TBT for pressure testing OH to surface cement plug</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">17:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Attempted to pressure test OH to surface cement plug to 115 bar, pressure bled off after reaching 10 bar.
+Static losses 1,2 m3/hr.</td></tr><tr><td class="ColValue">17:45</td><td class="ColValue">18:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for cutting 13 3/8" casing.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U and M/U 13 3/8" cutter BHA.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">18:45</td><td class="ColValue">53</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ 13 3/8" cutter BHA on 5 1/2" DP from surface to 53 m.</td></tr><tr><td class="ColValue">18:45</td><td class="ColValue">19:00</td><td class="ColValue">53</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed PS-21 slips.</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">20:00</td><td class="ColValue">694</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued RIH w/ cutter BHA on 5 1/2" DP from 53 m to 694 m. Avg. tripping speed 640 m/hr.</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">21:00</td><td class="ColValue">700</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">Established paramters. Up/down weight 92/87 ton. 400 lpm / 34 bar, 500 lpm / 57 bar, 600 lpm / 76 bar.
+Positioned cutter at 700 mMD. Cut 13 3/8" casing, 600 lpm / 57 bar, 80 rpm. Pressure dropped, good indication of cut.
+Observed H2S gas at shaker, 11 ppm H2S in air, 52ppm in gas trap.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">23:15</td><td class="ColValue">700</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated 500 lpm / 52 bar through mud/gas separator due to H2S. Circulated until H2S out of well, pumped totally 72 m3.
+Treated return pits with H2S scavenger.</td></tr><tr><td class="ColValue">23:15</td><td class="ColValue">00:00</td><td class="ColValue">453</td><td class="ColValue">plug abandon -- cut</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH w/ cutter  BHA on 5 1/2" DP from 700 m to 453 m. Avg. tripping speed 330 m/hr.</td></tr></tbody></table></div></div></div></section></body></html>

@@ -1,0 +1,160 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-4</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2007-06-12 00:00 - 2007-06-13 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">4</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-03-10 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-02-28</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia (in):</td><td class="ColValue">36</td></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">256.5</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">256.5</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">247</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">251.2</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">251.2</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Ciruclated and worked 30" conductor to setting depth. Engaged centralizing dogs in template funnel. Cemented 30" conductor and displaced cement. Waited for cement to set up. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Perform top up cementing job. Release cart and pull out of hole w/cementing stinger and UWG top up cementing hose.. L/D cart and cementing stinger in doubles. Skid rig to F12 and RIH 36" BHA. Drill 36" hole.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:30</td><td class="ColValue">111</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued running 4 3/4" aluminum cement stinger inside 30" conductor. Installed a total of 10 joints adding up to 91 m, i.e. approx 16 m off shoe bottom. Installed centralizers on joint number 3 and 6.</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">01:30</td><td class="ColValue">111</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up primary CART. M/U 4 1/2" IF x butress X-over to low end of CART. M/U CART to innerstring. Removed innerstring handling equipment. Made up CART to 30" conductor housing with 5 lefthand turns. Checked inclinometer -ok. Checked filler valve in open position - ok.</td></tr><tr><td class="ColValue">01:30</td><td class="ColValue">03:00</td><td class="ColValue">137</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in with 30" conductor on 5 1/2" HWDP. Strapped residual top up pipe to the conductor housing on XMT deck. Installed ROV plugs in 30" conductor housing on Centralizer deck.</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">03:30</td><td class="ColValue">137</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">In order not to damage ROV plugs, inclinometer and filler valve =&gt; Used chain hoists / steel slings to center top of housing through the Centralizer deck.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">05:00</td><td class="ColValue">200</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in with 30" conductor on 5 1/2" HWDP. Observed with ROV when running through template slot.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">06:00</td><td class="ColValue">215</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Started loosing hook weight at 200 m MD. Worked string up and down  trying to release friction in well.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:45</td><td class="ColValue">210</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Contiuned to work 30" conductor. Had overpull of 15 MT.</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">11:30</td><td class="ColValue">237</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed filler valve with ROV. Started circulation with SW at 2300 lpm thorugh 30" conductor. Worked 30" conductor while circulating w/ maximum 12 bar pumppressure and 10 mt downweight. Put datum mark on pipe 112,88 m centralizer deck to top 30" conductor housing.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">13:30</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke out two joints from 5 1/2" HWDP stand. M/U cement stand with side entry sub and lotorqe valve. Continued to work 30" condcutor while ciruclating SW at 2300 lpm. Reached TD and confirmed correct depth by datum mark on pipe towards machined ring on centralizer deck.</td></tr><tr><td class="ColValue">13:30</td><td class="ColValue">15:00</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Hooked up ROV with hydraulic reservoir to hydraulic receptacle on template. Engaged centralization rams in template funnel.
+
+Pitch and roll readings :
+Before engaging rams ; roll 0,04 to 0,3 /  pitch 0,01 to 0,2
+After engaging rams ;  roll static at 0,13 /  pitch static at 0,05</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">15:30</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated at 2300 lpm / SPP 11 bar to confirm no leaks on plugs in conductor housing. No leaks could be observed by the ROV. Meanwhile held cementing prejobmeeting at drill floor.</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">16:15</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared for cementing conductor. Lined up and tested cement lines to 200 bar / 5 min - ok.</td></tr><tr><td class="ColValue">16:15</td><td class="ColValue">17:45</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 75 m3 of 1,50 sg X-lite cement slurry with cement unit. Pump pressure during cement displacement 13 bar. Displacement rate 800 lpm.</td></tr><tr><td class="ColValue">17:45</td><td class="ColValue">18:00</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced cement with seawater. Pressure rose from 20 bar to approx 35 bar during displacement indicating cement in annulus and good cement job. Pumped a total of 8,5 m3 leaving theoretical TOC at 247 m MD inside the 30" conductor.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:15</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged down cement hose and flushed same. Flushed manifold.</td></tr><tr><td class="ColValue">18:15</td><td class="ColValue">00:00</td><td class="ColValue">251</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Waited on cement to set up.
+
+Meanwhile :
+-Cleared and tidied rigfloor
+-PV on drillfloor equipment
+-Flushed and cleaned cement unit
+-Inspected seabed for cement returns - inconcluisve due to poor visiblity
+</td></tr></tbody></table></div></div></div></section></body></html>

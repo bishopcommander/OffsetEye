@@ -1,0 +1,169 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2013-10-14 00:00 - 2013-10-15 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">56</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2009-01-19 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2009-02-14</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3049</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">2914.8</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">POOH with cutting BHA #2. L/D same.
+M/U drift run BHA w/ 5 3/4" taper mill.
+RIH washed/reamed top of 7" tubing cut, RIH to 505 m, passing DHSV and FLX.
+POOH and L/D drift BHA.
+Re-arranged FLX cutting BHA and RIH to 499,7 m.
+Unable to pass restriction at 499,7 m. Evaluated situation and POOH.
+Re-postioned 5 3/4" stab in BHA and ran back in.
+Entered 7" tubing cut at 474 m and landed 8" NoGo on top cut (503,1 m bit depth).</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Cut FLX.
+POOH and L/D FLX cutting BHA.
+M/U and RIH overshot BHA.
+Engage 7" tubing and pull DHSV/FLX assembly free.
+POOH and L/D 7" tubing, DHSV and FLX incl. control lines.
+RIH w/ overshot, pull completion free of PBR.
+POOH and L/D tubing and completion assemblies.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:15</td><td class="ColValue">499</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">B/O TDS and performed TBT for POOH and racking 3 1/2" DP stands.</td></tr><tr><td class="ColValue">00:15</td><td class="ColValue">01:00</td><td class="ColValue">345</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH w/ FLX cutting BHA  on 3 1/2"  DP from 499 m to 345 m. Pulled wet.</td></tr><tr><td class="ColValue">01:00</td><td class="ColValue">01:30</td><td class="ColValue">345</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Troubleshot pipe grip on aft PRS. Switched to fwd PRS.</td></tr><tr><td class="ColValue">01:30</td><td class="ColValue">03:15</td><td class="ColValue">28</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH on 3 1/2" DP from 345 m to 28 m. Experienced problems racking stands in foldable fingerboard with fwd PRS.</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">03:30</td><td class="ColValue">28</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed slips and bowls.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">03:45</td><td class="ColValue">28</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled cutting BHA above rotary and inspected NoGo ring and cutter. No mark indications, knives closed and taped.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for laying out of BHA.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned rigfloor after wet trip prior handling BHA.</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D FLX cutting BHA.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleared rigfloor and changed handling equipment.</td></tr><tr><td class="ColValue">06:15</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared drift run with 5,75" taper mill. P/U spear assembly with taper mill.
+Meanwhile discussed way forward with onshore organization.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT with day shift, discussed TOFS and MOC.</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">07:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">B/O taper mill and L/D spear assembly.</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">08:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Changed handling equipment from 5 1/2" to 3 1/2". M/U 5 3/4" taper mill to 3 1/2" DP.</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">09:00</td><td class="ColValue">462</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ drift BHA on 3 1/2" DP from surface to 462 m.</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">09:15</td><td class="ColValue">474</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U TDS and washed from 462 m to 474 m w/ 1000 l/min, 43 bar.</td></tr><tr><td class="ColValue">09:15</td><td class="ColValue">10:15</td><td class="ColValue">476</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Reamed from top 7" tubing cut at 474 m to 476 m w/ 1000 l/min, 43 bar, 50 RPM, 3-4 kNm. Made 3 passes. No obstructions.</td></tr><tr><td class="ColValue">10:15</td><td class="ColValue">11:00</td><td class="ColValue">505</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Racked circulation stand. RIH w/ 5,75" drift BHA from 462 m to 505 m, passing through DHSV and FLX-4.</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">12:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 505 m to 0 m. Pulled wet.</td></tr><tr><td class="ColValue">12:15</td><td class="ColValue">12:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and cleared rigfloor after wet trip.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">13:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Changed handling equipment from 3 1/2" to 5 1/2".</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">13:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT prior to handling rig tongs.</td></tr><tr><td class="ColValue">13:15</td><td class="ColValue">16:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Re-arranged FLX cutting BHA as per Baker instructions. 
+Measured M/U BHA #2 and double checked space out.</td></tr><tr><td class="ColValue">16:30</td><td class="ColValue">17:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Surface tested cutter blocks, 200 lpm, 5 bar. RIH w/ BHA to 33 m.</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">17:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed auto slips, installed PS 21.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">18:00</td><td class="ColValue">462</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ FLX cutting BHA #2 on 5 1/2" DP from 33 m to 462 m.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:30</td><td class="ColValue">462</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Filled string w/o screwing in to avoid premature cutter activation, 400 lpm / 3 bar.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">19:15</td><td class="ColValue">499.7</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH to 499,7 m bit depth. Set down 4 t weight, unable to pass FLX (5,988" ID) with 5,75" stb. Pulled free with 6 t overpull. Attempted to rotate 5 rpm, 8 kNm. String stalled out. Pulled free w/ 10 t overpull and discussed way forward.</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">20:30</td><td class="ColValue">33</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH w/ FLX cutting BHA #2 on 5 1/2" DP from 499 m to 33 m. Pulled wet.</td></tr><tr><td class="ColValue">20:30</td><td class="ColValue">20:45</td><td class="ColValue">33</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed PS 21 slips and installed master bushings.</td></tr><tr><td class="ColValue">20:45</td><td class="ColValue">21:00</td><td class="ColValue">33</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held TBT for handling BHA.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">21:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled BHA from 33 m to surface.</td></tr><tr><td class="ColValue">21:15</td><td class="ColValue">22:45</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Inspected BHA. Observed marks on stab shoulder. Secured knives.
+B/O stab and re-installed same higher up in BHA.
+Removed master bushing and installed PS 21 slips.</td></tr><tr><td class="ColValue">22:45</td><td class="ColValue">23:45</td><td class="ColValue">474</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ modified FLX cutting BHA #3 on 5 1/2" DP from 33 m to 474 m.</td></tr><tr><td class="ColValue">23:45</td><td class="ColValue">00:00</td><td class="ColValue">503.1</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Entered top of cut at 474 m, continued to run in. Landed 8" NoGo on top of cut at 503,1 m bit depth.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">10:00</td><td class="ColValue">21:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Reserve pit</td><td class="ColValue">Reserve pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">3231</td><td class="ColValue">3231</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Enviromul Yellow</td><td class="ColValue">Enviromul Yellow</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.21</td><td class="ColValue">1.21</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">30</td><td class="ColValue">30</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">7</td><td class="ColValue">7</td></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT (degC)</td><td class="ColValue">120</td><td class="ColValue">120</td></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

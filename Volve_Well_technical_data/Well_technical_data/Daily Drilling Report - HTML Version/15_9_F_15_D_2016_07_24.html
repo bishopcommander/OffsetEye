@@ -1,0 +1,164 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 D</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2016-07-23 00:00 - 2016-07-24 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">16</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">.6</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-11-10 14:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2013-12-02</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">2894</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1368.4</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- RIH and cut 13 3/8" casing at 820 mMD
+- Honed CH area
+- RIH with clean-out BHA and washed EZSV setting area. Pumped and displaced hi-vis pill out of hole
+- Set new 13 3/8" EZSV plug at 811 mMD.
+- Attempted to test EZSV plug</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Slip &amp; Cut
+- RIH with RTTS below CH and pressure test EZSV from above
+- Set OH to surface cement plug</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:30</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U TDS and tested new cutter at surface. Disconnected TDS</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">00:45</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed master bushing and installed PS-21 slips</td></tr><tr><td class="ColValue">00:45</td><td class="ColValue">02:30</td><td class="ColValue">820</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ cutter  BHA on 5 1/2"  DP from surface to 820 m. Avg. tripping speed 470 m/hr. Avg.</td></tr><tr><td class="ColValue">02:30</td><td class="ColValue">02:45</td><td class="ColValue">820</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Filled pipe 800 lpm. Reduced rate to 200lpm when pipe was full</td></tr><tr><td class="ColValue">02:45</td><td class="ColValue">03:30</td><td class="ColValue">820</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Recorded parameters 600lpm / 68 bar, 400 lpm / 35 bar. Took up/down weight 95/90 ton. 1-6 kNm free rot. torque.
+Cut casing at 820 mMD, 80 rpm / 600 lpm. Saw pressure drop, indiaction of cut. Max torque when cutting 17 kNm.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">03:45</td><td class="ColValue">820</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flowchecked well for 10 min, static.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">04:00</td><td class="ColValue">820</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Measured cut window, 80cm.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Disconnected TDS and POOH on 5 1/2" DP. Avg. tripping speed 510 m/hr.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:30</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed PS-21 slips and installed master bushing
+L/D cutter BHA. String magnet covered in swarf.</td></tr><tr><td class="ColValue">06:30</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and cleared drill floor.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:15</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for honing CH area</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">08:15</td><td class="ColValue">67</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U and M/U milling BHA</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">08:30</td><td class="ColValue">135</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ milling BHA from surface to 135m.</td></tr><tr><td class="ColValue">08:30</td><td class="ColValue">09:00</td><td class="ColValue">135</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Filled pipe and recorded parameters, 80 rpm/1-4 kNm, up/down weight 80/77 ton, 2000 lpm/9bar.
+RIH and tagget obstuction at 141,5m with 1 ton.</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">10:30</td><td class="ColValue">177</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Honed obstruction in CH area, 100 rpm/2-20 kNm, 2000 lpm/9bar.
+RIH with 12 1/4" stab below CH.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">10:45</td><td class="ColValue">177</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for POOH</td></tr><tr><td class="ColValue">10:45</td><td class="ColValue">11:00</td><td class="ColValue">67</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH w/ milling BHA</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">13:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D milling BHA</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">13:45</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared for clean-out run.
+Cleaned and cleared drill floor.</td></tr><tr><td class="ColValue">13:45</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for M/U and RIH with clean-out BHA</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">15:00</td><td class="ColValue">67</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U clean-out BHA</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">15:15</td><td class="ColValue">67</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed master bushing and installed PS-21 slips</td></tr><tr><td class="ColValue">15:15</td><td class="ColValue">16:15</td><td class="ColValue">806</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ clean-out BHA from 67 mMD  to 806 mMD. Avg. running speed 740 m/hr.</td></tr><tr><td class="ColValue">16:15</td><td class="ColValue">17:30</td><td class="ColValue">815</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Filled pipe and staged up pumps to 3100 lpm/36 bar. OBM in returns, got a gas peak of 18% and 8ppm H2S in return fluid.
+Staged up pumps to 4000lpm / 58 bar
+Made 4 passes with flow and rotation between 806 mMD and 815 mMD. 4000 lpm / 58 bar, 100 rpm/1-10 kNm.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">18:00</td><td class="ColValue">815</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 10m3 hi-vis pill and circulated 1 x B/U.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:15</td><td class="ColValue">815</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flowchecked well for 10min, static.</td></tr><tr><td class="ColValue">18:15</td><td class="ColValue">19:00</td><td class="ColValue">81</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH w/ clean-out  BHA from 815 mMD to 81 mMD</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">19:15</td><td class="ColValue">81</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flowchecked well, static.
+Meanwhile: Removed PS-21 slips and installed masterbushing</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">21:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D clean-out BHA.
+Cleaned and cleared drill floor.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">21:15</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for M/U new 13 3/8" EZSV plug and RT</td></tr><tr><td class="ColValue">21:15</td><td class="ColValue">22:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U and M/U running tool and 13 3/8" EZSV plug</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">22:15</td><td class="ColValue">160</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ 13 3/8" EZSV BHA slowly until below CH. No obstructions seen.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">22:30</td><td class="ColValue">160</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed master bushing and installed PS-21 slips</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">00:00</td><td class="ColValue">728</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH restricted w/ 13 3/8" EZSV BHA to 728 mMD, 2 min/std.</td></tr></tbody></table></div></div></div></section></body></html>

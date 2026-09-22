@@ -1,0 +1,162 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-1 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2014-04-17 00:00 - 2014-04-18 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">56</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">3.8</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2014-02-21 14:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2014-03-15</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.6</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">4094</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3180.5</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">3059</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2874.4</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">4087.1</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3178</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">POOH with perforation assy #9. Inflow tested HMV/SV. L/D tool string #9.
+M/U perforation assy #10. RIH, correlated and perforated interval #10 (3640 - 3658 m).
+POOH with perforation assy #10. Troubleshot blocked closed drain system.
+Inflow tested HMV/SV. L/D tool string #10.
+Prepared perforation assy #11.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">M/U tractor and perforation guns for assy #11.
+RIH, correlate and perforate interval #11 (3600 - 3609 m).
+POOH, inflow test HMV/SV. L/D tool string #11.
+M/U perforation assy #12.
+RIH, correlate and perforate interval #12 (3579 - 3588 m).</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:30</td><td class="ColValue">300</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 1900 m to 300 m. Made PA announcement and shut down SLB unit.</td></tr><tr><td class="ColValue">01:30</td><td class="ColValue">02:00</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled tools into catcher and closed in well as per procedure.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Inflow tested HMV and SV. Bled down into closed drain system. Purged riser with N2.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:15</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for L/D perforation guns.</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">05:15</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke lubricator. L/D guns and tractor on deck. All guns fired.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">07:30</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared tractor and guns for perforation run #10 (perforation interval 3640 - 3658 m).</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">07:45</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for M/U perforation assy.</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">09:15</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U BHA for run #10. Leak tested QTS to 20/250 bar 5/10 min.
+Opened well, WHP 47 bar.</td></tr><tr><td class="ColValue">09:15</td><td class="ColValue">11:30</td><td class="ColValue">3225</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ perforation assy #10 (interval 3640 - 3658 m), 4,5" OD guns by gravity from surface to 3225 m. Average running speed 24 m/min.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">12:30</td><td class="ColValue">3680</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with tractor activated from 3225 m to 3680 m. Average running speed 7,5 m/min.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">14:00</td><td class="ColValue">3658</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Correlated across perforation interval #10 3640 - 3658 m.
+Performed 5 passes to correlate and orient guns.
+Positioned guns with top shot at 3640 m.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">14:15</td><td class="ColValue">3658</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Perforated interval 3640 - 3658 m. Lost 400 lbs tension.</td></tr><tr><td class="ColValue">14:15</td><td class="ColValue">16:30</td><td class="ColValue">300</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 3658 m to 300 m. Shut down SLB unit.</td></tr><tr><td class="ColValue">16:30</td><td class="ColValue">17:15</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled tool string into catcher. Closed well in and bled down pressure to closed drain. WHP 49,3 bar.</td></tr><tr><td class="ColValue">17:15</td><td class="ColValue">21:45</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Transfer pump on closed drain system tripped. Production department troubleshot and flushed system with hot water to dissolve grease.
+
+Meanwhile performed TBT for L/D perforation assy #10.</td></tr><tr><td class="ColValue">21:45</td><td class="ColValue">22:15</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure in XMT cross to 5 bar. Inflow tested HMV and SV.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke lubricator. L/D tool string #10.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">completion -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">SLB prepared and tested tractor for perforation run #11 (interval 3600 - 3609 m).</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Perforation Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="perforationInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Time of Opening Well Perf</th><th class="ColHead">Time of Closing Well Perf</th><th class="ColHead">Top of Perf mMD</th><th class="ColHead">Bottom of Perf mMD</th><th class="ColHead">Top of Perf TVD</th><th class="ColHead">Bottom of Perf TVD</th></tr></thead><tbody><tr><td class="ColValue">23:00</td><td class="ColValue">23:00</td><td class="ColValue">3640</td><td class="ColValue">3658</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColValue">15:15</td><td class="ColValue">15:15</td><td class="ColValue">3600</td><td class="ColValue">3609</td><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

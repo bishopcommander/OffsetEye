@@ -1,0 +1,152 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-14</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2008-06-22 00:00 - 2008-06-23 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">68</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">13</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-04 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-06-15</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.56</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3750</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3158.5</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">3654</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2788</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2728.4</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3695</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3123.4</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Made up TH landing string. Rigged up for running tubing. Spotted control line reels. Made up and ran completion assemblies. Terminated DHPG and chemical injection valve. Ran 7" tubing to 240 m MD.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Run 7" tubing to 1250 m MD. Install gas lift assy. Run 7" tubing to 1400 m MD.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:15</td><td class="ColValue">0</td><td class="ColValue">completion -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke out and laid out cleaning assembly #2 - 7" Razor back / well sweep magnets. Laid out cleaning assembly #1 - 6" PDC bit and pup. Small/moderate amounts of swarf recovered on magnets.</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">01:45</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox talk for pulling bowl protector. Cleared and tidied drillfloor.</td></tr><tr><td class="ColValue">01:45</td><td class="ColValue">02:15</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with bowl protector pulling tool and jet sub on 5 1/2" stand. Engaged tool at 20,1 m MD according to Vetco instructions. Picked up 0,3 m and circulated to clean wellhead. Flow 3500 lpm / SPP 65 bar. Pumped a total of 10 m3 packer fluid. POOH with bowl protector running tool - no bowl protector recovered.</td></tr><tr><td class="ColValue">02:15</td><td class="ColValue">03:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran back in with bowl protector pulling tool and jet sub on 5 1/2" stand. Broke off TDS. Landed pulling tool at 20,1 m MD. Engaged pulling tool using chain tongs. Made up TDS. Picked up 0,3 m and circulated clean wellhead while picking up slowly. Flow 3500 lpm / SPP 65 bar. Pumped a total of 10 m3 packer fluid. POOH with bowl protector running tool. Broke of bowl protector. Broke out and laid down bowl protector pulling tool.</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">03:15</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up 5 1/2" FH x 7" VT swadge to stand of 5 1/2" DP and racked back in derrick.</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">03:45</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up 5 1/2" FH x 7" VT swadge to FOSV's with side entry sub (top of landing stand). Made up top of landing stand to 5 1/2" singel and hung off in aft PRS.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox talk for rigging up tubing running equipment.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Parked IR. Installed and hooked up Odfjell tubing running tong.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">08:00</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up tubing hanger landing string comprising of 1 x 12 m 7" tubing, 1 x 6 m 7" tubing, 1 x 1 m 7" tubing, THRT, Swadge with FOSV's and side entry. Used single joint elevator to pick up tubing. Observed damage on pin end of 7" tubing joint in landing string. Observed damage on rig floor tugger wire.</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">09:15</td><td class="ColValue">0</td><td class="ColValue">interruption -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Checked rig floor tugger for damaged and respooled same.</td></tr><tr><td class="ColValue">09:15</td><td class="ColValue">10:00</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Laid out damaged tubing joint (#240) in landing string. Picked up and made up new 7" tubing joint (#196).</td></tr><tr><td class="ColValue">10:00</td><td class="ColValue">12:00</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up THRT and racked back TH landing string in derrick. Continued rigging tubing running equipment.</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">12:30</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleared and tidied drillfloor prior to bringing in control line reels.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">12:45</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox talk with rig and completion crews.</td></tr><tr><td class="ColValue">12:45</td><td class="ColValue">14:45</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Spotted WD and BOT control line reels on stb fwd setback. Suspened control line sheave in fwd PRS using PRS lifting tool. Dressed BX elevator with 7" inserts. Dressed slips and dogcollars.</td></tr><tr><td class="ColValue">14:45</td><td class="ColValue">15:15</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox talk with rig and completion crews.</td></tr><tr><td class="ColValue">15:15</td><td class="ColValue">18:30</td><td class="ColValue">74</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up of and hung off assy#1 Ratcheting muleshoe / stinger. Picked up and made up assy#2 - 9 5/8" Granite packer. Picked up and made up assy#3- 20" completion PBR. Made up and ran 3 x 7" tubing joint.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">19:00</td><td class="ColValue">88</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up assy#4 DHPG/CIV. Made up joint on top of completion assy#4 to ease termination of controlines.</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">19:15</td><td class="ColValue">88</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox talk prior to terminating DHPG/CIV completion assemblies.</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">22:00</td><td class="ColValue">88</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Stripped and splitted control line. Terminated DHPG cable according to WD procedure. Tested conductivity - ok. Tested cable fitting to 10.000 psi through test port - ok.</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">00:00</td><td class="ColValue">88</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with tubing to place in working height for terminatining CIV control line. Stripped and bevelled control line. Installed CIV in carrier. Tested control line termination fitting to 10.000 psi through test port - ok. Tried to obtain ~50 bar on control line, hydraulic pump not suited for supplying low pressure (spiked when pressuring up).  Pressure up several time to obtain stable pressue. Hard to determine if there was a leakage on fitting closest to the carrier.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">22:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Active pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">3750</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Packer fluid</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

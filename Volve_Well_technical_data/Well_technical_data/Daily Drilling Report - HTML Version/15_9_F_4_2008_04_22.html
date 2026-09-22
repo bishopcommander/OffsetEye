@@ -1,0 +1,156 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-4</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2008-04-21 00:00 - 2008-04-22 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">106</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-03-10 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-02-28</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.65</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3510</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3138.8</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2760</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2599</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3508</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3136.9</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Continued POOH with perforation guns from 1800 m to OOH. Confirmed that guns had not fired due to leak in logging head. Built new logging head and MU and checked toolstring. RIH with perforation run #3, correlated and fired guns. POOH from 3390 m to OOH. Had zero WHP. Left MEG above TRSCSSV and tested XMT cross. LD guns. RD WL equipment.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Continue RD WL equipment. Test tree cap. Hand over well to production.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:30</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued connecting upper toolstring to guns hanging in riser and armed guns. PU tension on toolstring and took off C-plate.</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">01:00</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Connected lubricator and tested in-situ sub to 30/185 bar for 5/10 min with Seawell test pump. Ok. Opened HMV and observed 0 WHP. Verified TRSCSSV was open. Opened SV.</td></tr><tr><td class="ColValue">01:00</td><td class="ColValue">04:00</td><td class="ColValue">3300</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with 4.5" TCP guns on 7/16" electric line from surface to 3300 m MD. 
+
+Meanwhile worked on synergi report for derrick, performed general maintenace and prepared BOP for pressure test.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:30</td><td class="ColValue">3390.3</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Correlated depth to 2 m pup-joint in 7" liner at 3228.38-3230.42 m tally depth / 3229.5 -3231.5 m WL dept correlated with GR on reservoar log using CCL.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">05:15</td><td class="ColValue">3390.3</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with guns to shooting depth. No WHP. Up weight 2985 kg / Running weight 1540 kg. Hanging weight 2330 kg. Fired guns and perforated interval #2 from 3395.0 m to 3408.5 m MD. 
+
+No obvious indication that guns has fired, but observed short circuit in string and CCL stopped working. Observed no increase in WHP. PU weight increased with 100 kg (3100 kg).</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">06:00</td><td class="ColValue">1800</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with perforation guns from 3390 m to 1800 m MD.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:45</td><td class="ColValue">0</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with perforation guns from 1800 m to OOH. Powered down logging unit at 70 m below seabed. Made PA announcement and pulled cable head into tool catcher. Closed SV to verify BHA OOH. Closed HMV. Observed no WHP. Opened bleed to closed drain as a precaution. Opened needle valve and confirmed that lubricator was empty and that the well was on vacuum. Broke lubricator at in-situ sub. Confirmed that guns had not fired.</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">13:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Disarmed guns and removed firing head. Found leak in rope socket/cable head which caused short circuit in toolstring. Built and tested new cable head. Checked CCL on rig floor. Shut down power to Schlumberger unit according to procedure for MU perforation gun.</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">MU firing head, CAL-B and new swiwel to guns hung off in riser. Connected upper toolstring to guns hanging in riser and armed guns. PU tension on toolstring and took off C-plate. Connected lubricator and tested in-situ sub to 30/185 bar for 5/10 min with Seawell test pump. Ok. Opened HMV and observed 0 WHP. Verified TRSCSSV was open. Opened SV.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">15:00</td><td class="ColValue">701</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with 4.5" TCP guns on 7/16" electric line from surface to 701 m MD.</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">15:45</td><td class="ColValue">360</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with perforation guns from 701 m to 360 m MD due to weak CCL signal.</td></tr><tr><td class="ColValue">15:45</td><td class="ColValue">17:30</td><td class="ColValue">3408</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Schlumberger discussed with town and confirmed that CCL was ok. RIH with 4.5" TCP guns on 7/16" electric line from 360 m to 3408 m MD.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">18:15</td><td class="ColValue">3390.3</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Correlated depth to 2 m pup-joint in 7" liner at 3228.38-3230.42 m tally depth / 3229.5 -3231.5 m WL dept correlated with GR on reservoar log using CCL. RIH with guns to shooting depth. No WHP. Fired guns and perforated interval #2 from 3395.0 m to 3408.5 m MD. Positiv indication that guns fired.</td></tr><tr><td class="ColValue">18:15</td><td class="ColValue">20:30</td><td class="ColValue">0</td><td class="ColValue">interruption -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with perforation guns from 3390 m to OOH. Powered down logging unit at 70 m below seabed. Made PA announcement and pulled cable head into tool catcher. Closed SV to verify BHA OOH. Closed HMV. Observed no WHP. Opened bleed to closed drain as a precaution. Opened needle valve and confirmed that lubricator was empty and that the well was on vacuum. Broke lubricator at in-situ sub. Confirmed that guns had fired.</td></tr><tr><td class="ColValue">20:30</td><td class="ColValue">21:45</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Connected lubricator and tested in-situ sub to 30/185 bar for 5/10 min with Seawell test pump. Ok. Opened HMV and observed 0 WHP. Verified TRSCSSV was open. Opened KWV. Pumped /bullheaded 3 m3 100% MEG at 180 lpm and 8 bar into well with cmt pump to provide cusion above closed TRSCSSV. Displaced MEG to above TRSCSSV by chasing it with 5.5 m3 packer fluid at 180 lpm and 8-20 bar. WHP started to increase after approx. 3 m3 packer fluid pumped.</td></tr><tr><td class="ColValue">21:45</td><td class="ColValue">22:15</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 300 ltrs 100% MEG and displaced line with 500 ltrs packer fluid to fill XMT cross with 100% MEG. Closed TRSCSSV and HMV. Leak tested XMT cross to 123 bar / 10 min against closed HMV. Dropped 1.1 bar / 10 min. Bled off pressure to zero bar. Closed KWV.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke lubricator at in-situ sub. BO and LD guns using certified lifting sub.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Equipment Failure Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="equipmentfailureInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Sub Equip - Syst Class</th><th class="ColHead">Operation Downtime (min)</th><th class="ColHead">Equipment Repaired</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue"/><td class="ColValue">service equ -- other</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">Leaking o-ring in XO below tool catcher in WL lubricator.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">15:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Active pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Packer fluid</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Pore Pressure</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="porepressureInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Time</th><th class="ColHead">Depth mMD</th><th class="ColHead">Depth TVD</th><th class="ColHead">Equ Mud Weight (g/cm3)</th><th class="ColHead">Reading</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">3510</td><td class="ColValue"/><td class="ColValue">1.08</td><td class="ColValue">measured</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Perforation Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="perforationInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Time of Opening Well Perf</th><th class="ColHead">Time of Closing Well Perf</th><th class="ColHead">Top of Perf mMD</th><th class="ColHead">Bottom of Perf mMD</th><th class="ColHead">Top of Perf TVD</th><th class="ColHead">Bottom of Perf TVD</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:00</td><td class="ColValue">3395</td><td class="ColValue">3408.5</td><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

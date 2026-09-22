@@ -1,0 +1,176 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-11</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2013-03-13 00:00 - 2013-03-14 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">7</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-03-07 17:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia (in):</td><td class="ColValue">36</td></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">208</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">208</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">202.3</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">202</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">M/U and run 30" conductor to setting depth and cemented same inplace.
+Next 24 hrs: Wait on cement to ca. 14:00hrs 14/3/13. Subject to confirmation that cement slurry surface samples have set up, retrieve and lay down 30" conductor running tool. Prepare to commence drilling 26" hole section.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Cement 30" conductor in place. Wait on cement (programmed for 12 hrs period from completion of cement displacement). </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:30</td><td class="ColValue">10</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U first 30" intermediate joint and M/U same to 30" conductor shoe. Attempted to run in with 30" conductor. RIH connector 33.17" OD conductor stood up on Weatherford bushing in auto slips (32,5" ID). Evaluated situation and planned forward operation. Held toolbox talk with relevant personel due to changes in sequence of 30" conductor running operation.</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">01:00</td><td class="ColValue">12</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed half moon bushing in Weatherford auto slips and run intermediate 30" joint connector below rotary table. Re-installed bushing and set conductor in auto slips.</td></tr><tr><td class="ColValue">01:00</td><td class="ColValue">01:30</td><td class="ColValue">14</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Run 30" conductor to 14 m. Unable to pass weather deck split hatch.</td></tr><tr><td class="ColValue">01:30</td><td class="ColValue">02:00</td><td class="ColValue">14</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Raised permit and conducted toolbox talk. Removed weather deck split hatch.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">02:30</td><td class="ColValue">24</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed bushing in Weatherford auto slips. Run 30" connector below rotary table to 24 m and re-installed bushing.</td></tr><tr><td class="ColValue">02:30</td><td class="ColValue">03:00</td><td class="ColValue">36</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U second 30" intermediate conductor joint. RIH 30" conductor from 24 m to 28 m. Flushed conductor with SW to function test floatshoe. RIH 30" conductor from 24 m to 36 m.
+At 02:51 hrs informed production 30" conductor shoe below centralizer deck and that production could start up on well F-14.
+
+Meanwhile ROV performed template survey.</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">04:30</td><td class="ColValue">47</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up 30" conductor x-over joint. Removed half moon bushing in Weatherford auto slips and run 30" connector below rotary table. Re-installed bushing and set conductor in auto slips.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">05:00</td><td class="ColValue">47</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held pre-job meeting. Changed over handling equipment to 5 1/2" elevator.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">06:00</td><td class="ColValue">47</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held pre-job meeting. P/U 30" conductor housing on 5 1/2" handling tool.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:00</td><td class="ColValue">47</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U handling equipment for making up 30" conductor well head housing.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">09:00</td><td class="ColValue">47</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held pre-job meeting. M/U 30" conductor housing with belt tong to 49 KNm and installed anti rotation locks and pins on same.</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">09:30</td><td class="ColValue">51</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed half moon bushing in Weatherford auto slips and run connection between x-over joint and 30" connector housing below rotary table to 51 m. Re-installed bushing.</td></tr><tr><td class="ColValue">09:30</td><td class="ColValue">10:30</td><td class="ColValue">61</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran down 30" conductor from 51 m through splash zone (MSL at ca. 54 m) to 61 m and filled 30" conductor with seawater. Observed significant movement of string (3 m significant wave hight). Evaluated situation - decision made to pull back above splash zone.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">11:00</td><td class="ColValue">52</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held Time Out For Safety meeting (TOFS). Checked with town connection OK. Formulated plan to limit time 30" conductor in splash zone to 52 m.</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">13:00</td><td class="ColValue">52</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed 30" conductor lift tool on PRS. P/U 30" conductor running tool, installed 2" conductor fill up valve and inclinometer. M/U 3 doubles of fiberglass cement inner string and set back same in setdown area.
+
+Meanwhile: monitoring weather conditions.
+               Sea Hz    Sea max                                                                            
+                (m)           (m)    
+11:00        3.0           4.8 
+12:00        2.4           4.0
+13:00        2.4           3.9 
+</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">16:00</td><td class="ColValue">66</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held pre-job meeting and observed seastate improved and safe to RIH 30" conductor through splash zone. Run 30" conductor down through splash zone from 52 m to 66 m continuosly observing proximity of 30" conductor string to adjacent production risers with ROV, 30" conductor did not make contact with same at any time. Filled 30" conductor with seawater.</td></tr><tr><td class="ColValue">16:00</td><td class="ColValue">16:30</td><td class="ColValue">62</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U C-plate for inner cementing string on top of 30" conductor housing and secured same. P/U and run fiberglass innerstring and secured in C-plate.</td></tr><tr><td class="ColValue">16:30</td><td class="ColValue">17:00</td><td class="ColValue">62</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U 30" conductor running tool and M/U same to cementing innerstring. Removed C-plate and M/U 30" conductor running tool to 30" conductor housing. ROV engineer turned on inclinometer and checked same. Confirmed conductor fill-up ball valve open. Painted "anti rotation" rotation line on running tool and conductor housing.</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">19:00</td><td class="ColValue">62</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and removed 30" bowls. Installed battery in inclinometer and attempted to run through rotary. Snapped off 2" fill up valve. Evaluated situation and decided to installed handle on 2" fill up valve at moon pool level.</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">20:00</td><td class="ColValue">143</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Run 30" conductor on 5 1/2" HWDP dedicated landing string from 93 m to above F-11 template funnel at 143 m.</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">21:00</td><td class="ColValue">202</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Stabbed 30" conductor shoe into F-11 template funnel with ROV assistance. Held pre-job meeting evaluating risk of running in open hole riserless. Recorded Recorded Up/Down wt. 106/100 MT. RIH 30" conductor from 143 m to 36" TD at 202 m, recorded Up/Down weight 102/97 MT.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">22:00</td><td class="ColValue">202</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke circulation and observed with ROV seawater returns through 2" fill up valve on running tool, 400 lpm, 5 bar and closed same with ROV. ROV removed plug from F-12 30" conductor housing annulus cement return hole and verified F-11 setting depth.
+
+Digiquartz readings:               Inclinometer:
+F-12(m)     F-11(m)                 roll / pitch
+86.887       86.832                  0.02/0.10
+86.835       86.842                  0.01/0.11   
+86.872       86.828                  0.03/0.12</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">23:00</td><td class="ColValue">202</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated 2.5 bottoms up with seawater, 2500 lpm, 15 bar.
+
+Meanwhile: Prepared for cementing operations</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">23:30</td><td class="ColValue">202</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held pre-job meeting with all involved personel prior to cement job. Notified production control room and engine room of up comming cement job. 
+
+Meanwhile circulated 3 bottoms up, 2500 lpm, 15 bar.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">00:00</td><td class="ColValue">202</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flushed cement line and verified cement line up with 20 bar. Leak tested cement line 100 bar / 5 min.
+
+Meanwhile: ROV positioned to observe top of 30" conductor housing and returns at seabed.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">10:00</td><td class="ColValue">20:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Reserve pit</td><td class="ColValue">Active pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">207</td><td class="ColValue">165</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Spud Mud</td><td class="ColValue">Spud mud</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.4</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">100</td><td class="ColValue">120</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="3">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Casing Liner Tubing</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="casingLinerInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Start Time</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">End Time</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Type of Pipe</td><td class="ColValue">Casing</td><td class="ColValue">Casing</td><td class="ColValue">Casing</td><td class="ColValue">Casing</td><td class="ColValue">Casing</td><td class="ColValue">Casing</td></tr><tr><td class="ColHeadRowOriented">Casing Type</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Outside diameter (in)</td><td class="ColValue">30</td><td class="ColValue">30</td><td class="ColValue">30</td><td class="ColValue">30</td><td class="ColValue">30</td><td class="ColValue">30</td></tr><tr><td class="ColHeadRowOriented">Inside diameter (in)</td><td class="ColValue">27</td><td class="ColValue"/><td class="ColValue">28</td><td class="ColValue">28</td><td class="ColValue">27</td><td class="ColValue">27</td></tr><tr><td class="ColHeadRowOriented">Weight (lbm/ft)</td><td class="ColValue">457</td><td class="ColValue">309.7</td><td class="ColValue">309.7</td><td class="ColValue">309.7</td><td class="ColValue">457</td><td class="ColValue">457</td></tr><tr><td class="ColHeadRowOriented">Grade</td><td class="ColValueWrapped">X-56</td><td class="ColValueWrapped">X-52</td><td class="ColValueWrapped">X-52</td><td class="ColValueWrapped">X-52</td><td class="ColValueWrapped">X-56</td><td class="ColValueWrapped">X-56</td></tr><tr><td class="ColHeadRowOriented">Connection</td><td class="ColValueWrapped">GE Vetco RL-4 HC DS </td><td class="ColValueWrapped">ST-2RB</td><td class="ColValueWrapped">ABB ST-2 FB</td><td class="ColValueWrapped">ABB ST-2 FB</td><td class="ColValueWrapped">GE Vetco RL-4 HC DS </td><td class="ColValueWrapped">GE Vetco RL-4 HC DS </td></tr><tr><td class="ColHeadRowOriented">Length (m)</td><td class="ColValue">25.4</td><td class="ColValue">36.5</td><td class="ColValue">12.6</td><td class="ColValue">24.4</td><td class="ColValue">12.3</td><td class="ColValue">12.9</td></tr><tr><td class="ColHeadRowOriented">Top mMD</td><td class="ColValue">140.1</td><td class="ColValue">165.5</td><td class="ColValue">189.7</td><td class="ColValue">165.3</td><td class="ColValue">153</td><td class="ColValue">140.1</td></tr><tr><td class="ColHeadRowOriented">Bottom mMD</td><td class="ColValue">165.5</td><td class="ColValue">202</td><td class="ColValue">202.3</td><td class="ColValue">189.7</td><td class="ColValue">165.3</td><td class="ColValue">153</td></tr><tr><td class="ColHeadRowOriented">Description</td><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/><td class="ColValueWrapped"/></tr></tbody></table></div></div></div></section></body></html>

@@ -1,0 +1,183 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-5</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2016-10-13 00:00 - 2016-10-14 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">16</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">1</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-11 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-07-30</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1404.7</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">1340.3</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Skidded cantilever to F-5. Removed hatches and hole covers
+- RIH with innerstring / BHA.
+- Removed tension cylinders, boat collision stool and deck centralizers
+- Cut riser at 134,9m
+- Pulled, cut and L/D tensioner joint
+- Cut and pulled riser joints (3 out of 7)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Continue cut and pull remaining riser joints
+- R/D riser pulling equipment
+- Bring tension cylinders to moonpool 
+- Install hatches and hole covers.
+- Skid rig to F-15</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">02:30</td><td class="ColValue">02:45</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for skidding rig</td></tr><tr><td class="ColValue">02:45</td><td class="ColValue">03:30</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Skidded rig AFT to well F-5</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">03:45</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Built handrail scaffold in moonpool.
+Meanwhile: Performed post-skid checks.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">04:15</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed hatch in moonpool</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">04:45</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Built ring/fence around deck openings.
+Meanwhile: Performed TBT to run NT2 connector.</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled master bushing and removed fence around rotary.
+Ran NT2 connector and installed same on multibowl.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U and M/U cutter BHA</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U Multibowl RT to inner string. Recorder up/down weight 75/72 ton.
+RIH and engaged Multibowl RT to multibowl by rotating elevator.
+M/U TDS.</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">07:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for removal of tension cylinders</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">12:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled off pressure on tension cylinders and transfered load to TDS. R/D tension cylinders, hubs and tensioner ring.
+Removed boat collision stool and centralizers at all decks.
+Installed hoses to multibowl outlets.
+Meanwhile: L/O 21 joints 5 1/2" DP from set-back. Performed TBT for cutting riser.</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">12:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took tension, 20 ton overpull.
+Staged up flow rate to 2400 lpm / 90 bar.
+Cut riser, lost overpull, good indication of cut.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">13:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed hoses and outlets from Multibowl.</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">13:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled riser until Multibowl at drill floor.
+Installed big C-plate and landed off riser.</td></tr><tr><td class="ColValue">13:45</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">B/O Multibowl RT.
+Installed false rotary.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">14:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Parked AFT PRS w/ Multibowl RT in safe position.</td></tr><tr><td class="ColValue">14:15</td><td class="ColValue">14:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled and R/B innser string.</td></tr><tr><td class="ColValue">14:45</td><td class="ColValue">15:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/B cutting BHA</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">15:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U and M/U Multibowl RT</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">16:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled tensioner joint (Lift #1), cleaned riser for marine growth at centralizer deck.
+Installed master bushing and elevator. Landed riser onto elevator.</td></tr><tr><td class="ColValue">16:30</td><td class="ColValue">16:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U cutting machine</td></tr><tr><td class="ColValue">16:45</td><td class="ColValue">17:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cut tensioner joint
+Significant wave height 2,7 m.</td></tr><tr><td class="ColValue">17:45</td><td class="ColValue">18:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D cutting machine</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/O tensioner joint</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">19:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed running tool.
+Installed cradle on HTS frame.
+Removed elevator.
+Cleared drill floor.</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">19:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for cut and pull riser joints</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">19:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lifted riser and removed master bushing.</td></tr><tr><td class="ColValue">19:30</td><td class="ColValue">20:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled riser (lift #2).
+Cleaned off marine growth on centralizer deck (relatively big amounts of growth on spash zone joint).</td></tr><tr><td class="ColValue">20:15</td><td class="ColValue">20:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled riser flange to drill floor. Installed master bushing and elevator.
+Removed fairing and landed riser onto elevator.</td></tr><tr><td class="ColValue">20:30</td><td class="ColValue">20:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U cutting machine</td></tr><tr><td class="ColValue">20:45</td><td class="ColValue">22:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cut riser joint. Knifes jammed several times possibly due to movement.
+Changed 1 knife due to wear.
+Significant wave height between 2,8 and 3,3 m.</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">22:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D cutting machine.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">22:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/O riser joint (lift #2).</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled riser (lift #3)
+Installed elevator and master bushing. Landed riser onto elevator.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">23:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U cutting machine.
+Cut riser.
+R/D cutting machine.
+Significant wave height 3,5 m.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">23:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/O riser joint (lift #3).</td></tr><tr><td class="ColValue">23:45</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled riser out of splash zone (lift #4).</td></tr></tbody></table></div></div></div></section></body></html>

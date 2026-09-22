@@ -1,0 +1,152 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 D</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2014-01-15 00:00 - 2014-01-16 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">62</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">19.2</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-11-10 14:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2013-12-02</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">4685</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3212</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">4683.6</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3212</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">R/D wire line equipment. Installed cap and needle valve on x-mas tree. Inflow tested DHSV, MMV and HMV. R/D chicksan lines and valves. Pressure tested x-mas tree cap to 250 bar. Handed over well to production.
+Operation completed continued operation on 15/9 F-99. Await decision for F-1 operation.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Operation completed continued operation on 15/9 F-99. Await decision for F-1 operation.
+</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:45</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D wire line equipment. B/D lubricator and L/D same on deck.</td></tr><tr><td class="ColValue">00:45</td><td class="ColValue">01:15</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and cleared drill floor for exccess wire line equipment.</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">03:00</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D wire line equipment. Disconnected top riser and removed wire line BOP.</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">03:45</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D wire line equipment. Removed spool and riser joint from x-mas tree.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">04:30</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed half moon on F-15 and secured same.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">04:45</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flushed lines with 1 m3 packer fluid</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">05:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed tree cap and needle valve on xmas tree.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Started to pressure test x-mas tree, DHSV, MMV and HMV. according to procedure.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">09:45</td><td class="ColValue">0</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bullheaded 3 m3 100 % meg, 6,6 m3 packer fluid and 1,2 m3 100 % meg.</td></tr><tr><td class="ColValue">09:45</td><td class="ColValue">11:30</td><td class="ColValue">0</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed inflow test on DHSV, MMV and HMV.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">12:00</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D chicksan lines and valves from x-mas tree.</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">13:30</td><td class="ColValue">0</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressure tested x-mas tree cap to 250 bar.</td></tr><tr><td class="ColValue">13:30</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">completion -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleared well head area for excces equipment.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">15:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared and handed over well to production. Await decision for F-1 operation.
+Operation completed continued operation on 15/9 F-99. Await decision for F-1 operation.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Casing Liner Tubing</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="casingLinerInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Start Time</td><td class="ColValue">18:30</td><td class="ColValue">18:30</td></tr><tr><td class="ColHeadRowOriented">End Time</td><td class="ColValue">16:30</td><td class="ColValue">16:30</td></tr><tr><td class="ColHeadRowOriented">Type of Pipe</td><td class="ColValue">Casing</td><td class="ColValue">Casing</td></tr><tr><td class="ColHeadRowOriented">Casing Type</td><td class="ColValue">Production</td><td class="ColValue">Production</td></tr><tr><td class="ColHeadRowOriented">Outside diameter (in)</td><td class="ColValue">10.75</td><td class="ColValue">10.75</td></tr><tr><td class="ColHeadRowOriented">Inside diameter (in)</td><td class="ColValue">9.56</td><td class="ColValue">9.56</td></tr><tr><td class="ColHeadRowOriented">Weight (lbm/ft)</td><td class="ColValue">65.7</td><td class="ColValue">65.7</td></tr><tr><td class="ColHeadRowOriented">Grade</td><td class="ColValueWrapped">P-110</td><td class="ColValueWrapped">P-110</td></tr><tr><td class="ColHeadRowOriented">Connection</td><td class="ColValueWrapped">Vam TOP</td><td class="ColValueWrapped">Vam TOP</td></tr><tr><td class="ColHeadRowOriented">Length (m)</td><td class="ColValue">11.71</td><td class="ColValue">103.39</td></tr><tr><td class="ColHeadRowOriented">Top mMD</td><td class="ColValue">21</td><td class="ColValue">32.71</td></tr><tr><td class="ColHeadRowOriented">Bottom mMD</td><td class="ColValue">32.71</td><td class="ColValue">136.1</td></tr><tr><td class="ColHeadRowOriented">Description</td><td class="ColValueWrapped">Install 10 3/4" tieback string</td><td class="ColValueWrapped">Install 10 3/4" tieback string</td></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValueWrapped"/><td class="ColValueWrapped"/></tr></tbody></table></div></div></div></section></body></html>

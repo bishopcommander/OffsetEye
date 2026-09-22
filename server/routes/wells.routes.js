@@ -48,17 +48,20 @@ router.get('/nearby', async (req, res) => {
   const { lat, lng, radius_m, formation } = value;
   try {
     let sql = `
-      SELECT id, name, latitude, longitude, formation, current_depth, planned_depth,
-             ST_Distance(location::geography, ST_SetSRID(ST_MakePoint($2,$1),4326)::geography) AS dist_m
-      FROM wells
-      WHERE ST_DWithin(location::geography, ST_SetSRID(ST_MakePoint($2,$1),4326)::geography, $3)
+      SELECT w.id, w.name, w.latitude, w.longitude, w.formation, w.current_depth, w.planned_depth,
+             ST_Distance(w.location::geography, ST_SetSRID(ST_MakePoint($2,$1),4326)::geography) AS dist_m,
+             COUNT(e.id)::int AS event_count,
+             array_agg(DISTINCT e.event_type) FILTER (WHERE e.event_type IS NOT NULL) AS event_types
+      FROM wells w
+      LEFT JOIN events e ON e.well_id = w.id
+      WHERE ST_DWithin(w.location::geography, ST_SetSRID(ST_MakePoint($2,$1),4326)::geography, $3)
     `;
     const params = [lat, lng, radius_m];
     if (formation) {
       params.push(formation);
-      sql += ` AND LOWER(formation) = LOWER($${params.length})`;
+      sql += ` AND LOWER(w.formation) = LOWER($${params.length})`;
     }
-    sql += ' ORDER BY dist_m';
+    sql += ' GROUP BY w.id ORDER BY dist_m';
     const result = await query(sql, params);
     return res.json({ wells: result.rows, count: result.rowCount });
   } catch (err) {

@@ -1,0 +1,183 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-14</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2016-07-30 00:00 - 2016-07-31 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">1</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">1.1</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-04 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-06-15</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.56</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2788</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2728.4</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3695</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3123.4</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Skidded rig to well F-14
+- R/U cement spool and surface equipment
+- Bullheaded well with SW
+- Bullheaded cement
+- WOC. Meanwhile: Performed rig maintenance.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Pressure test and inflow test cement plug
+- Inflow test DHSV
+- Install BPV plug (drop protection for DHSV)
+- R/D cement spool
+- N/D XT and spacer spool</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">04:15</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Completed checklists and permits for skidding operations.
+Prepared cantilever for skidding</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">05:45</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for skidding rig to F-14</td></tr><tr><td class="ColValue">05:45</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed access stairs and bridge between produciton unit and cantilever</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">moving -- skid</td><td class="ColValue">ok</td><td class="ColValueWrapped">Skidded rig to F-14</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT with ongoing crew for pulling hatch on F-14</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">08:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared to pull hatch. Lowered halv moon hatch on position.
+Meanwhile: Built scaffolding around XT.</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">09:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued building scaffolding around XT.
+Meanwhile: Continued preparing for pulling hatch.</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">10:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled hatch on well F-14.
+Installed half moon hatch.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">13:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lifted cement spool onto XT and M/U bolts.
+Installed hole covers in moonpool.
+Built scaffiling to access cement spool valves.
+
+Installed gauge and bleed off line on top of cement spool.
+Meanwhile: Performed maintenance on BOP and drilling equipment.</td></tr><tr><td class="ColValue">13:45</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and cleared moonpool.
+Meanwhile: Topped up A - and B annulus with SW.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">14:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for pressure testing cement spool and lines.</td></tr><tr><td class="ColValue">14:15</td><td class="ColValue">14:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Confirmed line-ups and valve positions, walked the lines.
+Prepared cement unit for pressure test.
+Meanwhile: Barriered off areas prior to pressure testing.</td></tr><tr><td class="ColValue">14:45</td><td class="ColValue">15:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Applied 20 bar against closed LTV15, opened LTV15 and confirmed correct line-up.</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">16:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flushed cement spool.
+Pressure tested cement spool to 20/310 bar for 5/10 min. Bled off pressure.</td></tr><tr><td class="ColValue">16:15</td><td class="ColValue">17:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT for line-up and bullheading operations.</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">17:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined-up rig pumps and confirmed line-up.
+Opened HMV and SV. Pressurized DHSV control line to 520 bar.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">19:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up well to equalize DHSV by pumping 3m3 50/50 MEG/SW.
+Pumped 3,8m3 wash pill. Stopped pumping due to indications of DHSV not opening.</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">19:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Investigated issue with DHSV.
+Kept 520 bar on DHSV control line and bled of pressure from well through closed drain. Monitored pressure on DHPG and observed pressure dropping 1 bar / 10 min while bleeding off well. Closed bleed-off valve and observed DHPG pressure increase, indicating that DHSV was in open position.</td></tr><tr><td class="ColValue">19:30</td><td class="ColValue">22:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Staged up rig pumps to 1300lpm/71bar and bullheaded remaining 6,2m3 of wash pill followed by 208 m3 SW.
+Meanwhile: Performed TBT for cement job.
+
+After bullheading 118 m3 of SW the pressure increased from 71 bar to 91 bar rapidly. Continued bullheading SW at 1300lpm, pressure stabilized at 90 bar with a slightly decreasing trend.
+After bullheading 208 m3 of SW the pressure increased again from 90 bar to 100 bar rapidly. Pressure stabilized with steady trend at 100 bar.</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">22:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued bullheading SW at 1300 lpm / 100 bar.
+Meanwhile: Mixed cement.</td></tr><tr><td class="ColValue">22:45</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up and released bottom dart.
+Mixed and pumped 6,6 m3 1,90sg cement slurry at 600 lpm.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">23:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced surface lines with 0,9 m3 hi-vis pill from cement unit.
+Released top dart and continued to bullhead 6,9 m3 hi-vis with cement unit.</td></tr><tr><td class="ColValue">23:15</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced cement with 41,5 m3 SW from cement unit at 1300 lpm / 85 bar, cycled DHSV 3x after bullheading 30 m3 of SW (while still pumping at 1300lpm).
+
+Continued displacement by pumping 3 m3 contamination pill at 600lpm / 56 bar with cement unit. After bullheading 2,7 m3 contamination pill the formation started to pack off, pressure increased from 56 bar to a final squeeze pressure of 95 bar. Stopped pumping, final static pressure 57 bar.
+Estimated TOC 2700 mMD.</td></tr></tbody></table></div></div></div></section></body></html>

@@ -1,0 +1,155 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-02-09 00:00 - 2009-02-10 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">23</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">31.8</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2009-01-19 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2009-02-14</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.56</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">2920</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">2748</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2562</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2418</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">2914.8</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">None</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">None</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:30</td><td class="ColValue">139.8</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Stabbed spear into 10 3/4" casing hanger and took overpull to confirm that grapple was engaged. Landed stop plate on top of csg hanger.
+
+RIH with 10 3/4" surface casing hanger from 119 m to 136 m. RIH weight was 82 mT. Tagged subsea tie-back WH. RIH and tagged top of tie-back threads in subsea csg hanger at 139.8 m. Sat down 1 mT. Observed white painted ring through multibowl valve. Turned 6 1/2 turn clocwise to max torque at 13000 Nm. Observed red/green painted ring through multibowl valve.
+
+Took 30 mT overpull to check pre-tension in csg. Released spear. POOH and RB spear in derrick.</td></tr><tr><td class="ColValue">01:30</td><td class="ColValue">03:15</td><td class="ColValue">139.8</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">PU and RIH to 28 m with pre-made 5 1/2" DP stand with adjustment sub setting tool. Locked adjustment sub ring inside 10 3/4" csg and confirmed with taking overpull. Rotated 4 turns clockwise to engage torque slots in adjusting sleeve. No go - had engaged the wrong profile.
+
+Released tool, bled off pressure and pulled up 7 cm. Increased pressure to 140 bar and pulled up another 7 cm. Locked adjustment sub ring inside 10 3/4" csg and confirmed with taking overpull. Rotated 13.5  turns clockwise to engage torque slots in adjusting sleeve. Vetco observed casing hanger movement through A-annulus valve on multibowl. Surface tie-back hanger landed out and torque increased to 9000 Nm. Released locking ring. POOH and RB adjustment sub setting tool string.</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">03:45</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Changed to 10 3/4" casing handling equipment.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">MU and RIH with csg hanger RT on 10 3/4" casing landing string from surface to 20 m. MU swedge, lo-torque and cmt hose to landing string.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:15</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up and leak tested the cmt line to rig floor 345 bar/5 min. Bled off pressure and lined up and leak tested the 10 3/4" surface tie-back casing against the RTTS at 319 m to 345 bar/10 min with SW. Test OK, dropped 0.8 bar (0.2%). Volume pumped 345 ltrs and had 320 ltrs in returns.</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">08:45</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke out cmt hose. Released and POOH with csg hanger RT from 21 m to OOH. PU, BO and LO landing string joint with attched swedge.</td></tr><tr><td class="ColValue">08:45</td><td class="ColValue">10:15</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RD 10 3/4" casing handling equipment and cleared rig floor.</td></tr><tr><td class="ColValue">10:15</td><td class="ColValue">10:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RU 5 1/2" handling equipment.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">12:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">LO adjustment sub assembly and spear assembly. Cleared rig floor off excess equipment.</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">15:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and picked up and RIH with 10 3/4" MS-T seal assy RT. Landed out on 10 3/4" casing hanger. Locked RT into riser. Set seal assy by applying 4300 psi to setting function. Tested seal assy trough test port in multibowl to 345 bar/10 min. Ok.</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">15:45</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Released RT from Casing Hanger and POOH with RT. Laid out same.</td></tr><tr><td class="ColValue">15:45</td><td class="ColValue">17:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and picked up and RIH Bowl protector and landed off in surface wellhead. POOH and LO RT.</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">18:30</td><td class="ColValue">315</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk. PU and MU RTTS pulling tool. Started RIH from surface to 318 m. Tagged plug with 4 mT. PU 3 m with RTTS RT to 315 m.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">20:00</td><td class="ColValue">315</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Emptied trip tanks and displaced choke and kill lines to 1.25 sg mud. Displaced well with 21 m3 1.25 sg OBM at 1500 lpm.</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">21:00</td><td class="ColValue">315</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took up/down weight 81/78 mT. Tagged RTTS plug, screwed into the RTTS with 21 turns. Pressure dropped with 3 bars when equalizing. Flow checked well and confirmed well static. Picked up 28 mT overpull and released the RTTS plug. Well swabbed slightly when plug was pulled free. Flow checked well until it was static.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">23:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and POOH wet with RTTS plug from 315 m to OOH. LO RTTS plug, RT and XO.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and changed handling equipment back to 5 1/2" DP.</td></tr></tbody></table></div></div></div></section></body></html>

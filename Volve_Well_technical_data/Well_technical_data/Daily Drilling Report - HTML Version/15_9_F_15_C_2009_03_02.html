@@ -1,0 +1,183 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-03-01 00:00 - 2009-03-02 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">42</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">61.6</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2009-01-19 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2009-02-14</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.5</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3232</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3044</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2923</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2752</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3231</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3044</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Continued commissioning the XMT. Rigged up WL and leak tested rig up. Installed flow line support frame. 
+
+</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Complete commission XMT.  Make up perforation guns and start RIH same.
+</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:45</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Vetco instrumentation installed instrumentation for chemical injection at well head. Connected Well Dynamic chemical pump, flushed lines to chemical inlet at well head. 
+</td></tr><tr><td class="ColValue">01:45</td><td class="ColValue">03:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Opened KWV flushed lines through tree cap. Closed Swab valve and open vent valve on flow line.
+Opened HMV pressured up the well to 220 bars 660 litres. Equalized and opened the DHSV. 
+Closed MMV and bled pressure down to 185 bars - 35 bars LP inflow tested MMV for 10 min. Continued to bleed pressure down to 5 bars - 215 bars HP inflow tested for 10 min. Equalized pressure to 220 bars and opened MMV. 
+Simultaneously pressured up chemical inj. line to 345 bars to test outlet block. Observed pressure. Pressure dropped to 270 bars. Pressured up chemical line to 345 bars and pressure dropped to 270 bars. Check valve in chemical sub set to 50 bars differential. Disk sheared premature to expected setting. Good indication of check valve settings. 
+</td></tr><tr><td class="ColValue">03:00</td><td class="ColValue">03:30</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed HMV and bled pressure down to 185 bars - 35 bars LP inflow tested HMV for 10 min. Continued to bleed pressure down to 5 bars - 215 bars HP inflow tested for 10 min. Equalized pressure to 220 bars and open HMV. 
+</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed KWV and bled pressure down to 185 bars - 35 bars LP inflow tested KWV for 10 min. Continued to bleed pressure down to 5 bars - 215 bars HP inflow tested for 10 min. Equalized pressure to 220 bars and open KWV. Bled down well to zero 660 litres back.  
+</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:15</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Close DHSV, HMV and KWV.
+</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">04:30</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior rig up WL and good communiction with Vetco instrumentation.
+</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">05:15</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed lower riser to XMT using dual lift arrangement and installed cap.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior to making up chiksan manifold at XMT.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">workover -- rig up/down</td><td class="ColValue">ok</td><td class="ColValueWrapped">Started making up chiksan manifold at XMT.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:30</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up chiksan manifold at XMT and secured same.
+</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">07:45</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up from cement unit to XMT. Flushed through to test cap on riser with 100% MEG.
+</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">08:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior to leak test Lo-torq manifold.
+</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:15</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Connected WL test pump to test cap. 
+</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">13:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Leak tested lo-torq manifold with WL test pump to 30/200 bars 5/10 min. Had to change out 2 Lo-torq valves. Prepared for running riser through RT.
+</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">14:15</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Attempted to leak test LTV2. Greased LTV2, no go. Changed out LTV2.
+</td></tr><tr><td class="ColValue">14:15</td><td class="ColValue">19:30</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Vetco instrumentation continued commissioning XMT.
+
+Parallel activity:
+Held tool box talk prior to rig up WL BOP's.
+Installed WL BOP's on riser. Dual lift. 
+Picked up and made up riser and lower through RT and made up to BOP's. Dual lift
+Made up in-situ sub to riser and test cap.
+Opened SV with 44 turns. Flushed riser to 100% MEG. 
+</td></tr><tr><td class="ColValue">19:30</td><td class="ColValue">21:30</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Leak tested of riser/WL BOP's up to rig floor. 30/200bars 5/10mins.
+Leak tested LTV2 and CV. 30/200bars 5/10mins.
+</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued commissioning XMT.
+
+Parallel activity:
+Continued with drop object list for derrick.
+Lowered flow line support frame down to the well head.
+Held tool box talk and spotted WL equipment on the rig floor.
+</td></tr></tbody></table></div></div></div></section></body></html>

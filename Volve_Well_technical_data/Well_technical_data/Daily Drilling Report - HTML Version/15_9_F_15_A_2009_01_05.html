@@ -1,0 +1,186 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 A</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-01-04 00:00 - 2009-01-05 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">25</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">12.5</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2008-12-11 15:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">266</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia (in):</td><td class="ColValue">8.5</td></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.56</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">4095</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3213</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2562</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2418</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">2561.8</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">2416.2</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Drilled from 3866m to 4095m. Took pressure points. Circulated well clean. Commenced RU WL.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">RU WL. RIH with WL and perform VIP. POOH with WL and RD same.
+</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:00</td><td class="ColValue">3866</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued drilling 8&#189;" hole from 3829 m to 3866 m. Flow 2100 lpm / SPP 160 bars / String RPM 160  TQ 19-27 kNm / WOB 2-8 / ECD 1.41 EMW / MUD weight 1.34 SG / ROP 20-32 mph. Up weight 185 MT / Down weight 135 MT / Free rotational weight 154 MT.
+
+Parallel activity: Continued with trouble shoot of HTS.
+</td></tr><tr><td class="ColValue">01:00</td><td class="ColValue">02:00</td><td class="ColValue">3866</td><td class="ColValue">drilling -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole clean prior to take pressure points, reciprocating the string. Simultaneously held tool box talk prior to take pressure points.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">04:00</td><td class="ColValue">3866</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed sticky test. Correlation log from 3832m to 3842m.
+Took pressure points:
+
+MD probe      TVD                    Reservoir press.         Mud hydrostatic         Pressure gradient
+3802m           3001.5m              318.7 bars                   410.7 bars                   1.08 SG
+3811m           3007.5m              319.3 bars                   411.8 bars                   1.08 SG
+3831m           3021.0m              320.8 bars                   412.8 bars                   1.08 SG
+</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">06:00</td><td class="ColValue">3915</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued drilling 8&#189;" hole from 3866mto 3915 m. Flow 2100 lpm / SPP 160-163 bars / String RPM 160  TQ 18-21 kNm / WOB 8-12 / ECD 1.40-1.41 EMW / MUD weight 1.34 SG / ROP 32 mph. Up weight 184 MT / Down weight 135 MT / Free rotational weight 152 MT.
+</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:15</td><td class="ColValue">3947</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued drilling 8&#189;" hole from 3866 m to 3947 m. Flow 2100 lpm / SPP 164 bars / String RPM 126  TQ 19-26 kNm / WOB 7-8 / ECD 1.41 EMW / MUD weight 1.34 SG / ROP 25-35 mph. Up weight 190 MT / Down weight 136 MT / Free rotational weight 152 MT.
+</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">08:00</td><td class="ColValue">3947</td><td class="ColValue">drilling -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole clean prior to take pressure points, reciprocating the string, 1800lpm 80 rpm. Performed sticky test. 
+</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">10:00</td><td class="ColValue">3947</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took pressure points:
+
+MD probe      TVD                    Reservoir press.         Mud hydrostatic         Pressure gradient
+3882m           3054.6m              324.4 bars                   416.9 bars                   1.083 SG
+3860m           3039.7m              322.7 bars                   414.9 bars                   1.082 SG
+3849m           3032.4m              321.9 bars                   413.9 bars                   1.082 SG
+</td></tr><tr><td class="ColValue">10:00</td><td class="ColValue">13:45</td><td class="ColValue">4027</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued drilling 8&#189;" hole from 3947 to 4027 m. Flow 2100 lpm / SPP 163 bars / String RPM 160  TQ 19-26 kNm / WOB 7-8 / ECD 1.42 EMW / MUD weight 1.34 SG / ROP 25-35 mph. Up weight 192 MT / Down weight 139 MT / Free rotational weight 159 MT. Took survey at 3947m.
+
+Parallel activity: MU 10 3/4" casing and racked in derrick. Status: 22 stands racked back.
+</td></tr><tr><td class="ColValue">13:45</td><td class="ColValue">14:30</td><td class="ColValue">4027</td><td class="ColValue">drilling -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole clean prior to take pressure points, reciprocating the string, 2100lpm 160 rpm. Performed sticky test. 
+</td></tr><tr><td class="ColValue">14:30</td><td class="ColValue">15:30</td><td class="ColValue">4027</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took pressure points:
+
+MD probe      TVD                    Reservoir press.         Mud hydrostatic         Pressure gradient
+3963.5m        3111.6m              359.1 bars                   428.2 bars                   1.176 SG
+3981m           3125.0m              347.2 bars                   429.2 bars                   1.133 SG
+3977m           3067.1m              347.8 bars                   428.2 bars                   1.135 SG
+</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">18:15</td><td class="ColValue">4095</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued drilling 8&#189;" hole from 4027 to 4095 m. Flow 2100 lpm / SPP 163 bars / String RPM 160  TQ 19-26 kNm / WOB 7-8 / ECD 1.42 EMW / MUD weight 1.34 SG / ROP 25-35 mph. Up weight 192 MT / Down weight 139 MT / Free rotational weight 159 MT. Took survey at 4075m.
+</td></tr><tr><td class="ColValue">18:15</td><td class="ColValue">00:00</td><td class="ColValue">4095</td><td class="ColValue">drilling -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated well clean while reciprocating the drill string, 2100 lpm, 164 bars and 160 rpm. After 1 BU pumped 5.5m&#179; 1.60 SG Hi-vis pill.
+
+Simultaneously rigged up wire line prior to run VSP.
+</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">05:00</td><td class="ColValue">11:00</td><td class="ColValue">20:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Flowline</td><td class="ColValue">Flowline</td><td class="ColValue">Flowline</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">3902</td><td class="ColValue">3955</td><td class="ColValue">4095</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">OBM-Standard</td><td class="ColValue">OBM-Standard</td><td class="ColValue">OBM-Standard</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.35</td><td class="ColValue">1.35</td><td class="ColValue">1.35</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="4">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="4">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">22</td><td class="ColValue">22</td><td class="ColValue">22</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">10.5</td><td class="ColValue">10.5</td><td class="ColValue">11.5</td></tr><tr><td class="ColHeadRowOriented" colSpan="4">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT (degC)</td><td class="ColValue">120</td><td class="ColValue">120</td><td class="ColValue">120</td></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Pore Pressure</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="porepressureInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Time</th><th class="ColHead">Depth mMD</th><th class="ColHead">Depth TVD</th><th class="ColHead">Equ Mud Weight (g/cm3)</th><th class="ColHead">Reading</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">3849</td><td class="ColValue"/><td class="ColValue">1.08</td><td class="ColValue">measured</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">3860</td><td class="ColValue"/><td class="ColValue">1.08</td><td class="ColValue">measured</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">3882</td><td class="ColValue"/><td class="ColValue">1.08</td><td class="ColValue">measured</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">3963.5</td><td class="ColValue"/><td class="ColValue">1.18</td><td class="ColValue">measured</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">3977</td><td class="ColValue"/><td class="ColValue">1.14</td><td class="ColValue">measured</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">3981</td><td class="ColValue"/><td class="ColValue">1.13</td><td class="ColValue">measured</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Survey Station</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table info="surveystationInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Inclination (dega)</th><th class="ColHead">Azimuth (dega)</th><th class="ColHead">Comment</th></tr></thead><tbody><tr><td class="ColValue">3926</td><td class="ColValue">3085.2</td><td class="ColValue">44.89</td><td class="ColValue">297.26</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">3965.9</td><td class="ColValue">3114.1</td><td class="ColValue">42.74</td><td class="ColValue">297.32</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4005.9</td><td class="ColValue">3143.9</td><td class="ColValue">40.71</td><td class="ColValue">297.62</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4047.2</td><td class="ColValue">3175.6</td><td class="ColValue">39.12</td><td class="ColValue">297.35</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4075</td><td class="ColValue">3197.3</td><td class="ColValue">38.43</td><td class="ColValue">296.47</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4095</td><td class="ColValue">3213</td><td class="ColValue">38</td><td class="ColValue">297</td><td class="ColValueWrapped"/></tr></tbody></table></div></div></div></section></body></html>

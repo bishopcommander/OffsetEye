@@ -1,0 +1,153 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-1 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2016-06-27 00:00 - 2016-06-28 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">13</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">1.1</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2014-02-21 14:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2014-03-15</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.6</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">3100</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">3059</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2874.4</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">4087.1</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3178</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Perforated below 10 3/4in subsea csg hanger, circulate possible gas, flow checked
+- M/U and RIH w/ milling BHA, started milling 10 3/4 subsea csg hanger
+- Milled approximately 20 cm. Due to slow progress POOH to inspect mill</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">- Finish milling 10 3/4 subsea csg hanger
+- M/U and RIH w/ spear
+- Pull 10 3/4 x 9 5/8 csg</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke connection, dropped ball, RIH to firing depth. Perforated interval 141m - 147,4m</td></tr><tr><td class="ColValue">00:15</td><td class="ColValue">00:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed BOP, lined via  fully open choke, pressured up string to 135 bar, observed shear</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">01:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated via poor boy to check for gas with 250 lpm, 1 bar. Pumped 2.3m3 to get stable returns</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">01:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flow check via choke</td></tr><tr><td class="ColValue">01:45</td><td class="ColValue">02:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Opened BOP, lined up and flow checked on trip tank, well static</td></tr><tr><td class="ColValue">02:15</td><td class="ColValue">02:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 148 m to 16m</td></tr><tr><td class="ColValue">02:45</td><td class="ColValue">03:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Inspected and layed down BHA. All shots fired</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">03:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Change handling gear back to 5.5 elevators and iron roughneck</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">03:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D perforation handling equipment and cleared rig floor.</td></tr><tr><td class="ColValue">03:45</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pickup milling BHA from cantilever, RIH from surface to 5m</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed Pre-job Meeting for handling milling BHA and rig tongs</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">05:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/U tongs and M/U magnet to 68knm</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/D rig tongs</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">07:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued P/U milling BHA</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">M/U TDS and fill pipe</td></tr><tr><td class="ColValue">07:15</td><td class="ColValue">07:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Recorded parameters 2000lts/ min 5-7 bar. Up wt. 78T, down wt. 74T without rotation, free rotation torque with 80 rpm, 0-3 KNM, rotating weight 76T. Run in and tagged at 140.86m bit depth</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">15:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled up 1.5m, established parameters and commenced milling. 2000lts/ min 5-7 Bar, 80 RPM, 2-4 KNM, WOB 1.3T. Milled from 141.26m to 141.46m. Picked off bttm and spaced out due to leaking fittings on BOP</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">18:00</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Repaired leaking fitting on BOP</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">19:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lineed up and started milling from 141.06m to 141.07m, 2000 lpm, 5 bar, 120 rpm, 5-15 knm</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">22:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued milling @100-120RPM, 1-3t WOB, 2000lpm, 3-11KNM, 5-7bar. Stopped due to no progress</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">23:45</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Attempted to R/B DP stand, no success. Observed connection above saver sub broke when trying to break out stand from TDS</td></tr><tr><td class="ColValue">23:45</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mill</td><td class="ColValue">ok</td><td class="ColValueWrapped">R/B stand of DP with saver sub. Broke connection with 150KNM</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Equipment Failure Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="equipmentfailureInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Sub Equip - Syst Class</th><th class="ColHead">Operation Downtime (min)</th><th class="ColHead">Equipment Repaired</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">811</td><td class="ColValue"/><td class="ColValue">pipe handling equ syst -- vertical pipe handling equ syst</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">Tugger wire caught up in FWD PRS causing damages to PRS.</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">21</td><td class="ColValue"/><td class="ColValue">pipe handling equ syst -- elevator</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">Issues with rotator on elevator</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">1393</td><td class="ColValue"/><td class="ColValue">pipe handling equ syst -- elevator</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">Elevator not latching properly. Changed elevator.</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">2179</td><td class="ColValue"/><td class="ColValue">drill floor -- draw works</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">fault on draw works motor 3 </td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">1313</td><td class="ColValue"/><td class="ColValue">pipe handling equ syst -- other</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">HTS not feeding pipe correctly. DP was not fed all the way to the elevator.</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">144</td><td class="ColValue"/><td class="ColValue">drillstring downhole -- fishing tools</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">Two unsuccessful attempts to fish tieback adapter were carried out, did not get fish</td></tr></tbody></table></div></div></div></section></body></html>

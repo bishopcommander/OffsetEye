@@ -1,0 +1,155 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-9</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-06-26 00:00 - 2009-06-27 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">3</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-09 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-08-31</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">1085</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">1075.9</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1064</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Ran in in hole with open ended 5-1/2" DP to 850,1 m and hang up slightly on top of PBR. At 854,5 m took weight and had no further progress. Rotated and washed down from 854,5 m to 892 m. 
+Rigged up Seawell and Schlumberger surface equipment for WL logging. Picked up tool string and ran in hole with USIT - CBL logging string  to 845 m. Commenced logging up from 845 m to surface. Due to poor data in riser made a repeat run in riser section from 170 m to surface. Ran in hole and made a repeat logging run from 845 m to surface. Rigged down wireline equipment.
+Picked up and made up EZSV plug and running tool. RIH to plug setting depth at 878 m.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Run 9-5/8" EZSV plug and set same at 878 m. 
+RIH with RTTS and pressure test EZSV to 126 bar.
+RIH with cement stinger and set a cement plug from 850 m to 650 m.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">02:45</td><td class="ColValue">17</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Run back in with ESP assemblies. Disconnect bolt on discharge head c/w XO assy, pump, protector assy and motor.</td></tr><tr><td class="ColValue">02:45</td><td class="ColValue">03:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rig down Schlumberger handling equipment and Weatherford casing equipment</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">04:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Clean and clear rig floor.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">05:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up wear bushing c/w running tool. RIH to 20,9 m MD and installed wear bushing. Pulled out of hole and laid down WBRT.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed PS-21 auto slips and commenced to run in the hole with 5-1/2" open ended DP.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">08:00</td><td class="ColValue">854.5</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole from 604 m to 854,5 m MD. At 850,1 m MD hang up on 9-5/8" PBR - sat down 5 tons and rotated, circulated and worked the string through PBR. At 854,5m took weight 5 tons and had no further progress. Racked back one stand.</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:45</td><td class="ColValue">854.5</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed 2 x 3m DP pup joints and final stand. Removed PS-21 slips and outer split ring to wash rotary.</td></tr><tr><td class="ColValue">08:45</td><td class="ColValue">10:15</td><td class="ColValue">892</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Washed string down from 854 m to 892 m MD. Max 2000 lpm, 5 rpm, 4-8 bar.
+Observed up to 9,6 % gas peak, while washing down. Reduced flow rate while filling sand traps and starting degasser and then staged up pumps. Circulated a total of 105 m3 SW prior to wash pill.
+</td></tr><tr><td class="ColValue">10:15</td><td class="ColValue">11:45</td><td class="ColValue">892</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated a 20 m3 soap pill around. Displaced with app. 160 m3 of SW. Parameters: Max. 4500 lpm/ 38 bar - 5 rpm. Returns clean at the end. Re-installed PS-21 slips.</td></tr><tr><td class="ColValue">11:45</td><td class="ColValue">13:45</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pull out of hole from 892 m to surface. Picked up single and re-installed on stand no.1.</td></tr><tr><td class="ColValue">13:45</td><td class="ColValue">14:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleared and cleaned rig floor.</td></tr><tr><td class="ColValue">14:00</td><td class="ColValue">14:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk with involved personnel prior to rigging up for wireline logging.</td></tr><tr><td class="ColValue">14:15</td><td class="ColValue">16:00</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged up wireline cable sheaves and picked up logging tool string.</td></tr><tr><td class="ColValue">16:00</td><td class="ColValue">16:15</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Conducted surface functional tests on Schlumberger logging tools.</td></tr><tr><td class="ColValue">16:15</td><td class="ColValue">18:00</td><td class="ColValue">845</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with Schlumberger USIT-CBL logging string to 845 m</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">21:30</td><td class="ColValue">660</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Correlated the tool and commenced to log from 845 m to surface. Got poor data in the production riser (low hydrostatic pressure). Forwarded data to onshore contact person for data interpretation. Rig personnel simultaneously carried out cleaning of header box, shakers pads, flow line  and sand traps.</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">22:15</td><td class="ColValue">170</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in to 170 m and made a repeat run to surface of the riser section.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">23:30</td><td class="ColValue">845</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with Schlumberger USIT - CBL logging string to 845 m.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">00:00</td><td class="ColValue">695</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Carried out repeat logging pass from 845 m to 695 m.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Log Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="logInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Run No</th><th class="ColHead">Service Company</th><th class="ColHead">Depth Top mMD</th><th class="ColHead">Depth Bottom mTVD</th><th class="ColHead">Tool</th><th class="ColHead">BHST (degC)</th></tr></thead><tbody><tr><td class="ColValue">1</td><td class="ColValue">Schlumberger</td><td class="ColValue">0</td><td class="ColValue">845</td><td class="ColValue">CBL - USIT</td><td class="ColValue">-999.99</td></tr><tr><td class="ColValue">2</td><td class="ColValue">Schlumberger</td><td class="ColValue">0</td><td class="ColValue">845</td><td class="ColValue">USI - CBL - Schlumberger</td><td class="ColValue">-999.99</td></tr></tbody></table></div></div></div></section></body></html>

@@ -15,14 +15,14 @@ export default function Header({ onOpenUpload, activeMode, onSelectMode }) {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <h1 style={{ fontSize: '1.15rem', fontWeight: 800, letterSpacing: '-0.02em', background: 'linear-gradient(90deg, #38bdf8, #0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              eRTMAC-NWIS
+              OffsetEye
             </h1>
             <span style={{ fontSize: '0.7rem', background: 'rgba(14, 165, 233, 0.15)', color: '#38bdf8', padding: '2px 6px', borderRadius: '4px', fontWeight: 700, border: '1px solid rgba(14, 165, 233, 0.3)' }}>
               OIL INDIA LIMITED
             </span>
           </div>
           <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-            Nearby Wells Intelligence System & Drilling Risk Decision-Support
+            Offset Well Intelligence & Drilling Risk Decision-Support
           </p>
         </div>
       </div>

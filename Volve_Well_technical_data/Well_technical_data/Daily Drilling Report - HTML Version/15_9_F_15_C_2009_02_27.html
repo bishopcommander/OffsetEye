@@ -1,0 +1,181 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-02-26 00:00 - 2009-02-27 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">39</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">62.6</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2009-01-19 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2009-02-14</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.5</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3232</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3044</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2923</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2752</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3231</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3044</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Set FLX packer, pressure tested production packer to 330 bars 15 min. Inflow tested ASV. Nipple down Diverter, slick joint, BOP and riser. Removed communication collar and started feeding control lines through dedicated ports in wellhead. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Install spacer spool, XMT, flow line. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:15</td><td class="ColValue">2817</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took 15MT overpull.
+</td></tr><tr><td class="ColValue">00:15</td><td class="ColValue">00:45</td><td class="ColValue">2817</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Tested tubing hanger seal at well head 35/345bars , 5/10mins.
+</td></tr><tr><td class="ColValue">00:45</td><td class="ColValue">01:15</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Leak tested line/hose against lo-torq valve to 345bar/5min with Halliburton cement pump. Bled down to 10 bars. Applied 545 bars to ASV and DHSV. Opened lo-torq valve.
+</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">01:45</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up tubing to 50 bar, checked pressure integrity, prior to setting packer. Held for 5 min. Volume pumped 181 litres. Closed DHSV and bled down pressure to 5 bars and observe red for 10 min. Bled back 50 litres.
+</td></tr><tr><td class="ColValue">01:45</td><td class="ColValue">02:00</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up tubing to 60 bars and equalized over DHSV, 88 litres. Applied 545bars to control lines for DHSV.
+</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">03:30</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up tubing 100 lpm to 345 bars 863 litres total 951 lifters. Packer set after 15 min. Continued with tubing test of 345 bars to a straight line of 15 min. 
+</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">04:00</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure to 280 bars, 190 litres bled back. Closed DHSV and bled down to 210 bars, 45 litres bled back. Performed inflow test of DHSV with 70 bars diff./15min. 
+</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">04:30</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure to 10 bars, 98 litres bled back. Performed inflow test of DHSV with 270 bars diff./30min.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">04:45</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Equalised pressure across DHSV, pressure up tubing 280 bar, 170 litres. Opened DHSV. 
+</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">05:00</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure in tubing to 100 bars and kept DHSV open. 550 litres bled back.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">05:15</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior to set FLX-packer. Increased tubing pressure to 110 bars. Lined for monitoring the THP on the stand pipe manifold. Isolated cement unit and bled down 10 bars THP verifying line up.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">05:45</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up cement-unit to A-annulus, with hose connected to Multi Bowl, and tested same to 35/345bar for 5/10min against closed outer annulus valve.
+</td></tr><tr><td class="ColValue">05:45</td><td class="ColValue">06:00</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Opened annulus valve and started to set FLX-packer.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:30</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued pressuring up A-annulus in steps accordance with BOT procedure to 330bar 10 min to test the production packer and set the FLX-packer. Pumped 1250 liters.
+Maintained 100 bars on tubing during pressure testing and setting of the FLX-packer, 330 bar 15 minutes. 
+</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">08:00</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure to 270 bars, 170 litres bled back. Closed ASV and bled down to 200 bars, 70 litres bled back. Performed inflow test of ASV with 70 bars diff./15min. THP 85 bars.
+</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:30</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure to 10 bars, 120 litres bled back. Performed inflow test of ASV with 260 bars diff./30min. THP 77 bars.
+</td></tr><tr><td class="ColValue">08:30</td><td class="ColValue">09:00</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up on ASV control line to 545 bars and isolated control line. Pressured up annulus above ASV from 10 bars to 270 bars, pumped 199 liters,  and equalized ASV. Observed pressure drop in control line when equalizing ASV.
+</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">09:45</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed the outer A-section valve. Bled pressure down to 5 bars on the cement unit and inflow tested A-annulus valves to 265bars for 30 min. 
+</td></tr><tr><td class="ColValue">09:45</td><td class="ColValue">10:15</td><td class="ColValue">2817</td><td class="ColValue">completion -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Equalized pressure against closed outer A-annulus valve, to 270 bars, opened A-annulus valve and bleed back 900 liters. 
+</td></tr><tr><td class="ColValue">10:15</td><td class="ColValue">10:30</td><td class="ColValue">2817</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior to rig down surface equipment. Simultaneously bled down pressure in tubing.
+</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">10:45</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke off swedge on top of tubing. Cut control lines. Rigged down sheaves.
+</td></tr><tr><td class="ColValue">10:45</td><td class="ColValue">11:45</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Disconnected the landing string/THRT from TH by rotating 9 turns clockwise. Pulled out landing string and laid down same.
+</td></tr><tr><td class="ColValue">11:45</td><td class="ColValue">12:30</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged down surface completion equipment, tubing tong, control line reels etz.
+</td></tr><tr><td class="ColValue">12:30</td><td class="ColValue">13:30</td><td class="ColValue">0</td><td class="ColValue">interruption -- waiting on weather</td><td class="ColValue">ok</td><td class="ColValueWrapped">Waited on crane due to wind speed above 40 knots.
+</td></tr><tr><td class="ColValue">13:30</td><td class="ColValue">14:45</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed equipment out from the rig floor.
+</td></tr><tr><td class="ColValue">14:45</td><td class="ColValue">17:00</td><td class="ColValue">0</td><td class="ColValue">completion -- completion string</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked/made up BPV and centralizer, RIH and set BPV in tubing hanger. POOH with running tool and laid out same. 
+</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">17:15</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleared and cleaned rig floor.
+</td></tr><tr><td class="ColValue">17:15</td><td class="ColValue">17:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior to nipple down diverter, slick joint and BOP.
+</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">19:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged up for retrieving divertor and slick joint. 
+</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">19:15</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk prior to nipple down diverter &amp; BOP.
+</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">20:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled diverter and installed master bushings. Stored diverter in set back area.
+</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">20:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled slick joint and store on rig floor.
+</td></tr><tr><td class="ColValue">20:30</td><td class="ColValue">21:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed tension cylinders from BOP.
+</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Erected scaffolding at NT2 connector. Meanwhile rigged up dual lift assy for lower riser.
+</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">drilling -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Completed rigging up scaffolding. Removed choke hose from BOP.
+</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Casing Liner Tubing</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="casingLinerInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Start Time</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">End Time</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Type of Pipe</td><td class="ColValue">Casing</td></tr><tr><td class="ColHeadRowOriented">Casing Type</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Outside diameter (in)</td><td class="ColValue">7</td></tr><tr><td class="ColHeadRowOriented">Inside diameter ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Weight (lbm/ft)</td><td class="ColValue">29</td></tr><tr><td class="ColHeadRowOriented">Grade</td><td class="ColValueWrapped">13 CrS-110</td></tr><tr><td class="ColHeadRowOriented">Connection</td><td class="ColValueWrapped">Vam TOP</td></tr><tr><td class="ColHeadRowOriented">Length (m)</td><td class="ColValue">2796.5</td></tr><tr><td class="ColHeadRowOriented">Top mMD</td><td class="ColValue">20.5</td></tr><tr><td class="ColHeadRowOriented">Bottom mMD</td><td class="ColValue">2817</td></tr><tr><td class="ColHeadRowOriented">Description</td><td class="ColValueWrapped"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValueWrapped"/></tr></tbody></table></div></div></div></section></body></html>

@@ -1,0 +1,151 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-1 B</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2013-12-24 00:00 - 2013-12-25 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">5</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Aker Solution Services</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-08-29 15:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2013-09-07</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3463.3</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3258.2</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">POOH with BHA#3, 4,72" OD P3 guns. L/D BHA#3. All shots fired. Found 3 dl of sand in P3 gun bull nose. P/U BHA#4, 4.72" OD P3 guns and installed same in lubricator. RIH and tagged HUD at 3298 m. Correlated and perforated P3 guns between 3288-3294 m and 3245-3251 m. RIH and tagged HUD at 3297,5. POOH. Inflow tested HMV. L/D BHA#4. Found 5 dl of sand in P3 gun bull nose. Inflow tested DHSV. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">R/D wireline equipment. Install tree cap. Leak test tree cap, kill wing cap and XMT cross. Pack WL equipement.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:20</td><td class="ColValue">3300</td><td class="ColValue">workover -- wire line</td><td class="ColValue">ok</td><td class="ColValueWrapped">Schlumberger discussed situation with onshore. Picked up and saw an increase in PW of 400 lbs, and also observed pressure changes on pressure trend plot. This indicated that the P3 guns had been fired. RIH and tagged HUD at 3300 m MD RKB.
+</td></tr><tr><td class="ColValue">01:20</td><td class="ColValue">02:40</td><td class="ColValue">550</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 3300 m to 550 m MD RKB.</td></tr><tr><td class="ColValue">02:40</td><td class="ColValue">03:15</td><td class="ColValue">550</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Powered down logging unit and performed TBT prior to POOH and L/D BHA#3, 4,72" OD P3 guns.</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">03:30</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 550m MD RKB to surface.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">05:15</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">OOH. WHP 93,5 bar. Closed swab valve and HMV and inflow tested same. Flushed lubricator with nitrogen.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">05:40</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D BHA#3 4,72" OD P3 guns on drill floor and inspected same. All shots fired. Found 3 dl of sand in P3 gun bull nose.</td></tr><tr><td class="ColValue">05:40</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Checked cable head and prepared BHA#4, 4.72" OD P3 guns.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">10:30</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued preparation of BHA#4 4.72" OD P3 guns.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">10:40</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed TBT prior to P/U and install BHA#4, 4.72" OD P3 guns into lubricator.</td></tr><tr><td class="ColValue">10:40</td><td class="ColValue">11:30</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">P/U BHA#4, 4.72" OD P3 guns and installed same in lubricator.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">12:10</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Leak tested QTS to 20/200 bar for 5/10 min. Checked valve status on WL rig-up, well and pump units. Opened well, WHP 99,5 bar.</td></tr><tr><td class="ColValue">12:10</td><td class="ColValue">12:40</td><td class="ColValue">530</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ BHA#4, 4,72" OD P3 guns from 0 m to 530 m MD RKB.</td></tr><tr><td class="ColValue">12:40</td><td class="ColValue">12:55</td><td class="ColValue">530</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Powered up logging unit.</td></tr><tr><td class="ColValue">12:55</td><td class="ColValue">15:10</td><td class="ColValue">3298</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH w/ BHA#3, 4,72" OD P3 guns from 530 m to 3298 m MD RKB.</td></tr><tr><td class="ColValue">15:10</td><td class="ColValue">15:45</td><td class="ColValue">3280.2</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Tagged at 3298 m MD RKB, correlated depth. Correlated and positioned P3 guns at firing depth. Perforated between 3288-3294 m MD RKB. Observed movement in WHP. Observed drop in HW.</td></tr><tr><td class="ColValue">15:45</td><td class="ColValue">16:10</td><td class="ColValue">3297.5</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Correlated while POOH and positioned P3 guns at firing depth. Perforated between 3245-3251 m MD RKB. WHP increased from 102,2 to 102,3 bar. Observed drop in HW. RIH and tagged 3297,5 m MD RKB, correlated depth.</td></tr><tr><td class="ColValue">16:10</td><td class="ColValue">18:10</td><td class="ColValue">550</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 3297,5 m to 550 m MD RKB.</td></tr><tr><td class="ColValue">18:10</td><td class="ColValue">18:25</td><td class="ColValue">550</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">Powered down logging unit.</td></tr><tr><td class="ColValue">18:25</td><td class="ColValue">18:45</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH from 550m MD RKB to surface.</td></tr><tr><td class="ColValue">18:45</td><td class="ColValue">22:00</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">OOH. WHP 106 bar. Closed swab valve and HMV and inflow tested same. Flushed lubricator with nitrogen.</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">workover -- perforate</td><td class="ColValue">ok</td><td class="ColValueWrapped">L/D BHA#4 4,72" OD P3 guns on drill floor and inspected same. All shots fired. Found 5 dl of sand in P3 gun bull nose.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">workover -- test scsssv</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down pressure above DHSV from 110 bar to 40 bar.
+Meanwhile performed TBT prior to R/D WL equipment.</td></tr></tbody></table></div></div></div></section></body></html>

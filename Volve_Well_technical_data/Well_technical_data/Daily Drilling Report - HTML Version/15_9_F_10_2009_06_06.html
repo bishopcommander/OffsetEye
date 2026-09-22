@@ -1,0 +1,152 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-10</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-06-05 00:00 - 2009-06-06 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">61</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">28.4</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2009-04-06 06:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2009-06-03</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.55</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3240</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">3439</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2654</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3441</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">2654</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Circulated and conditioned mud while mixing cement spacer. Mixed, pumped and displaced 12,7m3 1,90 sg cement from 5331m to 5100m MD. Pulled to 3795m MD, spotted 30m3 Hi-Vis pill. Pulled to 3495m MD, circulated B/U, Hi-Vis in return. Dropped and pumped CST, pulled to 3490m MD, mixed, pumped and displaced 10,2m3 1,92 sg "G" cement from 3490m to 3240m MD. POOH to 2080m MD. L/D " DP on deck.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">L/D 5" DP on deck. Slip &amp; cut drill line, test cement plug, set EZSV plug at 2560m MD.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:30</td><td class="ColValue">5326</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued to clean pit and mixing lines. circulated and conditioned mud at 5326m MD, 2400 l/min, 281 bar, 25 rpm, 12-13 kNm.</td></tr><tr><td class="ColValue">00:30</td><td class="ColValue">01:00</td><td class="ColValue">5326</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Filled pit with drill water and performed clorine check prior to start mixing cement spacer. Circulated and conditioned mud at 5326m MD, 2400 l/min, 281 bar, 25 rpm, 12-13 kNm.</td></tr><tr><td class="ColValue">01:00</td><td class="ColValue">04:45</td><td class="ColValue">5326</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Mixed cement spacer according to specifications. Simultaneously removed claw from aft PRS. Held tool box talk prior to cement job. Circulated and conditioned mud at 5326m MD, 2400 l/min, 281 bar, 25 rpm, 12-13 kNm.</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">05:15</td><td class="ColValue">5326</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Stopped pumps and rotation, took up weight, needed 230 ton to move pipe, than 200 ton up weight. Needed to rotate to come down, 156 ton. No circulation. Performed line test from cement unit to rigfloor  200 bar, 10 min.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">06:00</td><td class="ColValue">5326</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Mixed cement spacer according to specifications. Circulated with 1000 l/min, 65 bar. 25 rpm, 13-17 kNm.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:30</td><td class="ColValue">5329</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated and conditioned mud at 5329m MD. 1000 l/min, 65 bar.</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">07:45</td><td class="ColValue">5329</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Toolbox talk prior to pump cement plug.</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">08:00</td><td class="ColValue">5329</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared for pumping spacer. Informed engineer and production. cement room had priority for use of air.</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:15</td><td class="ColValue">5329</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 7m3, 320 strokes 1,47 sg spacer, chased with 0,5m3, 23 strokes OBM. 1000 l/min, 68 bar.</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">08:45</td><td class="ColValue">5329</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Mixed and pumped 12,7m3 1,90 sg Silica cement. Displaced to rigfloor with 892 ltr. drill water.</td></tr><tr><td class="ColValue">08:45</td><td class="ColValue">09:30</td><td class="ColValue">5329</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced cement down string, 48m3, 2200 strokes. 1900 l/min, 110 bar. Reduced rate at 43m3. 1000 l/min, 75 bar.</td></tr><tr><td class="ColValue">09:30</td><td class="ColValue">11:30</td><td class="ColValue">5010</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Got back pressure in string while pulling out of cement, connected DDM and pumped 6 strokes, 130 l per stand.</td></tr><tr><td class="ColValue">11:30</td><td class="ColValue">12:00</td><td class="ColValue">5010</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Inserted  2 sponge balls, due to back pressure we had to brake first single below DDM.</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">12:45</td><td class="ColValue">4900</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled from 5010m to 4900m MD, pumped sponge balls through string. 2500 l/min, 290 bar.</td></tr><tr><td class="ColValue">12:45</td><td class="ColValue">13:00</td><td class="ColValue">4900</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flushed stand pipe manifoild after cement job.</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">15:45</td><td class="ColValue">3795</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH wet with cement string from 4900m to 3795m MD.</td></tr><tr><td class="ColValue">15:45</td><td class="ColValue">16:00</td><td class="ColValue">3795</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke circulation and filled trip tank.</td></tr><tr><td class="ColValue">16:00</td><td class="ColValue">17:00</td><td class="ColValue">3795</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 30m3, 1370 strokes Hi-Vis pill. 1300 l/min, 97 bar. Displaced Hi-Vis pill with 30,5m3, 1396 strokes. 1986 l/min, 194 bar.</td></tr><tr><td class="ColValue">17:00</td><td class="ColValue">17:30</td><td class="ColValue">3795</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">64 bar backpressure in string after displacement of Hi-Vis pill. Bled back 300 ltr. 0 bar.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">19:15</td><td class="ColValue">3495</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH wet from 3795m to 3495m MD.</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">20:45</td><td class="ColValue">3495</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Established circulation 2750 l/min, 290 bar, 25 rpm, 8-10 kNm. Observed 73 bar with 220 l/min when broke circulation. Meanwhile held toolbox talk prior to cement job. Observed good Hi-Vis return at surface.</td></tr><tr><td class="ColValue">20:45</td><td class="ColValue">21:00</td><td class="ColValue">3495</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke off double DP and dropped CST.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">22:00</td><td class="ColValue">3495</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced CST with 1000 l/min, 53 bar. Reduced rate to 500 l/min, 22 bar after 29,6m3, 1355 strokes. When CST enters 3 1/2" DP, observed pressure increase to 26 bar, after 32,7m3, 1492 stroles pumped.</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">22:15</td><td class="ColValue">3490</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up 5m to 3490m MD. pumped 9m3, 410 strokes, 1,47 sg spacer, 1800 l/min, 140 bar.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">22:45</td><td class="ColValue">3490</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Mixed and pumped 10,3m3 1,92 sg "G" cement. 800 l/min, 30 bar from cement unit.</td></tr><tr><td class="ColValue">22:45</td><td class="ColValue">23:00</td><td class="ColValue">3490</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced cement with rig pumps, 2000 l/min, 125 bar, 50 rpm, 6-8 kNm. Reduced rate to 1000 l/min, 29 bar.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">2951</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with cement string from 3490m to 2951m MD.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">03:00</td><td class="ColValue">09:00</td><td class="ColValue">23:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Flowline</td><td class="ColValue">Flowline</td><td class="ColValue">Active pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">5331</td><td class="ColValue">5331</td><td class="ColValue">5331</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Enviromul Yellow</td><td class="ColValue">Enviromul Yellow</td><td class="ColValue">Enviromul Yellow</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.34</td><td class="ColValue">1.33</td><td class="ColValue">1.33</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="4">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="4">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">33</td><td class="ColValue">33</td><td class="ColValue">34</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">13.5</td><td class="ColValue">13</td><td class="ColValue">12</td></tr><tr><td class="ColHeadRowOriented" colSpan="4">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT (degC)</td><td class="ColValue">120</td><td class="ColValue">120</td><td class="ColValue">120</td></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

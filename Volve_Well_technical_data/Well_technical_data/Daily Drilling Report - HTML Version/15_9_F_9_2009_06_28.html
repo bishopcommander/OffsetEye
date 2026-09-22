@@ -1,0 +1,161 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-9</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2009-06-27 00:00 - 2009-06-28 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">4</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue"/></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-09 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-08-31</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.03</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">1085</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">1075.9</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">650</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">0</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">1064</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Ran in hole with EZSV plug to 878 m and sat same. Pulled running out of the hole.
+Ran in hole with RTTS test packer and sat same at 222 m. Tested the EZSV from above to 126 bar. Released and retrieve RTTS.
+Made up cement stinger and ran in hole to 875 m. Circulated btms up with 138 bar/4000 lpm.
+Pumped 20 m3 of DW spacer ahead of cement. Mixed and pumped 16,8 m3 1,9 sg cement (800 lpm) and displaced same with 5,1m3 of DW. Cement plug #1 placed at 878 m to 650 m.
+Pulled out of the hole with cement stinger. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Run in hole with 12-1/4" drift assembly to 500 m to drift casing.
+Wait for cement plug # 1 to set up.
+Test/tag cement plug # 1
+Set cement plug # 2 from 650 m to 590 m.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">03:30</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued repeat logging pass from 695 m to surface.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">04:45</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Laid out logging string and rigged down wireline equipment. Discussed barrier situation with onshore. Log interpretation to be found in "DBR 14. Logging remarks".</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">05:45</td><td class="ColValue">0</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Changed handling equipment for 5-1/2" DP and rigged up for running EZSV. Pick up and made up EZSV with running tool.</td></tr><tr><td class="ColValue">05:45</td><td class="ColValue">06:00</td><td class="ColValue">50</td><td class="ColValue">workover -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with EZSV plug on DP at 50 m..</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:00</td><td class="ColValue">366</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with EZSV plug on DP to 366 m.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">08:45</td><td class="ColValue">878</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Toolbox talk with new shift.
+Ran in from 366 m to EZSV setting depth 878 m. Running speed 1,5 min/std, filling pipe every 5 stds.</td></tr><tr><td class="ColValue">08:45</td><td class="ColValue">09:30</td><td class="ColValue">878</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Position EZSV plug at 878 m in neutral weight (=95 t). Sat EZSV and observed sleeve to shear at 117 ton. RIH and tagged the EZSV with 10 t - OK.</td></tr><tr><td class="ColValue">09:30</td><td class="ColValue">10:30</td><td class="ColValue">15</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with running tool from 878 m to 15 m.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">11:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Changed out PS-21 slips to master bushing and laid out EZSV running tool</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">13:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Had Tool box talk prior to picking up RTTS
+Made up side entry sub assembly. PU and MU Halliburton RTTS assembly and confirmed same to be open.</td></tr><tr><td class="ColValue">13:30</td><td class="ColValue">15:30</td><td class="ColValue">219</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole to 222 m. Flushed RTTS packer sealing interval with SW 400-800 lpm.
+Position RTTS at 219 m and set same.</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">16:30</td><td class="ColValue">219</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made a line test 200 bar OK. Pressure tested the RTTS to 126 bar/10 min. OK. Volume pumped/returned 349 l.</td></tr><tr><td class="ColValue">16:30</td><td class="ColValue">17:45</td><td class="ColValue">11</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged down cement hose and released RTTS packer. Pulled out of the hole from 219 m to 11 m.</td></tr><tr><td class="ColValue">17:45</td><td class="ColValue">18:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- mechanical plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Laid out RTTS assembly. Cleared and cleaned rig floor.</td></tr><tr><td class="ColValue">18:15</td><td class="ColValue">18:30</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox talk with crew prior to running in hole with 3-1/2" DP</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">19:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged up handling equipment for 3-1/2" DP. Grease equipment.</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">20:00</td><td class="ColValue">319</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Made up cement stinger to string and ran in hole to 319 m.</td></tr><tr><td class="ColValue">20:00</td><td class="ColValue">22:15</td><td class="ColValue">875</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Change handling gear to 5-1/2" DP and ran in hole from 319 m to 875 m. 
+Circulated btms up at 4000 lpm and 138 bar.</td></tr><tr><td class="ColValue">22:15</td><td class="ColValue">22:30</td><td class="ColValue">875</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk to crew prior to cement job</td></tr><tr><td class="ColValue">22:30</td><td class="ColValue">23:30</td><td class="ColValue">875</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Laid out single and installed 3m pup, side entry sub and FOSV onto string. Made string up to TDS.
+Confirmed line up and conducted line test 200 bar/5 min.</td></tr><tr><td class="ColValue">23:30</td><td class="ColValue">00:00</td><td class="ColValue">875</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pumped 20 m3 DW as a spacer. 2000 lpm/42 bar with mud pump.</td></tr></tbody></table></div></div></div></section></body></html>

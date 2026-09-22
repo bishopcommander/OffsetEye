@@ -96,30 +96,74 @@ export default function MapView({ activeWell, nearbyWells, radiusMeters, onSelec
     `);
     markersLayerRef.current.addLayer(activeMarker);
 
-    // Offset Wells Icons
+    // Offset Wells Icons — with coloured risk flag indicators
     nearbyWells.forEach(well => {
       if (well.id === activeWell.id) return; // Skip active well
+
+      const eventTypes = well.event_types || [];
+      const eventCount = well.event_count || 0;
+
+      // Colour map for event types
+      const eventColors = {
+        mud_loss:     '#f87171', // red
+        stuck_pipe:   '#fb923c', // orange
+        kick:         '#ec4899', // pink
+        overpressure: '#c084fc', // purple
+        torque_spike: '#eab308', // yellow
+        cementing:    '#38bdf8', // blue
+        npt:          '#94a3b8', // slate
+        fishing:      '#a3e635', // lime
+      };
+
+      // Build small flag dots (up to 4 most significant types)
+      const flagDots = eventTypes.slice(0, 4).map(et => {
+        const col = eventColors[et] || '#9ca3af';
+        return `<div style="width:8px;height:8px;border-radius:50%;background:${col};box-shadow:0 0 4px ${col};flex-shrink:0;"></div>`;
+      }).join('');
+
+      // Outer ring colour: red if any stuck_pipe/kick/mud_loss, amber otherwise, teal if no events
+      const hasCritical = eventTypes.some(t => ['mud_loss','stuck_pipe','kick','overpressure'].includes(t));
+      const hasModerate = eventTypes.some(t => ['torque_spike','cementing','npt','fishing'].includes(t));
+      const ringColor = eventCount === 0 ? '#10b981' : hasCritical ? '#ef4444' : hasModerate ? '#f59e0b' : '#38bdf8';
+      const ringGlow  = eventCount === 0 ? '#10b981' : hasCritical ? '#ef4444' : '#f59e0b';
 
       const offsetIcon = L.divIcon({
         className: 'custom-offset-marker',
         html: `
-          <div style="width: 24px; height: 24px; border-radius: 50%; background: #1f2937; border: 2px solid #38bdf8; box-shadow: 0 2px 5px rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; cursor: pointer;">
-            <div style="width: 8px; height: 8px; border-radius: 50%; background: #38bdf8;"></div>
+          <div style="position:relative;width:34px;height:34px;display:flex;align-items:center;justify-content:center;">
+            <div style="width:28px;height:28px;border-radius:50%;background:#111827;border:2.5px solid ${ringColor};box-shadow:0 0 8px ${ringGlow}40;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:pointer;">
+              ${eventCount > 0
+                ? `<div style="display:flex;gap:2px;flex-wrap:wrap;justify-content:center;padding:3px;">${flagDots}</div>`
+                : `<div style="width:6px;height:6px;border-radius:50%;background:${ringColor};"></div>`
+              }
+            </div>
+            ${eventCount > 0 ? `<div style="position:absolute;top:-5px;right:-5px;background:${ringColor};color:#000;font-size:9px;font-weight:800;border-radius:9999px;min-width:16px;height:16px;display:flex;align-items:center;justify-content:center;padding:0 3px;">${eventCount}</div>` : ''}
           </div>
         `,
-        iconSize: [24, 24],
-        iconAnchor: [12, 12]
+        iconSize: [34, 34],
+        iconAnchor: [17, 17]
       });
 
       const offsetMarker = L.marker([well.latitude, well.longitude], { icon: offsetIcon });
       const distStr = well.dist_m ? `${Math.round(well.dist_m)}m` : 'Nearby';
 
+      // Build event-type flag legend for popup
+      const eventLegend = eventTypes.length > 0
+        ? `<div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:4px;">${
+            eventTypes.map(et => {
+              const col = eventColors[et] || '#9ca3af';
+              return `<span style="background:${col}20;color:${col};border:1px solid ${col}60;border-radius:4px;font-size:0.65rem;font-weight:700;padding:1px 5px;text-transform:uppercase;">${et.replace('_',' ')}</span>`;
+            }).join('')
+          }</div>`
+        : '<div style="font-size:0.72rem;color:#9ca3af;margin-top:4px;">No events logged</div>';
+
       offsetMarker.bindPopup(`
         <div style="padding: 6px; font-family: sans-serif;">
-          <div style="font-size: 0.75rem; color: #9ca3af; font-weight: 600;">Offset Well (${distStr} offset)</div>
+          <div style="font-size: 0.72rem; color: #9ca3af; font-weight: 600;">Offset Well (${distStr} offset)</div>
           <div style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-top: 2px;">${well.name}</div>
-          <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 4px;">Primary Target: <strong style="color: #f3f4f6;">${well.formation || 'Hugin'}</strong></div>
-          <div style="font-size: 0.8rem; color: #9ca3af;">Total Depth: <strong style="color: #f3f4f6;">${well.current_depth || 0}m</strong></div>
+          <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 4px;">Target: <strong style="color:#f3f4f6;">${well.formation || 'Hugin'}</strong> &nbsp;|&nbsp; TD: <strong style="color:#34d399;">${well.current_depth || 0}m</strong></div>
+          <div style="font-size:0.75rem;color:${ringColor};font-weight:700;margin-top:4px;">${eventCount} historical event${eventCount === 1 ? '' : 's'} logged</div>
+          ${eventLegend}
           <button id="select-well-${well.id}" style="margin-top: 8px; background: #0284c7; color: white; border: none; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; width: 100%;">
             Set as Active Well
           </button>
@@ -143,16 +187,24 @@ export default function MapView({ activeWell, nearbyWells, radiusMeters, onSelec
       <div ref={mapContainerRef} style={{ width: '100%', height: '100%' }} />
 
       {/* Map Legend Overlay */}
-      <div style={{ position: 'absolute', bottom: '12px', left: '12px', background: 'rgba(17, 24, 39, 0.9)', backdropFilter: 'blur(8px)', padding: '8px 12px', borderRadius: '8px', border: '1px solid #374151', fontSize: '0.72rem', display: 'flex', gap: '14px', zIndex: 500 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#0284c7', border: '2px solid white' }} />
+      <div style={{ position: 'absolute', bottom: '12px', left: '12px', background: 'rgba(17, 24, 39, 0.92)', backdropFilter: 'blur(8px)', padding: '8px 12px', borderRadius: '8px', border: '1px solid #374151', fontSize: '0.72rem', display: 'flex', gap: '12px', zIndex: 500, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#0284c7', border: '2.5px solid white', boxShadow: '0 0 6px #0ea5e9' }} />
           <span>Active Rig</span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#38bdf8' }} />
-          <span>Offset Wells</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#111827', border: '2.5px solid #ef4444', boxShadow: '0 0 5px #ef444440' }} />
+          <span style={{ color: '#fca5a5' }}>Critical Events</span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#111827', border: '2.5px solid #f59e0b' }} />
+          <span style={{ color: '#fde68a' }}>Moderate Events</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#111827', border: '2.5px solid #10b981' }} />
+          <span style={{ color: '#a7f3d0' }}>Clean Well</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
           <div style={{ width: '12px', height: '0px', borderTop: '2px dashed #0ea5e9' }} />
           <span>Radius Buffer</span>
         </div>

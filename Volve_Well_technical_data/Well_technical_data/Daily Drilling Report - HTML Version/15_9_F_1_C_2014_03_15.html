@@ -1,0 +1,166 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-1 C</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2014-03-14 00:00 - 2014-03-15 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">22</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">2</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2014-02-21 14:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2014-03-15</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">288</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia (in):</td><td class="ColValue">8.5</td></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.6</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">4094</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3180.5</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">3059</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2874.4</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3047</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">2868.3</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Drilled and geosteered 8 1/2" hole from 3806 m to TD at 4094 m.
+Circulated hole clean. Performed re-logging and pipe stretch calibration.
+Took pressure points as per program.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Take remaining pressure points.
+POOH and L/D 8 1/2" BHA.
+R/U to run 7" liner.
+M/U and RIH 7" liner.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:15</td><td class="ColValue">3840</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Drilled and geosteered 8 1/2" hole from 3806 m to 3840 m. Avg. ROP: 27,2 m/hr. WOB 3 - 8 MT. 2150 l/min/ 195 - 198 bar. 150 rpm / 15 - 20 kNm. ECD 1,49 - 1,50 sg. Max gas: 4,8 % from 3825 m lag depth.</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">02:00</td><td class="ColValue">3840</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Reamed single twice, tared CoPilot as per Baker instructions.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">04:30</td><td class="ColValue">3880</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Drilled and geosteered 8 1/2" hole from 3840 m to 3880 m. Avg. ROP: 16 m/hr. WOB 6 - 10 MT. 2150 l/min/ 196 - 200 bar. 150 rpm / 15 - 22 kNm. ECD 1,51 sg. Max gas: 4,5 % from 3856 m lag depth.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">04:45</td><td class="ColValue">3880</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took SCRs.</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">07:00</td><td class="ColValue">3903</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Drilled and geosteered 8 1/2" hole from 3880 m to 3903 m. Avg. ROP: 10,3 m/hr. WOB 8 - 10 MT. 2150 l/min/ 200 bar. 150 - 90 rpm / 15 - 22 kNm. ECD 1,51 sg. Max gas: 3,6 % from 3869 m lag depth.
+
+Reduced RPM to 90 while driilling hard stringers in interval.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">12:00</td><td class="ColValue">4009</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Drilled and geosteered 8 1/2" hole from 3903 m to 4009 m. Avg. ROP: 21,2 m/hr. WOB 5 - 12 MT. 2150 l/min/ 195 - 208 bar. 150 - 90 rpm / 15 - 22 kNm. ECD 1,52 sg. Max gas: 3,7 % from 3979 m lag depth.
+
+Reduced RPM to 90 while driilling hard stringers in interval.</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">16:00</td><td class="ColValue">4094</td><td class="ColValue">drilling -- drill</td><td class="ColValue">ok</td><td class="ColValueWrapped">Drilled and geosteered 8 1/2" hole from 4009 m to TD at 4094 m. Avg. ROP: 21,3 m/hr. WOB 5 - 10 MT. 2150 l/min/ 200 - 208 bar. 150 rpm / 15 - 22 kNm. ECD 1,52 sg.</td></tr><tr><td class="ColValue">16:00</td><td class="ColValue">17:30</td><td class="ColValue">4094</td><td class="ColValue">drilling -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole clean w/ 2200 - 2400 l/min/ 205 - 230 bar, 150 - 160 RPM / 12 - 16 kNm, ECD 1,51 sg. Racked back one stand and reciprocated string while circ.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">18:30</td><td class="ColValue">4050</td><td class="ColValue">formation evaluation -- log</td><td class="ColValue">ok</td><td class="ColValueWrapped">Stopped rotation. Performed pipe stretch calibration and re-logging passes as per Baker instructions. Circulated with 2400 l/min/ 235 bar.</td></tr><tr><td class="ColValue">18:30</td><td class="ColValue">20:15</td><td class="ColValue">4050</td><td class="ColValue">drilling -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole clean w/ 2400 l/min/ 230 bar, 160 RPM / 12 - 16 kNm, ECD 1,52 sg. Circulated in total 3 B/U. Reciprocated string while circ.</td></tr><tr><td class="ColValue">20:15</td><td class="ColValue">20:45</td><td class="ColValue">4075</td><td class="ColValue">drilling -- pressure detection</td><td class="ColValue">ok</td><td class="ColValueWrapped">Flowchecked well, well stable. Took up/down weights and torque readings.</td></tr><tr><td class="ColValue">20:45</td><td class="ColValue">21:30</td><td class="ColValue">4019</td><td class="ColValue">drilling -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed sticky test with BHA partly across reservoir sands, 5 MT overpull. Performed second test with full BHA across reservoir, 10 MT overpull.</td></tr><tr><td class="ColValue">21:30</td><td class="ColValue">00:00</td><td class="ColValue">3856</td><td class="ColValue">formation evaluation -- log</td><td class="ColValue">ok</td><td class="ColValueWrapped">Took pressure points as per Geology/Baker instructions. Positioned string on depth, sent downlink and activitated TesTrak sequence. Circulated with 1900 l/min while taking pressure points.
+Took 4 points at following bit depths:
+# 1: 4010 m MD
+# 2: 3958 m MD
+# 3: 3891 m MD
+# 4: 3856 m MD</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">01:00</td><td class="ColValue">09:00</td><td class="ColValue">15:00</td><td class="ColValue">20:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Flowline</td><td class="ColValue">Flowline</td><td class="ColValue">Flowline</td><td class="ColValue">Flowline</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">3828</td><td class="ColValue">3976</td><td class="ColValue">4076</td><td class="ColValue">4094</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Enviromul Yellow</td><td class="ColValue">Enviromul Yellow</td><td class="ColValue">Enviromul Yellow</td><td class="ColValue">Enviromul Yellow</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.34</td><td class="ColValue">1.34</td><td class="ColValue">1.34</td><td class="ColValue">1.34</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="5">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="5">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">34</td><td class="ColValue">36</td><td class="ColValue">35</td><td class="ColValue">37</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">11</td><td class="ColValue">10.5</td><td class="ColValue">11.5</td><td class="ColValue">11.5</td></tr><tr><td class="ColHeadRowOriented" colSpan="5">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT (degC)</td><td class="ColValue">120</td><td class="ColValue">120</td><td class="ColValue">120</td><td class="ColValue">120</td></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/><td class="ColValue"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Pore Pressure</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="porepressureInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Time</th><th class="ColHead">Depth mMD</th><th class="ColHead">Depth TVD</th><th class="ColHead">Equ Mud Weight (g/cm3)</th><th class="ColHead">Reading</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">3213</td><td class="ColValue"/><td class="ColValue">1.29</td><td class="ColValue">estimated</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">3977</td><td class="ColValue"/><td class="ColValue">1.16</td><td class="ColValue">measured</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Survey Station</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table info="surveystationInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Inclination (dega)</th><th class="ColHead">Azimuth (dega)</th><th class="ColHead">Comment</th></tr></thead><tbody><tr><td class="ColValue">3866.8</td><td class="ColValue">3099.6</td><td class="ColValue">69.52</td><td class="ColValue">52.2</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">3907.4</td><td class="ColValue">3113.9</td><td class="ColValue">69.07</td><td class="ColValue">53.3</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">3947.8</td><td class="ColValue">3128.3</td><td class="ColValue">69.09</td><td class="ColValue">55.53</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">3987.9</td><td class="ColValue">3142.7</td><td class="ColValue">69.09</td><td class="ColValue">56.45</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4028.5</td><td class="ColValue">3157.1</td><td class="ColValue">69.15</td><td class="ColValue">56.9</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4069.2</td><td class="ColValue">3171.6</td><td class="ColValue">69.11</td><td class="ColValue">57.78</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4079.2</td><td class="ColValue">3175.2</td><td class="ColValue">69.09</td><td class="ColValue">57.67</td><td class="ColValueWrapped"/></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Lithology Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="lithologyInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start Depth mMD</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Start Depth mTVD</th><th class="ColHead">End Depth mTVD</th><th class="ColHead">Shows Description</th><th class="ColHead">Lithology Description</th></tr></thead><tbody><tr><td class="ColValue">3800</td><td class="ColValue">4004</td><td class="ColValue">3077.4</td><td class="ColValue">3148.5</td><td class="ColValueWrapped"/><td class="ColValueWrapped">Sandstone with occasional siltstone and calcitic layers</td></tr><tr><td class="ColValue">3820</td><td class="ColValue">3880</td><td class="ColValue">0</td><td class="ColValue">0</td><td class="ColValueWrapped">Brnsh blk o stn, brt yel fluor, slo strmg bl, pa yelsh Res fluor</td><td class="ColValueWrapped"/></tr><tr><td class="ColValue">4004</td><td class="ColValue">4094</td><td class="ColValue">3148.5</td><td class="ColValue">3180.5</td><td class="ColValueWrapped"/><td class="ColValueWrapped">Claystone</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Gas Reading Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="gasreadingInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Time</th><th class="ColHead">Class</th><th class="ColHead">Depth to Top mMD</th><th class="ColHead">Depth to Bottom MD</th><th class="ColHead">Depth to Top mTVD</th><th class="ColHead">Depth to Bottom TVD</th><th class="ColHead">Highest Gas (%)</th><th class="ColHead">Lowest Gas ()</th><th class="ColHead">C1 (ppm)</th><th class="ColHead">C2 (ppm)</th><th class="ColHead">C3 (ppm)</th><th class="ColHead">IC4 (ppm)</th><th class="ColHead">IC5 (ppm)</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3799</td><td class="ColValue"/><td class="ColValue">3076.7</td><td class="ColValue"/><td class="ColValue">5.22</td><td class="ColValue"/><td class="ColValue">42475</td><td class="ColValue">3053</td><td class="ColValue">1384</td><td class="ColValue">123</td><td class="ColValue">85</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3817</td><td class="ColValue"/><td class="ColValue">3082.9</td><td class="ColValue"/><td class="ColValue">4.78</td><td class="ColValue"/><td class="ColValue">36903</td><td class="ColValue">2859</td><td class="ColValue">1386</td><td class="ColValue">129</td><td class="ColValue">87</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3837</td><td class="ColValue"/><td class="ColValue">3089.2</td><td class="ColValue"/><td class="ColValue">2.86</td><td class="ColValue"/><td class="ColValue">19651</td><td class="ColValue">1614</td><td class="ColValue">843</td><td class="ColValue">84</td><td class="ColValue">68</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3856</td><td class="ColValue"/><td class="ColValue">3095.6</td><td class="ColValue"/><td class="ColValue">4.52</td><td class="ColValue"/><td class="ColValue">34150</td><td class="ColValue">2492</td><td class="ColValue">1155</td><td class="ColValue">106</td><td class="ColValue">80</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3862</td><td class="ColValue"/><td class="ColValue">3098.9</td><td class="ColValue"/><td class="ColValue">3.71</td><td class="ColValue"/><td class="ColValue">29791</td><td class="ColValue">2141</td><td class="ColValue">983</td><td class="ColValue">91</td><td class="ColValue">71</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3884</td><td class="ColValue"/><td class="ColValue">3105.6</td><td class="ColValue"/><td class="ColValue">2.51</td><td class="ColValue"/><td class="ColValue">17694</td><td class="ColValue">1330</td><td class="ColValue">662</td><td class="ColValue">67</td><td class="ColValue">59</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3905</td><td class="ColValue"/><td class="ColValue">3112.7</td><td class="ColValue"/><td class="ColValue">2.74</td><td class="ColValue"/><td class="ColValue">19012</td><td class="ColValue">1440</td><td class="ColValue">702</td><td class="ColValue">69</td><td class="ColValue">60</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3919</td><td class="ColValue"/><td class="ColValue">3118.4</td><td class="ColValue"/><td class="ColValue">2.1</td><td class="ColValue"/><td class="ColValue">14549</td><td class="ColValue">1136</td><td class="ColValue">532</td><td class="ColValue">49</td><td class="ColValue">40</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3938</td><td class="ColValue"/><td class="ColValue">3124.8</td><td class="ColValue"/><td class="ColValue">3.44</td><td class="ColValue"/><td class="ColValue">24912</td><td class="ColValue">1956</td><td class="ColValue">902</td><td class="ColValue">79</td><td class="ColValue">55</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3961</td><td class="ColValue"/><td class="ColValue">3133</td><td class="ColValue"/><td class="ColValue">3.29</td><td class="ColValue"/><td class="ColValue">23997</td><td class="ColValue">1882</td><td class="ColValue">868</td><td class="ColValue">75</td><td class="ColValue">51</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3977</td><td class="ColValue"/><td class="ColValue">3138.8</td><td class="ColValue"/><td class="ColValue">3.64</td><td class="ColValue"/><td class="ColValue">26363</td><td class="ColValue">2192</td><td class="ColValue">1080</td><td class="ColValue">98</td><td class="ColValue">65</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">3999</td><td class="ColValue"/><td class="ColValue">3146.2</td><td class="ColValue"/><td class="ColValue">3.47</td><td class="ColValue"/><td class="ColValue">24544</td><td class="ColValue">2109</td><td class="ColValue">1066</td><td class="ColValue">97</td><td class="ColValue">65</td></tr><tr><td class="ColValue">00:00</td><td class="ColValue">drilling gas peak</td><td class="ColValue">4004</td><td class="ColValue"/><td class="ColValue">3148.4</td><td class="ColValue"/><td class="ColValue">1.97</td><td class="ColValue"/><td class="ColValue">13017</td><td class="ColValue">1137</td><td class="ColValue">591</td><td class="ColValue">56</td><td class="ColValue">42</td></tr></tbody></table></div></div></div></section></body></html>

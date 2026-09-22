@@ -1,0 +1,164 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-15</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2008-12-02 00:00 - 2008-12-03 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:52</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">59</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">22</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2008-10-24 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-12-11</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.5</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">4090</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3178</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">1381</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">1349</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">2534</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">2348.8</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">RIH with 8&#188;" clean out BHA. Washed down from 2034m to 2629m, rate 2500lpm SPP 167-175bars, 80 rpm. Tagged and set down 10 MT at 2631m firm cement. Cleaned out hole having large cuttings back over the shakers. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">POOH with 8&#188;" clean out BHA. M/U cement stinger and RIH same. Set cement plug and POOH. WOC.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:15</td><td class="ColValue">241</td><td class="ColValue">interruption -- maintain</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued investigation of the incident. Simulated incident. Found HTS rollers got stop signal but had too long slowing down period. Investigated for hydraulic or electrical error. On 2nd simulation attempt the system worked normal, rollers stopped as they should. Unable define the error.
+</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">02:00</td><td class="ColValue">241</td><td class="ColValue">interruption -- maintain</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and removed the HTS rollers.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">04:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued POOH with 3&#189;" DP from 241m to surface and laid out 3&#189;" DP on cantilever.</td></tr><tr><td class="ColValue">04:00</td><td class="ColValue">05:15</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- cement plug</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held tool box talk and leak tested Cement line to rig floor 200 bars/5mins. Attempted to pressure test the 2nd cement plug. Pressure up against shear ram 50 bars and increased pressure in 20 bars increments. At 110 bars pressure drop rapid to 70 bars. 0.95 m&#179; pumped 0.6 m&#179; return. Trip tank steady.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">06:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared for RIH with 8&#188;" drill out BHA.
+</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">08:00</td><td class="ColValue">0</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Prepared for RIH with 8&#188;" clean out BHA.
+</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">10:30</td><td class="ColValue">125</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with 8&#188;'' clean out BHA. Removed nozzles in bit.
+</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">10:45</td><td class="ColValue">125</td><td class="ColValue">plug abandon -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Changed out master bushing to PS21 slips.
+</td></tr><tr><td class="ColValue">10:45</td><td class="ColValue">14:15</td><td class="ColValue">1510</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with 5'' Drill pipe from 125m to 1510m. Filling pipe every 10 stands. Closed end displacement, monitoring returns on trip tank. Tripping speed 395 m/hr. 
+5'' elevators not closing probably on 5'' drill pipe.</td></tr><tr><td class="ColValue">14:15</td><td class="ColValue">14:30</td><td class="ColValue">1510</td><td class="ColValue">interruption -- maintain</td><td class="ColValue">ok</td><td class="ColValueWrapped">Investigated slipped stand in PRS and elevator.
+</td></tr><tr><td class="ColValue">14:30</td><td class="ColValue">15:30</td><td class="ColValue">1836</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued RIH with 5" DP from 1510m to 1836m. Tripping speed 326 m/hr.
+</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">16:00</td><td class="ColValue">2034</td><td class="ColValue">plug abandon -- trip</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH from 1836m to 2034m, up/down weight 129/112 MT. Tripping speed 198 m/hr.
+</td></tr><tr><td class="ColValue">16:00</td><td class="ColValue">16:45</td><td class="ColValue">2034</td><td class="ColValue">plug abandon -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Started circulation, staged up pumps from 450 to 2000 L/min, SPP 21.5 to 99.4 bars.
+</td></tr><tr><td class="ColValue">16:45</td><td class="ColValue">19:00</td><td class="ColValue">2401</td><td class="ColValue">plug abandon -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Washed down from 2034m to 2401m, down/up weight 114/131 MT. 2000 L/m, 105bar, increased pumprate to 2500 L/m, 167bar. No cement over the shakers.
+</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">22:00</td><td class="ColValue">2631</td><td class="ColValue">plug abandon -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Continued washing down from 2401m to 2587m w/ 2500 lpm, SPP 167-175bars. Tight/overpull at 2587mt. Started rotation at 20rpm. Continued to wash/ream down from 2587m to 2629, Torq 5-10 kNm. Occasionally WOB at 5 mt for a few seconds, otherwise no WOB.
+Took weight at 2629m 10 MT. Washed through. Reamed to 2631 m. Stopped rotation and set down 10 MT with 2500 lpm, firm cement at 2631m (TD).
+50/50 cement/formation over the shakers. No gain/losses during clean out.</td></tr><tr><td class="ColValue">22:00</td><td class="ColValue">00:00</td><td class="ColValue">2621</td><td class="ColValue">plug abandon -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Circulated hole with 2500 lpm 80 rpm and reciprocated the string. Size of the cutting in return: Cement &#216;1" and formation chips 2" x &#189;" x 1/8". Circulated 3 bottoms up. After 2nd bottoms up 90 % formations cuttings back. No gain/losses during clean out. Decided to pump out to 9 5/8" casing shoe.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Equipment Failure Information</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="equipmentfailureInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">Depth mMD</th><th class="ColHead">Depth mTVD</th><th class="ColHead">Sub Equip - Syst Class</th><th class="ColHead">Operation Downtime (min)</th><th class="ColHead">Equipment Repaired</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">241</td><td class="ColValue"/><td class="ColValue">miscellaneous equ syst -- other</td><td class="ColValue">0</td><td class="ColValue">00:00</td><td class="ColValueWrapped">M&#230;rsk synergi # 330445 - 3,5" DP coming off end of hydraulic rollers.
+M&#230;rsk gradering green 3
+3,5" DP coming off end of hydraulic rollers. Unable to stop rollers by various means.</td></tr></tbody></table></div></div></div></section></body></html>

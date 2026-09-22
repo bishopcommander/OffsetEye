@@ -1,0 +1,162 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-1 B</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2013-09-12 00:00 - 2013-09-13 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:51</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">14</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">16.6</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">Statoil</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">Maersk Drilling</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2013-08-29 15:30</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2013-09-07</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.6</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3465</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2605</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2459.2</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3463.3</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3258.2</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Jetted BOP and riser with seawater.
+Installed Safelock plug at 607m MD.
+Pressure tested Safelock plug to 345 bar from below and above.
+Pulled 10 3/4" wearbushing.
+Performed 9.5" drift run to 575m MD.
+Installed lockdown assembly.
+Nippled down diverter, slick joint and moved BOP to carrier.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">Rig up to pull high pressure drilling riser.
+Rig down tensioning ring and cylinders.
+Pull high pressure drilling riser.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">00:45</td><td class="ColValue">173</td><td class="ColValue">completion -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Jetted BOP and riser from 139m MD to 15m MD.</td></tr><tr><td class="ColValue">00:45</td><td class="ColValue">01:15</td><td class="ColValue">173</td><td class="ColValue">completion -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Broke out and laid down magnetosweep, jetting sub and crossover to cantilever.</td></tr><tr><td class="ColValue">01:15</td><td class="ColValue">02:15</td><td class="ColValue">0</td><td class="ColValue">completion -- circulating conditioning</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with well protector and crossover on 5 1/2" drill pipe from 173m MD. Broke out well protector and crossover and laid down same to cantilever.</td></tr><tr><td class="ColValue">02:15</td><td class="ColValue">02:45</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up Safelock plug.</td></tr><tr><td class="ColValue">02:45</td><td class="ColValue">03:15</td><td class="ColValue">120</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with Safelock plug on 5 1/2" heavy weight drill pipe to 120m MD.</td></tr><tr><td class="ColValue">03:15</td><td class="ColValue">05:00</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with Safelock plug on 5 1/2" drill pipe from 120m MD to 607m MD.</td></tr><tr><td class="ColValue">05:00</td><td class="ColValue">05:15</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed prejob meeting prior to set Safelock plug.</td></tr><tr><td class="ColValue">05:15</td><td class="ColValue">05:30</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Established circulation with 1100 lpm and washed setting area from 605m MD to 609m MD.</td></tr><tr><td class="ColValue">05:45</td><td class="ColValue">06:15</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Set Safelock plug by rotating 20 turns clockwise and applying 20MTweight for 5 minutes. Verified plug set by pulling 10MT overpull.</td></tr><tr><td class="ColValue">06:15</td><td class="ColValue">06:30</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Lined up to cement unit. Pressured up to 30 bar with cement unit by pumping 100 liters of seawater. Volume used indicated open ball valve. Bled down pressure.</td></tr><tr><td class="ColValue">06:30</td><td class="ColValue">07:15</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Set down 2MT weight on Safelock plug and applied 6kNm torque to shear and close ball valve. Pressured up string to 30 bar using rig pumps. Rotated 1/2 turn clockwise and observed pressure drop.</td></tr><tr><td class="ColValue">07:00</td><td class="ColValue">07:45</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressure tested Safelock plug from below to 345 bar for 10 minutes - ok. Pumped 1471 liters, bled 1463 liters back.</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">08:00</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed ball valve by rotating 1/2 turn anti-clockwise. Verified ball valve closed by pressuring string up to 345 bar and comparing volumes - ok. Released Safelock running tool.</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:15</td><td class="ColValue">607</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Spotted 5m3 high visc pill on top of Safelock plug and displaced same with 2000 lpm, 12 bar and 40rpm.</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">09:00</td><td class="ColValue">140</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with Safelock running tool on 5 1/2" drill pipe from 607m MD to 140m MD.</td></tr><tr><td class="ColValue">09:00</td><td class="ColValue">09:30</td><td class="ColValue">140</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Displaced riser and BOP to seawater with 2200 lpm and 10 bar.</td></tr><tr><td class="ColValue">09:30</td><td class="ColValue">10:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with Safelock running tool on 5 1/2" drill pipe from 140m MD. Laid out Safelock running tool to cantilever.</td></tr><tr><td class="ColValue">10:00</td><td class="ColValue">10:30</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Closed shear ram. Pressure tested Safelock plug from above to 345 bar for 10 minutes. Pumped 723 liter, bled 723 liters back.</td></tr><tr><td class="ColValue">10:30</td><td class="ColValue">10:45</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Cleaned and tidied rig floor.</td></tr><tr><td class="ColValue">10:45</td><td class="ColValue">11:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up wearbushing retrieval tool and jet sub to 5 1/2" heavy weight drill pipe.</td></tr><tr><td class="ColValue">11:00</td><td class="ColValue">11:15</td><td class="ColValue">139</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with wearbushing retrieval tool and jet sub to 139m MD. Jetted wellhead area with 1400 lpm and 8 bar.</td></tr><tr><td class="ColValue">11:15</td><td class="ColValue">12:00</td><td class="ColValue">139</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Landed off with wearbushing retrieval tool with 5MT weight. Picked wearbushing free with 39MT overpull.</td></tr><tr><td class="ColValue">12:00</td><td class="ColValue">13:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with wearbushing from 139m MD. Laid out wearbushing to cantilever. Broke out and laid down wearbushing running tool to cantilever. Inspected wearbushing and found ID to 9.5".</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">13:15</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up 9.5" drift and crossover to 5 1/2" drill pipe.</td></tr><tr><td class="ColValue">13:15</td><td class="ColValue">14:30</td><td class="ColValue">575</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with 9.5" drift on 5 1/2" drill pipe to 575m MD - ok.</td></tr><tr><td class="ColValue">14:30</td><td class="ColValue">15:30</td><td class="ColValue">0</td><td class="ColValue">interruption -- repair</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with 9.5" drift on 5 1/2" drill pipe from 575m MD. Laid out same to cantilever.</td></tr><tr><td class="ColValue">15:30</td><td class="ColValue">15:45</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up lockdown sub.</td></tr><tr><td class="ColValue">15:45</td><td class="ColValue">16:45</td><td class="ColValue">139</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran in hole with lockdown sub on heavy weight drill pipe to 139m MD. Installed lockdown sub by landing off with 7MT and rotating 4 1/2  turns clockwise. Observed drop to verify installed lock down assembly.</td></tr><tr><td class="ColValue">16:45</td><td class="ColValue">17:15</td><td class="ColValue">139</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressure tested lockdown sub to 207 bar for 10 minutes - ok. Pumped 262 liters, bled 260 liters back.</td></tr><tr><td class="ColValue">17:15</td><td class="ColValue">17:30</td><td class="ColValue">139</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Applied 30MT overpull - ok. Rotated 5 turns clockwise to release running tool.</td></tr><tr><td class="ColValue">17:30</td><td class="ColValue">18:00</td><td class="ColValue">0</td><td class="ColValue">completion -- bop/wellhead equipment</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled out of hole with lockdown assembly running tool from 139m MD, and laid down same to cantilever.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">19:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Bled down koomey-unit and prepared to pull diverter.
+
+Meanwhile: Performed general maintanence.</td></tr><tr><td class="ColValue">19:00</td><td class="ColValue">19:15</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed prejob meeting prior to pull diverter element and slick joint.</td></tr><tr><td class="ColValue">19:15</td><td class="ColValue">21:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled master bushings and outer ring and installed lift eyes to diverter. Pulled diverter and landed on set back.</td></tr><tr><td class="ColValue">21:00</td><td class="ColValue">22:45</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pulled slick joint and landed in set back. Installed master bushings and ring.</td></tr><tr><td class="ColValue">22:45</td><td class="ColValue">23:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Performed prejob meeting prior to nipple down BOP.</td></tr><tr><td class="ColValue">23:00</td><td class="ColValue">00:00</td><td class="ColValue">0</td><td class="ColValue">completion -- other</td><td class="ColValue">ok</td><td class="ColValueWrapped">Nippled down BOP.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">20:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Active pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">3465</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">NaCl brine</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>

@@ -1,0 +1,152 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:witsml="http://www.witsml.org/schemas/1series"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/><style type="text/css">
+							    /* set the page size to be A4 at a maximum
+								*/
+								
+								@media print and (color)
+{*
+{
+    -webkit-print-color-adjust:exact;
+   print-color-adjust:exact;
+}}
+								/*html,body{
+									height:297mm;
+									width:210mm;
+								}*/
+									thead {
+			display: table-row-group;
+	      }
+	tr {
+		 page-break-before: always;
+		 page-break-after: always;
+		 page-break-inside: avoid;
+		}
+		table {
+				word-wrap: break-word;
+			   }
+		table td {
+					word-break: break-all;
+				 }
+								
+								.ddr-report-grid .columns {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									text-align: center;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+								}
+								
+								.ddr-report-grid .column {
+									background: #BBB;
+									text-align: center;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									 display: flex;
+								  flex-direction: column;
+								  justify-content: center;
+								 
+								}
+								
+								.DDR-SubReportHeader {
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+								.DDR-ReportHeader {
+									font-family: Arial Black;
+									font-size: 16px;
+								}
+								
+								.ddr-report-wellbore-info-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: right;
+								}
+								.ddr-report-wellbore-info-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColHeadRowOriented {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								  
+								}
+								
+								
+								.ddr-report-wellbore-info-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								/*css data for operations table*/
+								.ddr-report-operations-table .ColHead {
+									font-family: Arial Black;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: center;
+								}
+								.ddr-report-operations-table .ColValue {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								
+								.ddr-report-operations-table .ColValueWrapped {
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+									white-space: pre-wrap;
+								}
+								
+								
+								/*Set the css for the text data field containing the actual text comments for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextData{
+									
+									white-space: pre-wrap;
+									font-family: Arial;
+									font-size: 11px;
+									text-decoration: none;
+									color: #000000;
+									text-align: left;
+								}
+								/*Set the css for the text header for sections containing e.g. comments data such as summary of activities*/
+								.ddr-report-text-data-grid .TextHeader{
+									background: #BBB;
+									border-radius: 4px;
+									font-size: 1rem;
+									height: 30px;
+									line-height: 30px;
+									margin-bottom: .75rem;
+									letter-spacing: .1rem;
+									font-family: Arial Black;
+									font-size: 12px;
+								}
+								
+				   </style></head><body><section class="section"><div class="container"><div class="columns ddr-report-grid"><div class="column"><p align="left" class="DDR-ReportHeader">Summary report</p></div></div><div class="columns ddr-report-grid"><div class="column is-one-third"><p align="left" class="DDR-SubReportHeader"><b>Wellbore: </b>15/9-F-5</p></div><div class="column is-two-thirds"><p align="right" class="DDR-SubReportHeader"><b>Period: </b>2008-08-12 00:00 - 2008-08-13 00:00</p></div></div><div class="columns is-gapless is-narrow"><div class="column is-one-third"><table id="wellboreInfoTable_1" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Status:</td><td class="ColValue">normal</td></tr><tr><td class="ColHead">Report creation time:</td><td class="ColValue">2018-05-03 13:53</td></tr><tr><td class="ColHead">Report number:</td><td class="ColValue">44</td></tr><tr><td class="ColHead">Days Ahead/Behind (+/-):</td><td class="ColValue">27.5</td></tr><tr><td class="ColHead">Operator:</td><td class="ColValue">StatoilHydro</td></tr><tr><td class="ColHead">Rig Name:</td><td class="ColValue">M&#198;RSK INSPIRER</td></tr><tr><td class="ColHead">Drilling contractor:</td><td class="ColValue">M&#230;rsk Contractors</td></tr><tr><td class="ColHead">Spud Date:</td><td class="ColValue">2007-11-11 00:00</td></tr><tr><td class="ColHead">Wellbore type:</td><td class="ColValue"/></tr><tr><td class="ColHead">Elevation RKB-MSL (m):</td><td class="ColValue">54.9</td></tr><tr><td class="ColHead">Water depth MSL (m):</td><td class="ColValue">91</td></tr><tr><td class="ColHead">Tight well:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">HPHT:</td><td class="ColValue">Y</td></tr><tr><td class="ColHead">Temperature ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Date Well Complete:</td><td class="ColValue">2008-07-30</td></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_2" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Dist Drilled (m):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Penetration rate (m/h):</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHead">Hole Dia ():</td><td class="ColValue"/></tr><tr><td class="ColHead">Pressure Test Type:</td><td class="ColValue">formation integrity test</td></tr><tr><td class="ColHead">Formation strength (g/cm3):</td><td class="ColValue">1.65</td></tr><tr><td class="ColHead">Dia Last Casing ():</td><td class="ColValue"/></tr></tbody></table></div><div class="column is-one-third"><table id="wellboreInfoTable_3" class="table is-striped is-narrow ddr-report-wellbore-info-table"><thead><tr><th/><th/><th/></tr></thead><tbody><tr><td class="ColHead">Depth at Kick Off mMD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth at Kick Off mTVD:</td><td class="ColValue"/></tr><tr><td class="ColHead">Depth mMd:</td><td class="ColValue">3792</td></tr><tr><td class="ColHead">Depth mTVD:</td><td class="ColValue">3247</td></tr><tr><td class="ColHead">Plug Back Depth mMD:</td><td class="ColValue">3754</td></tr><tr><td class="ColHead">Depth at formation strength mMD:</td><td class="ColValue">2921</td></tr><tr><td class="ColHead">Depth At Formation Strength mTVD:</td><td class="ColValue">2610</td></tr><tr><td class="ColHead">Depth At Last Casing mMD:</td><td class="ColValue">3790.1</td></tr><tr><td class="ColHead">Depth At Last Casing mTVD:</td><td class="ColValue">3245.3</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">RIH with adjustment sub actuation tool. Retracted adjustment sub according to Drillquip procedure. Not able to come free with tool with 5 MT overpull. Discussed situation. Not able to come free with 10 MT overpull. Discussed sitaution. Reverted to contingency plan. Released and POOH with 10 3/4" tie-back casing with stuck tool. Broke casing connection and found tool packed with cuttings/dirt. Discussed situation. POOH with 10 3/4" tie-back caing.</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Summary of planned activities (24 Hours)</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextData">POOH with 10 3/4" tie-back casing. Install bowl protector. Perform cleaning run across BOP and subsea wellhead. Pull bowl protector. Rig up for running casing. Run 10 3/4" tie-back casing. </p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Operations</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="operationsInfoTable" class="table is-striped is-narrow ddr-report-operations-table"><thead><tr><th class="ColHead">Start time</th><th class="ColHead">End time</th><th class="ColHead">End Depth mMD</th><th class="ColHead">Main - Sub Activity</th><th class="ColHead">State</th><th class="ColHead">Remark</th></tr></thead><tbody><tr><td class="ColValue">00:00</td><td class="ColValue">01:45</td><td class="ColValue">99</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Ran 10 3/4" - C95 60,7# VamTop tie-back casing from 15 m to 99 m MD.</td></tr><tr><td class="ColValue">01:45</td><td class="ColValue">02:00</td><td class="ColValue">108</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up and made up 10 3/4" 8,89 m space out pup.</td></tr><tr><td class="ColValue">02:00</td><td class="ColValue">03:30</td><td class="ColValue">119</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Removed BX elevator and changed to DP elevator. Picked up 10 3/4" casing hanger / adjustment sub assembly and made up same. Removed rubber protection and checked casing hanger according to Vetco proecdure.</td></tr><tr><td class="ColValue">03:30</td><td class="ColValue">04:15</td><td class="ColValue">119</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up stand with 10 3/4" Itco spear with PRS. Made up TDS while holding stand with PRS.</td></tr><tr><td class="ColValue">04:15</td><td class="ColValue">04:30</td><td class="ColValue">119</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH and engaged spear in 3 m pup joint below 10 3/4" hanger by rotating string counterclockwise while picking up, obtained weight of tie-back string of 80 MT. Noted block height when casing hanger flush with RT.</td></tr><tr><td class="ColValue">04:30</td><td class="ColValue">04:45</td><td class="ColValue">139.8</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with tie-back casing on Itco spear and tagged tie-back threads at 139,8 m with 2-3 MT (i.e. approx 15 cm deeper than expected). Checked colour band through B-annulus on Tensioner deck, observed centre of 2nd orange band.</td></tr><tr><td class="ColValue">04:45</td><td class="ColValue">05:30</td><td class="ColValue">139.8</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Put horizontal and vertical mark on pipe to count turns and measure elevation. Started rotation at 3 rpm clockwise and counted turns. Lost grip on Itco spear due to too much weight being slacked off when the block weight increased. Re-engaged spear by conterclockwise rotation. Resumed rotation and let block weight incrase approx 8 MT. Stopped rotation after an estimated 4-5 turns obtained, judging from effective rotation and travel on colour bands. Took overpull to 10 MT and set torque limit to 10,17 kNm. Resumed rotation at 3 rpm. Torque and weight increased and peaked at 7,03 kNm before Itco spear released. Estimated total downwards travel 2,5-3 inches. Re-attempted torquing up tie-back adapter twice, spear released at 3-5 kNm. Re-engaged spear and took overpull on tie.back adapter to 30 MT.</td></tr><tr><td class="ColValue">05:30</td><td class="ColValue">06:00</td><td class="ColValue">139.9</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Released 10 3/4" Itco spear and POOH with same. Racked back stand in derrick. Prepared for rigging down casing tong.</td></tr><tr><td class="ColValue">06:00</td><td class="ColValue">07:30</td><td class="ColValue">0</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rigged down casing tong. Removed FMS and installed master bushing and bowl. Picked up adjustment sub actuation tool. Made up TDS.</td></tr><tr><td class="ColValue">07:30</td><td class="ColValue">07:45</td><td class="ColValue">28.7</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">RIH with adjustment sub actuation tool to 28,72 m MD to locate actuation dogs in polish bore (1st target).</td></tr><tr><td class="ColValue">07:45</td><td class="ColValue">08:00</td><td class="ColValue">28.7</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up through DP to 140 bar to actuate horizontal latch dogs.</td></tr><tr><td class="ColValue">08:00</td><td class="ColValue">08:15</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Picked up to 2nd target and confirmed horizontal dogs latching into profile, took 5 MT overpull. Confirmed measurements. Rotated pipe 3 turns clockwise and obtained 2 kNm torque. Bled off pressure on DP to zero. Checked measurement towards rotary - no movement.</td></tr><tr><td class="ColValue">08:15</td><td class="ColValue">09:15</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Rotated pipe clockwise to retract adjustment sub. Obtained 6,5 turns on adjustment sub before stalling out on 10 kNm. Took 30 MT overpull and rotated 1/8 turn clockwise before stalling out at 6 kNm. Continuosly checked colour bands through annulus outlet on Tensioner deck. Checked elevation of casing hanger -ok.</td></tr><tr><td class="ColValue">09:15</td><td class="ColValue">10:15</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Slacked off overpull and came down to 1st tool target (sealbore). Waited 2 minutes for horizontal dog crest to relax. Picked up again and got unexpected overpull of 4-5 MT 20 cm above 2nd tool target (latch groove). Slacked off pipe and picked up againg in attempt to free tool, got overpull at 2nd tool target. Made several attempts to free pipe by coming up and down with tool, not able to pass 2nd target. Pressured up on pipe to 120 bar. Re-attempted passing 2nd target - negative. Bled off pressure. Worked pipe with +/- 5 MT at 2nd target - not able to pass. Tool was free to move down.</td></tr><tr><td class="ColValue">10:15</td><td class="ColValue">13:00</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Discussed situation with town. Made plan of action.</td></tr><tr><td class="ColValue">13:00</td><td class="ColValue">15:00</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Re-attempted comming free with adjustable sub actuation tool. Attempted to pull with 10 MT overpull - negative. Pressured up pipe to 115 bar twice in attempt to manipulate horizontal latch dogs. Worked pipe several times with ~ 10 MT overpull - not able to pass 2nd tool target.</td></tr><tr><td class="ColValue">15:00</td><td class="ColValue">16:30</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held planning meeting for discussing contingency operations. Made plan of action.</td></tr><tr><td class="ColValue">16:30</td><td class="ColValue">17:15</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Held toolbox meeting prior to contingency operations.</td></tr><tr><td class="ColValue">17:15</td><td class="ColValue">18:00</td><td class="ColValue">28.3</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Pressured up on DP to 130 bar to make sure horizontal latch dogs and vertical torque dogs engaged in adjustable sub profiles, maintained pressure throughout operation. Adjusted block weight to 81 mT (~1 MT overpull). Extended adjsutable sub while rotating 1-2 rpm / torque 2-3 kNm. Observed torque peak of 7,09 kNm when rotation and torque transferred to tie-back adapter. Verified correct 10 3/4" casing hanger travel by observing colour bands through annulus outlet.</td></tr><tr><td class="ColValue">18:00</td><td class="ColValue">18:45</td><td class="ColValue">119</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with 10 3/4" tie-back casing on 5 1/2" DP stand from 140 m to 119 m MD. Hung 10 3/4" casing in manual casing slips and secured with dog collar. Observed top of casing hanger packed with dirt/cuttings. Moved casing tong to access IR.</td></tr><tr><td class="ColValue">18:45</td><td class="ColValue">19:45</td><td class="ColValue">119</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed C-plate on top of 10 3/4" casing hanger. Bled off pressure on DP to zero. Adjusted pipe height to access 1st DP single with IR. Broke connection on 1st single (service breaking). Hung off DP in C-plate and screwd out connection with chain tongs. Racked back 5 1/2" DP double.</td></tr><tr><td class="ColValue">19:45</td><td class="ColValue">23:45</td><td class="ColValue">119</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">Installed DP elevator between C-plate and DP coupling and secured with cargo straps. Installed 10 3/4" BX elevator underneath 10 3/4" casing hanger. Removed drilling bails and DP elevator. Installed 10 3/4" BX elevator. Installed long bails and connected to 10 3/4" BX elevator. Moved casing tong to IR rails. Hooked up casing tong.</td></tr><tr><td class="ColValue">23:45</td><td class="ColValue">00:00</td><td class="ColValue">110</td><td class="ColValue">drilling -- casing</td><td class="ColValue">ok</td><td class="ColValueWrapped">POOH with 10 3/4" tie-back casing to access coupling underneath 10 3/4" casing hanger /adjustable sub assembly. Hung off on manual slips and secured with dog collar.</td></tr></tbody></table></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><p align="left" class="TextHeader">Drilling Fluid</p></div></div><div class="columns ddr-report-text-data-grid"><div class="column"><table id="drillingFluidTable" class="table is-striped is-narrow ddr-report-operations-table"><tbody><tr><td class="ColHeadRowOriented">Sample Time</td><td class="ColValue">23:00</td></tr><tr><td class="ColHeadRowOriented">Sample Point</td><td class="ColValue">Reserve pit</td></tr><tr><td class="ColHeadRowOriented">Sample Depth mMD</td><td class="ColValue">3790</td></tr><tr><td class="ColHeadRowOriented">Fluid Type</td><td class="ColValue">Packer fluid</td></tr><tr><td class="ColHeadRowOriented">Fluid Density (g/cm3)</td><td class="ColValue">1.03</td></tr><tr><td class="ColHeadRowOriented">Funnel Visc (s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Mf ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Chloride ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Calcium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Magnesium ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Ph</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Excess Lime ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Solids</td></tr><tr><td class="ColHeadRowOriented">Sand ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Water ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Oil ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Corrected solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">High gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Low gravity solids ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Viscometer tests</td></tr><tr><td class="ColHeadRowOriented">Plastic visc. (mPa.s)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented">Yield point (Pa)</td><td class="ColValue">-999.99</td></tr><tr><td class="ColHeadRowOriented" colSpan="2">
+					Filtration tests</td></tr><tr><td class="ColHeadRowOriented">Pm filtrate ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Lthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Filtrate Hthp ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn API ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Cake thickn HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Test Temp HPHT ()</td><td class="ColValue"/></tr><tr><td class="ColHeadRowOriented">Comment</td><td class="ColValue"/></tr></tbody></table></div></div></div></section></body></html>
