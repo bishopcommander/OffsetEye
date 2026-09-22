@@ -18,6 +18,7 @@ const Joi = require('joi');
 const { query } = require('../config/db');
 const authMiddleware = require('../middleware/auth.middleware');
 const validate = require('../middleware/validate.middleware');
+const { correlateNearbyRisks } = require('./correlation.service');
 
 const router = express.Router();
 router.use(authMiddleware);
@@ -25,26 +26,35 @@ router.use(authMiddleware);
 const depthSchema = Joi.object({
   well_id: Joi.number().integer().required(),
   depth_m: Joi.number().min(0).max(15000).required(),
+  depth_window: Joi.number().min(10).max(500).default(50),
+  radius_m: Joi.number().min(100).max(500000).default(25000)
 });
 
 // ── POST /api/depth/update ─────────────────────────────────────────────────────
 router.post('/update', validate(depthSchema), async (req, res) => {
-  const { well_id, depth_m } = req.body;
+  const { well_id, depth_m, depth_window, radius_m } = req.body;
   try {
-    // Update current_depth on the well record
+    // 1. Update current_depth on the well record
     await query('UPDATE wells SET current_depth = $1 WHERE id = $2', [depth_m, well_id]);
 
-    // Trigger correlation check (Phase 6 will hook into this)
-    // For now return the new depth so the client can update the UI
+    // 2. Trigger deterministic correlation check & risk analytics
+    const correlationResult = await correlateNearbyRisks({
+      wellId: well_id,
+      currentDepth: depth_m,
+      depthWindow: depth_window,
+      radiusMeters: radius_m
+    });
+
     return res.json({
       well_id,
       depth_m,
       simulated: true,
       note: 'Simulated feed — not a live eRTMAC connection. Replace with real stream at OIL deployment.',
+      correlation: correlationResult
     });
   } catch (err) {
     console.error('[depth/update]', err.message);
-    return res.status(500).json({ error: 'Internal server error' });
+    return res.status(500).json({ error: 'Internal server error', details: err.message });
   }
 });
 

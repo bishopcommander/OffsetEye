@@ -22,8 +22,9 @@ const authRoutes   = require('./routes/auth.routes');
 const wellsRoutes  = require('./routes/wells.routes');
 const alertsRoutes = require('./routes/alerts.routes');
 const searchRoutes    = require('./routes/search.routes');
-const documentsRoutes = require('./routes/documents.routes');
-const depthRouter     = require('./services/depthSimulator.service');
+const documentsRoutes   = require('./routes/documents.routes');
+const correlationRoutes = require('./routes/correlation.routes');
+const depthRouter       = require('./services/depthSimulator.service');
 
 const app  = express();
 const PORT = process.env.PORT || 3001;
@@ -62,9 +63,10 @@ app.get('/health', (_req, res) => {
 app.use('/api/auth',   authRoutes);
 app.use('/api/wells',  wellsRoutes);
 app.use('/api/alerts', alertsRoutes);
-app.use('/api/search',    searchRoutes);
-app.use('/api/documents', documentsRoutes);
-app.use('/api/depth',     depthRouter);
+app.use('/api/search',      searchRoutes);
+app.use('/api/documents',   documentsRoutes);
+app.use('/api/correlation', correlationRoutes);
+app.use('/api/depth',       depthRouter);
 
 // ── 404 handler ────────────────────────────────────────────────────────────────
 app.use((_req, res) => {
