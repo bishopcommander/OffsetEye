@@ -37,3 +37,11 @@ server/services/ml_model/
 
 # Test coverage
 coverage/
+
+# Large raw data archives
+*.zip
+*.tar
+*.gz
+*.crdownload
+Volve_Reports/
+

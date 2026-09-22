@@ -32,9 +32,11 @@ router.get('/', async (req, res) => {
     let sql = `
       SELECT a.id, a.well_id, a.event_id, a.triggered_at, a.depth_at_trigger, a.status,
              e.event_type, e.depth AS event_depth, e.formation, e.description, e.mitigation,
-             e.source_excerpt, e.confidence, e.needs_review
+             e.source_excerpt, e.confidence, e.needs_review,
+             w_src.name AS offset_well_name
       FROM alerts a
       LEFT JOIN events e ON e.id = a.event_id
+      LEFT JOIN wells w_src ON w_src.id = e.well_id
       WHERE a.well_id = $1
     `;
     const params = [well_id];
