@@ -1,12 +1,12 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
-import { Compass, AlertTriangle, User, LogOut, UploadCloud, Radio } from 'lucide-react';
+import { Compass, AlertTriangle, User, LogOut, UploadCloud, Radio, Activity, FileSpreadsheet } from 'lucide-react';
 
-export default function Header({ onOpenUpload }) {
+export default function Header({ onOpenUpload, activeMode, onSelectMode }) {
   const { user, logout } = useAuth();
 
   return (
-    <header className="glass-panel" style={{ margin: '12px 16px 0', padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', zIndex: 100 }}>
+    <header className="glass-panel" style={{ margin: '12px 16px 0', padding: '10px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', zIndex: 100 }}>
       {/* Branding */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
         <div style={{ width: '38px', height: '38px', borderRadius: '10px', background: 'linear-gradient(135deg, #0ea5e9, #0284c7)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 12px rgba(14, 165, 233, 0.5)' }}>
@@ -21,35 +21,49 @@ export default function Header({ onOpenUpload }) {
               OIL INDIA LIMITED
             </span>
           </div>
-          <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+          <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
             Nearby Wells Intelligence System & Drilling Risk Decision-Support
           </p>
         </div>
       </div>
 
-      {/* Center Simulated Feed Indicator */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(245, 158, 11, 0.1)', border: '1px solid rgba(245, 158, 11, 0.3)', padding: '6px 12px', borderRadius: '8px' }}>
-        <Radio size={16} color="#f59e0b" className="animate-pulse" />
-        <span style={{ fontSize: '0.75rem', color: '#fbbf24', fontWeight: 600 }}>
-          LIVE FEED: SIMULATED (Analogue: Equinor Volve Field)
-        </span>
+      {/* Center Operational Mode Switcher */}
+      <div style={{ display: 'flex', background: '#0a0e17', padding: '4px', borderRadius: '10px', border: '1px solid #1f2937', gap: '4px' }}>
+        <button
+          onClick={() => onSelectMode('monitor')}
+          className={`btn ${activeMode === 'monitor' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ fontSize: '0.78rem', padding: '6px 14px', borderRadius: '6px' }}
+        >
+          <Activity size={14} />
+          <span>Active Drilling Monitor</span>
+        </button>
+
+        <button
+          onClick={() => onSelectMode('prognosis')}
+          className={`btn ${activeMode === 'prognosis' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ fontSize: '0.78rem', padding: '6px 14px', borderRadius: '6px' }}
+        >
+          <FileSpreadsheet size={14} />
+          <span>New Well Planning & Offset Scan</span>
+        </button>
       </div>
 
       {/* User Actions */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <button
           onClick={onOpenUpload}
           className="btn btn-secondary"
-          style={{ fontSize: '0.8rem', padding: '6px 12px' }}
+          style={{ fontSize: '0.78rem', padding: '6px 10px' }}
+          title="Upload historical PDF or DDR report"
         >
-          <UploadCloud size={15} color="#38bdf8" />
-          <span>Upload WCR / DDR</span>
+          <UploadCloud size={14} color="#38bdf8" />
+          <span>Upload WCR/DDR</span>
         </button>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#1f2937', padding: '6px 10px', borderRadius: '8px', border: '1px solid #374151' }}>
-          <User size={15} color="#9ca3af" />
-          <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#f3f4f6' }}>{user?.username || 'Engineer'}</span>
-          <span style={{ fontSize: '0.65rem', background: '#374151', padding: '2px 5px', borderRadius: '4px', color: '#9ca3af', textTransform: 'uppercase' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: '#1f2937', padding: '5px 10px', borderRadius: '8px', border: '1px solid #374151' }}>
+          <User size={14} color="#9ca3af" />
+          <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#f3f4f6' }}>{user?.username || 'Engineer'}</span>
+          <span style={{ fontSize: '0.62rem', background: '#374151', padding: '2px 5px', borderRadius: '4px', color: '#9ca3af', textTransform: 'uppercase' }}>
             {user?.role || 'field'}
           </span>
         </div>
@@ -58,9 +72,9 @@ export default function Header({ onOpenUpload }) {
           onClick={logout}
           className="btn btn-secondary"
           title="Sign out"
-          style={{ padding: '7px 10px' }}
+          style={{ padding: '6px 8px' }}
         >
-          <LogOut size={15} color="#ef4444" />
+          <LogOut size={14} color="#ef4444" />
         </button>
       </div>
     </header>

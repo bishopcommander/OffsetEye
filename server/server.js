@@ -24,6 +24,7 @@ const alertsRoutes = require('./routes/alerts.routes');
 const searchRoutes    = require('./routes/search.routes');
 const documentsRoutes   = require('./routes/documents.routes');
 const correlationRoutes = require('./routes/correlation.routes');
+const prognosisRoutes   = require('./routes/prognosis.routes');
 const depthRouter       = require('./services/depthSimulator.service');
 
 const app  = express();
@@ -66,6 +67,7 @@ app.use('/api/alerts', alertsRoutes);
 app.use('/api/search',      searchRoutes);
 app.use('/api/documents',   documentsRoutes);
 app.use('/api/correlation', correlationRoutes);
+app.use('/api/prognosis',   prognosisRoutes);
 app.use('/api/depth',       depthRouter);
 
 // ── 404 handler ────────────────────────────────────────────────────────────────

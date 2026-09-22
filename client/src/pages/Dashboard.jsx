@@ -10,8 +10,10 @@ import RiskAnalyticsView from '../components/RiskAnalyticsView';
 import SearchBox from '../components/SearchBox';
 import EvidenceModal from '../components/EvidenceModal';
 import DocumentUploadModal from '../components/DocumentUploadModal';
+import NewWellPlanningView from '../components/NewWellPlanningView';
 
 export default function Dashboard() {
+  const [activeMode, setActiveMode] = useState('monitor'); // 'monitor' | 'prognosis'
   const [wells, setWells] = useState([]);
   const [activeWellId, setActiveWellId] = useState(1);
   const [activeWell, setActiveWell] = useState(null);
@@ -132,80 +134,90 @@ export default function Dashboard() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-primary)' }}>
-      <Header onOpenUpload={() => setShowUploadModal(true)} />
+      <Header
+        onOpenUpload={() => setShowUploadModal(true)}
+        activeMode={activeMode}
+        onSelectMode={setActiveMode}
+      />
 
-      {/* Main Dashboard Layout */}
-      <main style={{ flex: 1, padding: '14px 16px', display: 'grid', gridTemplateColumns: '360px 1fr 380px', gap: '14px', alignItems: 'start' }}>
-        
-        {/* Left Column: Well Controls, Radius, Depth Simulator */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-          <WellSelector
-            wells={wells}
-            activeWellId={activeWellId}
-            onSelectWell={handleSelectWell}
-            wellDetails={activeWell}
-          />
-
-          <RadiusSlider
-            radiusMeters={radiusMeters}
-            onChangeRadius={setRadiusMeters}
-            nearbyWellsCount={nearbyWells.length}
-          />
-
-          <DepthSimulator
-            depth={currentDepth}
-            onUpdateDepth={handleUpdateDepth}
-            currentFormation={currentFormation}
-            isSimulating={isSimulating}
-            setIsSimulating={setIsSimulating}
-            activeWell={activeWell}
-          />
-        </div>
-
-        {/* Center Column: Map & RAG Search */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
-          <div style={{ height: '420px' }}>
-            <MapView
-              activeWell={activeWell}
-              nearbyWells={nearbyWells}
-              radiusMeters={radiusMeters}
+      {activeMode === 'prognosis' ? (
+        <main style={{ flex: 1, padding: '14px 16px' }}>
+          <NewWellPlanningView onInspectEvidence={(ev) => setActiveEvidence(ev)} />
+        </main>
+      ) : (
+        /* Main Real-Time Dashboard Layout */
+        <main style={{ flex: 1, padding: '14px 16px', display: 'grid', gridTemplateColumns: '360px 1fr 380px', gap: '14px', alignItems: 'start' }}>
+          
+          {/* Left Column: Well Controls, Radius, Depth Simulator */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <WellSelector
+              wells={wells}
+              activeWellId={activeWellId}
               onSelectWell={handleSelectWell}
+              wellDetails={activeWell}
+            />
+
+            <RadiusSlider
+              radiusMeters={radiusMeters}
+              onChangeRadius={setRadiusMeters}
+              nearbyWellsCount={nearbyWells.length}
+            />
+
+            <DepthSimulator
+              depth={currentDepth}
+              onUpdateDepth={handleUpdateDepth}
+              currentFormation={currentFormation}
+              isSimulating={isSimulating}
+              setIsSimulating={setIsSimulating}
+              activeWell={activeWell}
             />
           </div>
 
-          <RiskAnalyticsView
-            riskAnalytics={riskAnalytics}
-            depthWindow={depthWindow}
-          />
+          {/* Center Column: Map & RAG Search */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
+            <div style={{ height: '420px' }}>
+              <MapView
+                activeWell={activeWell}
+                nearbyWells={nearbyWells}
+                radiusMeters={radiusMeters}
+                onSelectWell={handleSelectWell}
+              />
+            </div>
 
-          <SearchBox
-            activeWellId={activeWellId}
-            radiusMeters={radiusMeters}
-            onInspectEvidence={(ev) => setActiveEvidence(ev)}
-          />
-        </div>
+            <RiskAnalyticsView
+              riskAnalytics={riskAnalytics}
+              depthWindow={depthWindow}
+            />
 
-        {/* Right Column: Proactive Alerts & Feedback */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
-          <AlertPanel
-            alerts={alerts}
-            onInspectEvidence={(alert) => setActiveEvidence({
-              event_type: alert.event_type,
-              offset_well_name: alert.offset_well_name,
-              depth: alert.event_depth,
-              formation: alert.formation,
-              confidence: alert.confidence,
-              description: alert.description,
-              mitigation: alert.mitigation,
-              source_excerpt: alert.source_excerpt,
-              needs_review: alert.needs_review
-            })}
-            onUpdateAlertStatus={handleUpdateAlertStatus}
-            onLogFeedback={handleLogFeedback}
-            onJumpToHazard={handleUpdateDepth}
-          />
-        </div>
-      </main>
+            <SearchBox
+              activeWellId={activeWellId}
+              radiusMeters={radiusMeters}
+              onInspectEvidence={(ev) => setActiveEvidence(ev)}
+            />
+          </div>
+
+          {/* Right Column: Proactive Alerts & Feedback */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
+            <AlertPanel
+              alerts={alerts}
+              onInspectEvidence={(alert) => setActiveEvidence({
+                event_type: alert.event_type,
+                offset_well_name: alert.offset_well_name,
+                depth: alert.event_depth,
+                formation: alert.formation,
+                confidence: alert.confidence,
+                description: alert.description,
+                mitigation: alert.mitigation,
+                source_excerpt: alert.source_excerpt,
+                needs_review: alert.needs_review
+              })}
+              onUpdateAlertStatus={handleUpdateAlertStatus}
+              onLogFeedback={handleLogFeedback}
+              onJumpToHazard={handleUpdateDepth}
+            />
+          </div>
+        </main>
+      )}
 
       {/* Evidence Drill-down Modal */}
       {activeEvidence && (
