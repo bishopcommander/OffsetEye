@@ -1,0 +1,13 @@
+DAILY DRILLING & CASING REPORT
+WELL: 15/9-F-15
+DEPTH: 2690.0 M MD
+STRATIGRAPHY: SHETLAND GROUP
+
+CHERT INTERBED DRILLING DYNAMICS:
+Encountered dense micro-crystalline limestone and chert nodules in lower Shetland Group at 2690m MD.
+Rotary torque fluctuated violently between 8 kNm and 37 kNm (stick-slip index > 1.8). High torsional vibration caused premature MWD pulser failure.
+
+CASING & PRIMARY CEMENTING RECORD (PREVIOUS STRING):
+9-5/8 inch casing set at 2475m MD. During displacement of tail slurry, experienced 22 m3 slurry losses to fractured limestone formation.
+Mitigation: Dropped top plug, shut in wellhead, performed remedial squeeze cementing at casing shoe with 8 m3 thixotropic micro-fine cement.
+Top Shetland at 2445m to 2895m.

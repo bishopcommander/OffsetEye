@@ -1,0 +1,18 @@
+DAILY DRILLING REPORT (DDR) #48 - OFFSHORE SECTOR
+WELL: 15/9-F-12
+OPERATOR: STATOIL / EQUINOR
+DATE: 14-OCT-2008
+CURRENT OPERATION: DRILLING 8-1/2 INCH HOLE SECTION
+MEASURED DEPTH: 2930.5 M MD (TVD: 2855.0 M)
+CURRENT FORMATION: HUGIN SANDSTONE RESERVOIR
+
+OPERATIONAL NARRATIVE & INCIDENT SUMMARY:
+At 04:30 hrs, while drilling ahead at 2930.5m MD with 1.34 SG oil-based mud, observed instantaneous drop in active pit volume of 6.2 m3 within 12 minutes. Dynamic mud losses established at 34 m3/hr.
+Standpipe pressure decreased from 195 bar to 160 bar with penetration into high-permeability, partially depleted Hugin sand.
+
+MITIGATION & CORRECTIVE ACTIONS:
+1. Stopped drilling and pulled string off bottom to 2910m.
+2. Mixed and spotted 18 m3 high-fluid-loss crosslinked LCM pill containing 35 ppb medium calcium carbonate, mica flakes, and cellulose fibers.
+3. Allowed pill to hesitate squeeze for 90 minutes with 15 bar backpressure.
+4. Resumed circulation at reduced flow rate of 1750 l/min. Losses reduced to negligible seepage (< 1.5 m3/hr).
+5. Formation tops: Top Hugin at 2900m MD to 3210m MD. Top Shetland at 2450m MD.

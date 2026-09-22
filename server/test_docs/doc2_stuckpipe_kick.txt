@@ -1,0 +1,17 @@
+WELL COMPLETION REPORT & INCIDENT INVESTIGATION
+WELL: 15/9-F-14
+INTERVAL: 8-1/2 INCH SECTION
+MEASURED DEPTH: 3105.0 M MD
+GEOLOGICAL FORMATION: HUGIN FORMATION
+
+CRITICAL DRILLING EVENT: STUCK PIPE & SUBSEQUENT WELL CONTROL INFLUX
+During stationary survey check at 3105m MD across depleted reservoir zone, drillstring suffered differential sticking. 
+Overpull reached maximum rig margin of 920 kN without freeing string. Jars fired downwards repeatedly with 400 kN impact.
+While circulating lubricant soak pill, annular gas influx detected. Pit gain 2.2 m3 observed.
+
+MITIGATION & RECOVERY ACTIONS:
+Well immediately shut in on annular BOP. SIDPP stabilized at 420 psi, SICP at 580 psi.
+Executed Driller Method well kill sequence with 1.42 SG kill weight mud. 
+Once well stabilized, spotted 15 m3 ester-based pipe-freeing lubricant pill. Soaked for 4 hours; worked pipe with 750 kN overpull until string freed at 3105m.
+NPT incurred: 36.0 hours.
+Top Skagerrak formation at 3220m.

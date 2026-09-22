@@ -1,0 +1,5 @@
+### SCAN DEGRADED ARTIFACT #######
+???? .....  [CORRUPT BYTE STREAM] 
+~~~ ^^^ %%% ??? 
+~~~
+                       
