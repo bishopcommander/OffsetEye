@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, FastForward, ArrowDownCircle, AlertCircle, Zap } from 'lucide-react';
+import { Play, Pause, FastForward, ArrowDownCircle, AlertCircle, Zap, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function DepthSimulator({ depth, onUpdateDepth, currentFormation, isSimulating, setIsSimulating, activeWell }) {
   const [localDepth, setLocalDepth] = useState(depth);
+  const [showBenchmarks, setShowBenchmarks] = useState(false);
 
   useEffect(() => {
     setLocalDepth(depth);
@@ -113,45 +114,56 @@ export default function DepthSimulator({ depth, onUpdateDepth, currentFormation,
         </div>
       </div>
 
-      {/* Quick Hazard Jump Buttons for Testing */}
+      {/* Quick Hazard Jump Benchmarks (Side Info under button) */}
       <div>
-        <div style={{ fontSize: '0.68rem', color: '#9ca3af', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '4px' }}>
-          <Zap size={12} color="#06b6d4" /> Jump to Known Offset Hazard Depth:
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}>
-          <button
-            type="button"
-            onClick={() => jumpToHazard(2690)}
-            className="btn btn-secondary"
-            style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
-          >
-            ⚡ 2690m (Shetland Torque)
-          </button>
-          <button
-            type="button"
-            onClick={() => jumpToHazard(2930)}
-            className="btn btn-secondary"
-            style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
-          >
-            ⚡ 2930m (Hugin Mud Loss)
-          </button>
-          <button
-            type="button"
-            onClick={() => jumpToHazard(3110)}
-            className="btn btn-secondary"
-            style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
-          >
-            ⚡ 3110m (Hugin Stuck Pipe)
-          </button>
-          <button
-            type="button"
-            onClick={() => jumpToHazard(3250)}
-            className="btn btn-secondary"
-            style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
-          >
-            ⚡ 3250m (Skagerrak Kick)
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setShowBenchmarks(!showBenchmarks)}
+          className="btn btn-secondary"
+          style={{ width: '100%', padding: '4px 8px', fontSize: '0.7rem', justifyContent: 'space-between' }}
+        >
+          <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+            <Zap size={11} color="#06b6d4" /> Jump to Hazard Benchmarks
+          </span>
+          {showBenchmarks ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+        </button>
+
+        {showBenchmarks && (
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginTop: '6px' }}>
+            <button
+              type="button"
+              onClick={() => jumpToHazard(2690)}
+              className="btn btn-secondary"
+              style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
+            >
+              ⚡ 2690m (Torque)
+            </button>
+            <button
+              type="button"
+              onClick={() => jumpToHazard(2930)}
+              className="btn btn-secondary"
+              style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
+            >
+              ⚡ 2930m (Mud Loss)
+            </button>
+            <button
+              type="button"
+              onClick={() => jumpToHazard(3110)}
+              className="btn btn-secondary"
+              style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
+            >
+              ⚡ 3110m (Stuck Pipe)
+            </button>
+            <button
+              type="button"
+              onClick={() => jumpToHazard(3250)}
+              className="btn btn-secondary"
+              style={{ fontSize: '0.68rem', padding: '4px 6px', justifyContent: 'flex-start' }}
+            >
+              ⚡ 3250m (Kick)
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Simulation Controls */}

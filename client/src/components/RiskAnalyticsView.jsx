@@ -1,7 +1,9 @@
-import React from 'react';
-import { BarChart3, AlertCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { BarChart3, AlertCircle, Info, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function RiskAnalyticsView({ riskAnalytics, depthWindow }) {
+  const [showMethodology, setShowMethodology] = useState(false);
+
   if (!riskAnalytics || riskAnalytics.length === 0) {
     return null;
   }
@@ -19,6 +21,7 @@ export default function RiskAnalyticsView({ riskAnalytics, depthWindow }) {
 
   return (
     <div className="glass-panel" style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <BarChart3 size={16} color="#06b6d4" />
@@ -27,12 +30,13 @@ export default function RiskAnalyticsView({ riskAnalytics, depthWindow }) {
           </h2>
         </div>
         {depthWindow && (
-          <span className="mono" style={{ fontSize: '0.72rem', color: '#6b7280' }}>
+          <span className="mono" style={{ fontSize: '0.72rem', color: '#38bdf8', fontWeight: 600 }}>
             Window: ±50m ({depthWindow.start?.toFixed(0)} - {depthWindow.end?.toFixed(0)}m MD)
           </span>
         )}
       </div>
 
+      {/* KPI Cards (Always Front & Center) */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '8px' }}>
         {riskAnalytics.map(item => {
           const isElevated = item.flag === 'elevated';
@@ -72,6 +76,27 @@ export default function RiskAnalyticsView({ riskAnalytics, depthWindow }) {
           );
         })}
       </div>
+
+      {/* Button for Side Info (Methodology & Logic) */}
+      <button
+        type="button"
+        onClick={() => setShowMethodology(!showMethodology)}
+        className="btn btn-secondary"
+        style={{ padding: '3px 8px', fontSize: '0.68rem', justifyContent: 'space-between', width: 'fit-content' }}
+      >
+        <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          <Info size={11} color="#06b6d4" /> Correlation Logic & Rules
+        </span>
+        {showMethodology ? <ChevronUp size={11} /> : <ChevronDown size={11} />}
+      </button>
+
+      {/* Collapsible Methodology Panel */}
+      {showMethodology && (
+        <div style={{ background: '#0a0e17', padding: '8px 10px', borderRadius: '6px', border: '1px solid #1f2937', fontSize: '0.72rem', color: '#9ca3af', lineHeight: 1.4 }}>
+          <strong style={{ color: '#e5e7eb' }}>Deterministic Aggregation:</strong> Flags as <span style={{ color: '#f87171' }}>elevated</span> if ≥1 offset well encountered the incident within the active correlation depth window (±50m) and matched lithology/formation synonym. No black-box model is used for alert gating.
+        </div>
+      )}
     </div>
   );
 }
+

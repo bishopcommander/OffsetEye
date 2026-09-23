@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { AlertTriangle, CheckCircle, Eye, ThumbsUp, ThumbsDown, Zap } from 'lucide-react';
+import { AlertTriangle, CheckCircle, Eye, ThumbsUp, ThumbsDown, Zap, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function AlertPanel({ alerts, onInspectEvidence, onUpdateAlertStatus, onLogFeedback, onJumpToHazard }) {
   const [filter, setFilter] = useState('open'); // 'open' | 'all'
+  const [expandedAlerts, setExpandedAlerts] = useState({});
 
   const displayedAlerts = filter === 'open' 
     ? alerts.filter(a => a.status === 'open')
@@ -108,47 +109,76 @@ export default function AlertPanel({ alerts, onInspectEvidence, onUpdateAlertSta
                   <span>Formation: <strong style={{ color: '#f3f4f6' }}>{alert.formation || 'Hugin'}</strong></span>
                 </div>
 
-                {/* Action Bar */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(75, 85, 99, 0.3)', paddingTop: '8px', marginTop: '2px' }}>
-                  <button
-                    onClick={() => onInspectEvidence(alert)}
-                    className="btn btn-secondary"
-                    style={{ fontSize: '0.72rem', padding: '4px 8px' }}
-                  >
-                    <Eye size={13} color="#06b6d4" />
-                    <span>View Evidence</span>
-                  </button>
+                {/* Toggle Button for Side Info / Mitigation / Actions */}
+                <button
+                  type="button"
+                  onClick={() => setExpandedAlerts(prev => ({ ...prev, [alert.id]: !prev[alert.id] }))}
+                  className="btn btn-secondary"
+                  style={{ fontSize: '0.7rem', padding: '3px 8px', justifyContent: 'space-between', width: '100%', background: '#0a0e17' }}
+                >
+                  <span>{expandedAlerts[alert.id] ? 'Hide Technical Actions' : 'Technical Mitigation & Actions'}</span>
+                  {expandedAlerts[alert.id] ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                </button>
 
-                  {/* Engineer Feedback & Status */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <button
-                      onClick={() => onLogFeedback(alert.id, 'confirmed')}
-                      className="btn btn-secondary"
-                      title="Confirm this hazard applies to current operation"
-                      style={{ padding: '4px 6px' }}
-                    >
-                      <ThumbsUp size={12} color="#10b981" />
-                    </button>
-                    <button
-                      onClick={() => onLogFeedback(alert.id, 'overridden')}
-                      className="btn btn-secondary"
-                      title="Override: Hazard mitigated or not applicable"
-                      style={{ padding: '4px 6px' }}
-                    >
-                      <ThumbsDown size={12} color="#f59e0b" />
-                    </button>
-                    <button
-                      onClick={() => onUpdateAlertStatus(alert.id, isOpen ? 'acknowledged' : 'open')}
-                      className="btn btn-secondary"
-                      style={{ fontSize: '0.7rem', padding: '4px 8px' }}
-                    >
-                      {isOpen ? 'Acknowledge' : 'Reopen'}
-                    </button>
+                {/* Collapsible Section (Mitigation, Excerpt, Actions) */}
+                {expandedAlerts[alert.id] && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', borderTop: '1px solid rgba(75, 85, 99, 0.3)', paddingTop: '8px', marginTop: '2px' }}>
+                    {alert.mitigation && (
+                      <div style={{ fontSize: '0.72rem', color: '#34d399', background: 'rgba(16, 185, 129, 0.08)', padding: '6px 8px', borderRadius: '6px', border: '1px solid rgba(16, 185, 129, 0.25)', lineHeight: 1.4 }}>
+                        <strong>Proven Mitigation:</strong> {alert.mitigation}
+                      </div>
+                    )}
+
+                    {alert.source_excerpt && (
+                      <div style={{ fontSize: '0.68rem', color: '#9ca3af', fontStyle: 'italic', background: '#0a0e17', padding: '5px 8px', borderRadius: '4px', border: '1px solid #1f2937', lineHeight: 1.4 }}>
+                        "{alert.source_excerpt}"
+                      </div>
+                    )}
+
+                    {/* Action Bar */}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '2px' }}>
+                      <button
+                        onClick={() => onInspectEvidence(alert)}
+                        className="btn btn-secondary"
+                        style={{ fontSize: '0.7rem', padding: '3px 8px' }}
+                      >
+                        <Eye size={12} color="#06b6d4" />
+                        <span>View Evidence</span>
+                      </button>
+
+                      {/* Engineer Feedback & Status */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <button
+                          onClick={() => onLogFeedback(alert.id, 'confirmed')}
+                          className="btn btn-secondary"
+                          title="Confirm this hazard applies to current operation"
+                          style={{ padding: '3px 6px' }}
+                        >
+                          <ThumbsUp size={11} color="#10b981" />
+                        </button>
+                        <button
+                          onClick={() => onLogFeedback(alert.id, 'overridden')}
+                          className="btn btn-secondary"
+                          title="Override: Hazard mitigated or not applicable"
+                          style={{ padding: '3px 6px' }}
+                        >
+                          <ThumbsDown size={11} color="#f59e0b" />
+                        </button>
+                        <button
+                          onClick={() => onUpdateAlertStatus(alert.id, isOpen ? 'acknowledged' : 'open')}
+                          className="btn btn-secondary"
+                          style={{ fontSize: '0.68rem', padding: '3px 8px' }}
+                        >
+                          {isOpen ? 'Acknowledge' : 'Reopen'}
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             );
           })}
+
         </div>
       )}
     </div>

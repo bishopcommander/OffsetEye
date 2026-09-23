@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Sparkles, BookOpen, Quote, ChevronRight, Loader2 } from 'lucide-react';
+import { Search, Sparkles, BookOpen, Quote, ChevronRight, Loader2, ChevronDown, ChevronUp } from 'lucide-react';
 import api from '../services/api';
 
 export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidence }) {
@@ -7,6 +7,8 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [showCitations, setShowCitations] = useState(false);
 
   const suggestionChips = [
     'What mud loss and stuck pipe risks were encountered in Hugin sandstone near 2950m?',
@@ -81,22 +83,37 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
         </button>
       </div>
 
-      {/* Suggestion Chips */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-        <span style={{ fontSize: '0.72rem', color: '#6b7280', alignSelf: 'center' }}>Suggested:</span>
-        {suggestionChips.map((chip, idx) => (
-          <button
-            key={idx}
-            onClick={() => {
-              setQuestion(chip);
-              handleSearch(chip);
-            }}
-            className="btn btn-secondary"
-            style={{ fontSize: '0.72rem', padding: '3px 8px', borderRadius: '12px' }}
-          >
-            {chip.length > 55 ? chip.substring(0, 52) + '...' : chip}
-          </button>
-        ))}
+      {/* Suggestion Chips (Side Info under button) */}
+      <div>
+        <button
+          type="button"
+          onClick={() => setShowSuggestions(!showSuggestions)}
+          className="btn btn-secondary"
+          style={{ padding: '3px 8px', fontSize: '0.68rem', justifyContent: 'space-between', width: 'fit-content' }}
+        >
+          <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <Quote size={11} color="#06b6d4" /> Suggested Queries
+          </span>
+          {showSuggestions ? <ChevronUp size={11} /> : <ChevronDown size={11} />}
+        </button>
+
+        {showSuggestions && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '6px' }}>
+            {suggestionChips.map((chip, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  setQuestion(chip);
+                  handleSearch(chip);
+                }}
+                className="btn btn-secondary"
+                style={{ fontSize: '0.7rem', padding: '3px 8px', borderRadius: '12px' }}
+              >
+                {chip.length > 55 ? chip.substring(0, 52) + '...' : chip}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Error state */}
@@ -106,16 +123,16 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
         </div>
       )}
 
-      {/* Search Result Box */}
+      {/* Search Result Box (Summary Front & Center) */}
       {result && (
-        <div style={{ background: '#0a0e17', border: '1px solid #1f2937', borderRadius: '10px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <div style={{ background: '#0a0e17', border: '1px solid #1f2937', borderRadius: '10px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
           {result.cached_fallback_used && (
             <div style={{ fontSize: '0.72rem', color: '#fbbf24', background: 'rgba(245, 158, 11, 0.1)', padding: '4px 8px', borderRadius: '4px', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
               ⚡ Offline cached demo verification loaded (Zero hallucination fallback guarantee)
             </div>
           )}
 
-          {/* Grounded Summary */}
+          {/* Grounded Summary (Front & Center) */}
           <div>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#38bdf8', textTransform: 'uppercase', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '5px' }}>
               <BookOpen size={14} /> Grounded Synthesis
@@ -125,34 +142,44 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
             </p>
           </div>
 
-          {/* Citations List */}
+          {/* Citations List (Side Info under button) */}
           {result.citations && result.citations.length > 0 && (
-            <div style={{ borderTop: '1px solid #1f2937', paddingTop: '10px' }}>
-              <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af', textTransform: 'uppercase', marginBottom: '6px' }}>
-                Claim-Level Source Citations ({result.citations.length})
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                {result.citations.map((cite, i) => (
-                  <div
-                    key={i}
-                    style={{ background: '#111827', border: '1px solid #273549', borderRadius: '6px', padding: '8px 10px', fontSize: '0.75rem' }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', color: '#38bdf8', fontWeight: 600, marginBottom: '2px' }}>
-                      <span>Well {cite.source_well} @ {cite.depth ? `${cite.depth}m` : 'MD'} ({cite.formation || 'Target'})</span>
+            <div style={{ borderTop: '1px solid #1f2937', paddingTop: '8px' }}>
+              <button
+                type="button"
+                onClick={() => setShowCitations(!showCitations)}
+                className="btn btn-secondary"
+                style={{ padding: '3px 8px', fontSize: '0.7rem', justifyContent: 'space-between', width: '100%', background: '#111827' }}
+              >
+                <span>Claim-Level Source Citations ({result.citations.length})</span>
+                {showCitations ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+              </button>
+
+              {showCitations && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginTop: '8px' }}>
+                  {result.citations.map((cite, i) => (
+                    <div
+                      key={i}
+                      style={{ background: '#111827', border: '1px solid #273549', borderRadius: '6px', padding: '8px 10px', fontSize: '0.75rem' }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', color: '#38bdf8', fontWeight: 600, marginBottom: '2px' }}>
+                        <span>Well {cite.source_well} @ {cite.depth ? `${cite.depth}m` : 'MD'} ({cite.formation || 'Target'})</span>
+                      </div>
+                      <div style={{ color: '#d1d5db', marginBottom: '4px' }}>
+                        {cite.claim}
+                      </div>
+                      <div style={{ color: '#9ca3af', fontStyle: 'italic', fontSize: '0.7rem', borderLeft: '2px solid #0ea5e9', paddingLeft: '6px' }}>
+                        "{cite.source_excerpt}"
+                      </div>
                     </div>
-                    <div style={{ color: '#d1d5db', marginBottom: '4px' }}>
-                      {cite.claim}
-                    </div>
-                    <div style={{ color: '#9ca3af', fontStyle: 'italic', fontSize: '0.7rem', borderLeft: '2px solid #0ea5e9', paddingLeft: '6px' }}>
-                      "{cite.source_excerpt}"
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>
       )}
+
     </div>
   );
 }
