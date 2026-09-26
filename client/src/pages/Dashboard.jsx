@@ -25,6 +25,7 @@ export default function Dashboard() {
   const [depthWindow, setDepthWindow] = useState({ start: 2900, end: 3000 });
   const [currentDepth, setCurrentDepth] = useState(2950);
   const [isSimulating, setIsSimulating] = useState(false);
+  const [isAlertsCollapsed, setIsAlertsCollapsed] = useState(false);
 
   // Modals state
   const [activeEvidence, setActiveEvidence] = useState(null);
@@ -146,7 +147,15 @@ export default function Dashboard() {
         </main>
       ) : (
         /* Main Real-Time Dashboard Layout */
-        <main style={{ flex: 1, padding: '14px 16px', display: 'grid', gridTemplateColumns: '360px 1fr 380px', gap: '14px', alignItems: 'start' }}>
+        <main style={{ 
+          flex: 1, 
+          padding: '14px 16px', 
+          display: 'grid', 
+          gridTemplateColumns: isAlertsCollapsed ? '360px 1fr 52px' : '360px 1fr 380px', 
+          gap: '14px', 
+          alignItems: 'stretch',
+          transition: 'grid-template-columns 0.25s ease'
+        }}>
           
           {/* Left Column: Well Controls, Radius, Depth Simulator */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
@@ -197,7 +206,7 @@ export default function Dashboard() {
           </div>
 
           {/* Right Column: Proactive Alerts & Feedback */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%', alignSelf: 'stretch', minHeight: 0 }}>
             <AlertPanel
               alerts={alerts}
               onInspectEvidence={(alert) => setActiveEvidence({
@@ -214,6 +223,8 @@ export default function Dashboard() {
               onUpdateAlertStatus={handleUpdateAlertStatus}
               onLogFeedback={handleLogFeedback}
               onJumpToHazard={handleUpdateDepth}
+              isCollapsed={isAlertsCollapsed}
+              onToggleCollapse={() => setIsAlertsCollapsed(prev => !prev)}
             />
           </div>
         </main>

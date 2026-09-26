@@ -1,15 +1,101 @@
 import React, { useState } from 'react';
-import { AlertTriangle, CheckCircle, Eye, ThumbsUp, ThumbsDown, Zap, ChevronDown, ChevronUp } from 'lucide-react';
+import { AlertTriangle, CheckCircle, Eye, ThumbsUp, ThumbsDown, Zap, ChevronDown, ChevronUp, ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default function AlertPanel({ alerts, onInspectEvidence, onUpdateAlertStatus, onLogFeedback, onJumpToHazard }) {
+export default function AlertPanel({ 
+  alerts, 
+  onInspectEvidence, 
+  onUpdateAlertStatus, 
+  onLogFeedback, 
+  onJumpToHazard,
+  isCollapsed = false,
+  onToggleCollapse 
+}) {
   const [filter, setFilter] = useState('open'); // 'open' | 'all'
   const [expandedAlerts, setExpandedAlerts] = useState({});
+  const [compactCards, setCompactCards] = useState(false);
 
   const displayedAlerts = filter === 'open' 
     ? alerts.filter(a => a.status === 'open')
     : alerts;
 
   const openCount = alerts.filter(a => a.status === 'open').length;
+
+  // Collapsed Sidebar Rail View
+  if (isCollapsed) {
+    return (
+      <div
+        onClick={onToggleCollapse}
+        className="glass-panel"
+        style={{
+          padding: '14px 6px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '16px',
+          height: '100%',
+          cursor: 'pointer',
+          border: openCount > 0 ? '1px solid rgba(239, 68, 68, 0.45)' : '1px solid var(--border-subtle)',
+          background: openCount > 0 ? 'rgba(239, 68, 68, 0.06)' : 'var(--bg-card)',
+          transition: 'all 0.2s ease',
+          userSelect: 'none',
+          boxShadow: openCount > 0 ? '0 0 14px rgba(239, 68, 68, 0.2)' : 'none'
+        }}
+        title="Click to expand Active Alerts Panel"
+      >
+        <button
+          onClick={(e) => { e.stopPropagation(); onToggleCollapse && onToggleCollapse(); }}
+          className="btn btn-secondary"
+          style={{ padding: '6px', borderRadius: '6px', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          title="Expand Active Alerts"
+        >
+          <ChevronLeft size={16} color="#06b6d4" />
+        </button>
+
+        <div style={{ position: 'relative', marginTop: '6px' }}>
+          <AlertTriangle size={20} color={openCount > 0 ? '#ef4444' : '#9ca3af'} />
+          {openCount > 0 && (
+            <span
+              style={{
+                position: 'absolute',
+                top: '-6px',
+                right: '-8px',
+                background: '#ef4444',
+                color: '#fff',
+                fontSize: '0.6rem',
+                fontWeight: 700,
+                padding: '1px 5px',
+                borderRadius: '999px',
+                lineHeight: 1
+              }}
+            >
+              {openCount > 999 ? '999+' : openCount}
+            </span>
+          )}
+        </div>
+
+        {/* Vertical Text Label */}
+        <div
+          style={{
+            writingMode: 'vertical-rl',
+            transform: 'rotate(180deg)',
+            fontSize: '0.74rem',
+            fontWeight: 700,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: openCount > 0 ? '#fca5a5' : '#9ca3af',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            marginTop: '8px',
+            whiteSpace: 'nowrap'
+          }}
+        >
+          <span>Active Alerts</span>
+          <span style={{ color: '#06b6d4', fontWeight: 600 }}>({openCount})</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="glass-panel" style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '12px', height: '100%' }}>
@@ -20,26 +106,48 @@ export default function AlertPanel({ alerts, onInspectEvidence, onUpdateAlertSta
             Active Proactive Alerts
           </h2>
         </div>
-        <span className={`badge ${openCount > 0 ? 'badge-elevated' : 'badge-normal'}`}>
-          {openCount} Open Hazard{openCount === 1 ? '' : 's'}
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <span className={`badge ${openCount > 0 ? 'badge-elevated' : 'badge-normal'}`}>
+            {openCount} Open Hazard{openCount === 1 ? '' : 's'}
+          </span>
+          {onToggleCollapse && (
+            <button
+              onClick={onToggleCollapse}
+              className="btn btn-secondary"
+              style={{ padding: '4px 6px', borderRadius: '6px', color: '#9ca3af', border: '1px solid #374151' }}
+              title="Collapse Alerts Panel"
+            >
+              <ChevronRight size={15} />
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* Tabs Filter */}
-      <div style={{ display: 'flex', gap: '6px', background: '#0a0e17', padding: '4px', borderRadius: '8px', border: '1px solid #1f2937' }}>
+      {/* Tabs Filter & Density Toggle */}
+      <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', flex: 1, gap: '4px', background: '#0a0e17', padding: '3px', borderRadius: '8px', border: '1px solid #1f2937' }}>
+          <button
+            onClick={() => setFilter('open')}
+            className={`btn ${filter === 'open' ? 'btn-primary' : 'btn-secondary'}`}
+            style={{ flex: 1, padding: '4px 6px', fontSize: '0.72rem' }}
+          >
+            Open ({openCount})
+          </button>
+          <button
+            onClick={() => setFilter('all')}
+            className={`btn ${filter === 'all' ? 'btn-primary' : 'btn-secondary'}`}
+            style={{ flex: 1, padding: '4px 6px', fontSize: '0.72rem' }}
+          >
+            All ({alerts.length})
+          </button>
+        </div>
         <button
-          onClick={() => setFilter('open')}
-          className={`btn ${filter === 'open' ? 'btn-primary' : 'btn-secondary'}`}
-          style={{ flex: 1, padding: '4px 8px', fontSize: '0.72rem' }}
+          onClick={() => setCompactCards(prev => !prev)}
+          className={`btn ${compactCards ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ padding: '5px 8px', fontSize: '0.7rem', whiteSpace: 'nowrap' }}
+          title={compactCards ? "Switch to detailed cards" : "Collapse card descriptions"}
         >
-          Open Alerts ({openCount})
-        </button>
-        <button
-          onClick={() => setFilter('all')}
-          className={`btn ${filter === 'all' ? 'btn-primary' : 'btn-secondary'}`}
-          style={{ flex: 1, padding: '4px 8px', fontSize: '0.72rem' }}
-        >
-          All Well Alerts ({alerts.length})
+          {compactCards ? "Expanded" : "Compact"}
         </button>
       </div>
 
@@ -64,7 +172,7 @@ export default function AlertPanel({ alerts, onInspectEvidence, onUpdateAlertSta
           )}
         </div>
       ) : (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', overflowY: 'auto', maxHeight: '420px', paddingRight: '4px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', overflowY: 'auto', flex: 1, minHeight: 0, paddingRight: '4px' }}>
           {displayedAlerts.map(alert => {
             const isOpen = alert.status === 'open';
             return (
@@ -98,10 +206,12 @@ export default function AlertPanel({ alerts, onInspectEvidence, onUpdateAlertSta
                   </span>
                 </div>
 
-                {/* Description */}
-                <p style={{ fontSize: '0.8rem', color: '#e5e7eb', lineHeight: 1.4 }}>
-                  {alert.description || 'Historical offset well hazard identified within correlation window.'}
-                </p>
+                {/* Description (collapsible via compact mode) */}
+                {!compactCards && (
+                  <p style={{ fontSize: '0.8rem', color: '#e5e7eb', lineHeight: 1.4 }}>
+                    {alert.description || 'Historical offset well hazard identified within correlation window.'}
+                  </p>
+                )}
 
                 {/* Offset Source Tag */}
                 <div style={{ fontSize: '0.72rem', color: '#9ca3af', display: 'flex', justifyContent: 'space-between' }}>
