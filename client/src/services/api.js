@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const configuredBaseUrl = (import.meta.env.VITE_API_URL || 'https://offseteye.onrender.com/api').replace(/\/+$/, '');
+const configuredApiUrl = import.meta.env.VITE_API_URL;
+const configuredBaseUrl = (configuredApiUrl?.startsWith('http')
+  ? configuredApiUrl
+  : 'https://offseteye.onrender.com/api').replace(/\/+$/, '');
 const apiBaseUrl = configuredBaseUrl.endsWith('/api')
   ? configuredBaseUrl
   : `${configuredBaseUrl}/api`;
