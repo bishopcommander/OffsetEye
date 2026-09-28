@@ -168,11 +168,11 @@ async function correlateNearbyRisks({ wellId, currentDepth, depthWindow = 50, ra
     const eventsToAlert = matchedEvents.filter(e => elevatedCategories.includes(e.event_type));
 
     for (const ev of eventsToAlert) {
-      // Check if an open alert for this well & event already exists to prevent duplication
+      // Keep one alert per real event and trigger depth regardless of its status.
       const existingAlert = await query(`
         SELECT id FROM alerts
-        WHERE well_id = $1 AND event_id = $2 AND status = 'open'
-      `, [wellId, ev.id]);
+        WHERE well_id = $1 AND event_id = $2 AND depth_at_trigger = $3
+      `, [wellId, ev.id, currentDepth]);
 
       if (existingAlert.rows.length === 0) {
         const newAlert = await query(`

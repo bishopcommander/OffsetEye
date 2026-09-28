@@ -12,9 +12,9 @@ export default function WellSelector({ wells, activeWellId, onSelectWell, wellDe
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <Target size={16} color="#06b6d4" />
-          <h2 style={{ fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#9ca3af' }}>
-            Active Well
+          <Target size={16} color="var(--accent-brand)" />
+          <h2 style={{ fontSize: '0.85rem', fontWeight: 700,  color: 'var(--text-muted)' }}>
+            Active well
           </h2>
         </div>
         <span className="badge badge-normal" style={{ fontSize: '0.65rem' }}>Active Rig</span>
@@ -22,19 +22,19 @@ export default function WellSelector({ wells, activeWellId, onSelectWell, wellDe
 
       {/* Primary Info (Always Front & Center) */}
       {activeWell && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#0a0e17', padding: '10px 12px', borderRadius: '8px', border: '1px solid #1f2937' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--bg-page)', padding: '10px 12px', borderRadius: '8px', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)' }}>
           <div>
-            <div style={{ fontSize: '1rem', fontWeight: 800, color: '#f3f4f6' }}>
+            <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--text-primary)' }}>
               {activeWell.name}
             </div>
-            <div style={{ fontSize: '0.75rem', color: '#38bdf8', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px', marginTop: '2px' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--accent-brand)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px', marginTop: '2px' }}>
               <Layers size={12} /> {activeWell.formation || 'Hugin'} Formation
             </div>
           </div>
           <div style={{ textAlign: 'right' }}>
-            <span style={{ fontSize: '0.65rem', color: '#6b7280', textTransform: 'uppercase' }}>Current Depth</span>
-            <div className="mono" style={{ fontSize: '1.15rem', fontWeight: 800, color: '#10b981' }}>
-              {activeWell.current_depth || 0} <span style={{ fontSize: '0.75rem', color: '#9ca3af' }}>m</span>
+            <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)',  }}>Current depth</span>
+            <div className="mono" style={{ fontSize: '1.15rem', fontWeight: 800, color: 'var(--status-normal)' }}>
+              {activeWell.current_depth || 0} <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>m</span>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function WellSelector({ wells, activeWellId, onSelectWell, wellDe
           style={{ flex: 1, padding: '4px 8px', fontSize: '0.72rem', justifyContent: 'space-between' }}
         >
           <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-            <RefreshCw size={11} color="#06b6d4" /> Switch Well
+            <RefreshCw size={11} color="var(--accent-brand)" /> Switch Well
           </span>
           {showSwitchWell ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
         </button>
@@ -61,7 +61,7 @@ export default function WellSelector({ wells, activeWellId, onSelectWell, wellDe
           style={{ flex: 1, padding: '4px 8px', fontSize: '0.72rem', justifyContent: 'space-between' }}
         >
           <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-            <MapPin size={11} color="#10b981" /> Coordinates & TD
+            <MapPin size={11} color="var(--status-normal)" /> Coordinates & TD
           </span>
           {showTelemetry ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
         </button>
@@ -69,8 +69,8 @@ export default function WellSelector({ wells, activeWellId, onSelectWell, wellDe
 
       {/* Collapsible Well Switch Dropdown */}
       {showSwitchWell && (
-        <div style={{ background: '#0f172a', padding: '8px', borderRadius: '8px', border: '1px solid #334155' }}>
-          <label style={{ fontSize: '0.68rem', color: '#94a3b8', display: 'block', marginBottom: '4px' }}>Select Active Drilling Well:</label>
+        <div style={{ background: 'var(--bg-page)', padding: '8px', borderRadius: '8px', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)' }}>
+          <label style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>Select active drilling well:</label>
           <select
             value={activeWellId || ''}
             onChange={(e) => {
@@ -91,19 +91,19 @@ export default function WellSelector({ wells, activeWellId, onSelectWell, wellDe
 
       {/* Collapsible Telemetry / Coordinates */}
       {showTelemetry && activeWell && (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '0.75rem', background: '#0a0e17', padding: '10px', borderRadius: '8px', border: '1px solid #1f2937' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '0.75rem', background: 'var(--bg-page)', padding: '10px', borderRadius: '8px', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)' }}>
           <div>
-            <div style={{ color: '#6b7280', display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <div style={{ color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '4px' }}>
               <MapPin size={11} /> Coordinates
             </div>
-            <div className="mono" style={{ color: '#f3f4f6', marginTop: '2px', fontWeight: 500 }}>
+            <div className="mono" style={{ color: 'var(--text-primary)', marginTop: '2px', fontWeight: 500 }}>
               {activeWell.latitude?.toFixed(4)}°N, {activeWell.longitude?.toFixed(4)}°E
             </div>
           </div>
 
           <div>
-            <div style={{ color: '#6b7280' }}>Planned Total Depth</div>
-            <div className="mono" style={{ color: '#9ca3af', marginTop: '2px', fontWeight: 500 }}>
+            <div style={{ color: 'var(--text-muted)' }}>Planned Total Depth</div>
+            <div className="mono" style={{ color: 'var(--text-muted)', marginTop: '2px', fontWeight: 500 }}>
               {activeWell.planned_depth || 3500} m
             </div>
           </div>

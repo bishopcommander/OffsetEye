@@ -30,10 +30,21 @@ router.get('/', async (req, res) => {
   const { well_id, status } = value;
   try {
     let sql = `
-      SELECT a.id, a.well_id, a.event_id, a.triggered_at, a.depth_at_trigger, a.status,
-             e.event_type, e.depth AS event_depth, e.formation, e.description, e.mitigation,
-             e.source_excerpt, e.confidence, e.needs_review,
-             w_src.name AS offset_well_name
+            SELECT MAX(a.id) AS id, a.well_id, MAX(a.event_id) AS event_id,
+              MAX(a.triggered_at) AS triggered_at,
+             a.depth_at_trigger,
+             CASE
+               WHEN BOOL_OR(a.status = 'open') THEN 'open'
+               WHEN BOOL_OR(a.status = 'acknowledged') THEN 'acknowledged'
+               ELSE 'closed'
+             END AS status,
+             ARRAY_AGG(a.id ORDER BY a.id) AS alert_ids,
+             GREATEST(COUNT(DISTINCT a.event_id), 1)::int AS duplicate_count,
+             e.event_type, e.depth AS event_depth, MAX(e.formation) AS formation,
+             e.description, MAX(e.mitigation) AS mitigation,
+             MAX(e.source_excerpt) AS source_excerpt, MAX(e.confidence) AS confidence,
+             BOOL_OR(e.needs_review) AS needs_review,
+             e.well_id AS offset_well_id, w_src.name AS offset_well_name
       FROM alerts a
       LEFT JOIN events e ON e.id = a.event_id
       LEFT JOIN wells w_src ON w_src.id = e.well_id
@@ -44,7 +55,11 @@ router.get('/', async (req, res) => {
       params.push(status);
       sql += ` AND a.status = $${params.length}`;
     }
-    sql += ' ORDER BY a.triggered_at DESC';
+    sql += `
+      GROUP BY a.well_id, a.depth_at_trigger, e.well_id, e.event_type, e.depth,
+           e.description, w_src.name
+    `;
+    sql += ' ORDER BY MAX(a.triggered_at) DESC';
     const result = await query(sql, params);
     return res.json({ alerts: result.rows, count: result.rowCount });
   } catch (err) {

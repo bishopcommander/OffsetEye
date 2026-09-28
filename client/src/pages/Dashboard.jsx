@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { ChevronLeft, ChevronRight, SlidersHorizontal } from 'lucide-react';
 import api from '../services/api';
 import Header from '../components/Header';
 import WellSelector from '../components/WellSelector';
@@ -26,6 +27,7 @@ export default function Dashboard() {
   const [currentDepth, setCurrentDepth] = useState(2950);
   const [isSimulating, setIsSimulating] = useState(false);
   const [isAlertsCollapsed, setIsAlertsCollapsed] = useState(false);
+  const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
 
   // Modals state
   const [activeEvidence, setActiveEvidence] = useState(null);
@@ -116,8 +118,10 @@ export default function Dashboard() {
   // Handle alert status update
   const handleUpdateAlertStatus = async (alertId, status) => {
     try {
-      await api.patch(`/alerts/${alertId}/status`, { status });
-      setAlerts(prev => prev.map(a => a.id === alertId ? { ...a, status } : a));
+      const alertIds = Array.isArray(alertId) ? alertId : [alertId];
+      await Promise.all(alertIds.map(id => api.patch(`/alerts/${id}/status`, { status })));
+      const updatedIds = new Set(alertIds);
+      setAlerts(prev => prev.map(a => updatedIds.has(a.id) || a.alert_ids?.some(id => updatedIds.has(id)) ? { ...a, status } : a));
     } catch (err) {
       console.error('Error updating alert status:', err);
     }
@@ -134,7 +138,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-primary)' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-page)' }}>
       <Header
         onOpenUpload={() => setShowUploadModal(true)}
         activeMode={activeMode}
@@ -151,36 +155,70 @@ export default function Dashboard() {
           flex: 1, 
           padding: '14px 16px', 
           display: 'grid', 
-          gridTemplateColumns: isAlertsCollapsed ? '360px 1fr 52px' : '360px 1fr 380px', 
+          gridTemplateColumns: `${isControlsCollapsed ? '52px' : '360px'} 1fr ${isAlertsCollapsed ? '52px' : '380px'}`,
           gap: '14px', 
           alignItems: 'stretch',
           transition: 'grid-template-columns 0.25s ease'
         }}>
           
           {/* Left Column: Well Controls, Radius, Depth Simulator */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-            <WellSelector
-              wells={wells}
-              activeWellId={activeWellId}
-              onSelectWell={handleSelectWell}
-              wellDetails={activeWell}
-            />
+          {isControlsCollapsed ? (
+            <div
+              className="glass-panel"
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '12px 6px' }}
+            >
+              <button
+                type="button"
+                onClick={() => setIsControlsCollapsed(false)}
+                className="btn btn-secondary"
+                style={{ padding: '6px', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                aria-label="Expand well controls"
+                title="Expand well controls"
+              >
+                <ChevronRight size={16} />
+              </button>
+              <SlidersHorizontal size={18} color="var(--accent-brand)" />
+              <span style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', fontSize: '0.74rem', fontWeight: 700, color: 'var(--text-muted)', whiteSpace: 'nowrap' }}>
+                Well Controls
+              </span>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '-8px' }}>
+                <button
+                  type="button"
+                  onClick={() => setIsControlsCollapsed(true)}
+                  className="btn btn-secondary"
+                  style={{ padding: '4px 6px', color: 'var(--text-muted)' }}
+                  aria-label="Collapse well controls"
+                  title="Collapse well controls"
+                >
+                  <ChevronLeft size={15} />
+                </button>
+              </div>
+              <WellSelector
+                wells={wells}
+                activeWellId={activeWellId}
+                onSelectWell={handleSelectWell}
+                wellDetails={activeWell}
+              />
 
-            <RadiusSlider
-              radiusMeters={radiusMeters}
-              onChangeRadius={setRadiusMeters}
-              nearbyWellsCount={nearbyWells.length}
-            />
+              <RadiusSlider
+                radiusMeters={radiusMeters}
+                onChangeRadius={setRadiusMeters}
+                nearbyWellsCount={nearbyWells.length}
+              />
 
-            <DepthSimulator
-              depth={currentDepth}
-              onUpdateDepth={handleUpdateDepth}
-              currentFormation={currentFormation}
-              isSimulating={isSimulating}
-              setIsSimulating={setIsSimulating}
-              activeWell={activeWell}
-            />
-          </div>
+              <DepthSimulator
+                depth={currentDepth}
+                onUpdateDepth={handleUpdateDepth}
+                currentFormation={currentFormation}
+                isSimulating={isSimulating}
+                setIsSimulating={setIsSimulating}
+                activeWell={activeWell}
+              />
+            </div>
+          )}
 
           {/* Center Column: Map & RAG Search */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>

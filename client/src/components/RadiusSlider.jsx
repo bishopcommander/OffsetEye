@@ -17,12 +17,12 @@ export default function RadiusSlider({ radiusMeters, onChangeRadius, nearbyWells
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <CircleDot size={16} color="#0ea5e9" />
-          <h2 style={{ fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#9ca3af' }}>
-            Offset Query Radius
+          <CircleDot size={16} color="var(--accent-brand)" />
+          <h2 style={{ fontSize: '0.85rem', fontWeight: 700,  color: 'var(--text-muted)' }}>
+            Offset query radius
           </h2>
         </div>
-        <span className="mono" style={{ fontSize: '0.9rem', color: '#38bdf8', fontWeight: 800 }}>
+        <span className="mono" style={{ fontSize: '0.9rem', color: 'var(--accent-brand)', fontWeight: 800 }}>
           {radiusMeters >= 1000 ? `${(radiusMeters / 1000).toFixed(1)} km` : `${radiusMeters} m`}
         </span>
       </div>
@@ -35,13 +35,13 @@ export default function RadiusSlider({ radiusMeters, onChangeRadius, nearbyWells
         step="200"
         value={radiusMeters}
         onChange={(e) => onChangeRadius(Number(e.target.value))}
-        style={{ width: '100%', accentColor: '#0ea5e9', cursor: 'pointer' }}
+        style={{ width: '100%', accentColor: 'var(--accent-brand)', cursor: 'pointer' }}
       />
 
       {/* Front Buffer Count */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: '#9ca3af' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
         <span>PostGIS Spatial Buffer:</span>
-        <span style={{ color: '#10b981', fontWeight: 700 }}>
+        <span style={{ color: 'var(--status-normal)', fontWeight: 700 }}>
           {nearbyWellsCount} offset well{nearbyWellsCount === 1 ? '' : 's'}
         </span>
       </div>

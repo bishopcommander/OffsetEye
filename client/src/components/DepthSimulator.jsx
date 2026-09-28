@@ -65,12 +65,12 @@ export default function DepthSimulator({ depth, onUpdateDepth, currentFormation,
   else if (isOverpressureZone) hazardLabel = 'HAZARD: SKAGERRAK KICK & OVERPRESSURE';
 
   return (
-    <div className="glass-panel" style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '12px', border: isInAnyHazardZone ? '1px solid rgba(239, 68, 68, 0.5)' : undefined }}>
+    <div className="glass-panel" style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '12px', border: 'none', borderLeft: isInAnyHazardZone ? '3px solid var(--status-caution)' : undefined }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <ArrowDownCircle size={16} color="#10b981" />
-          <h2 style={{ fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#9ca3af' }}>
-            Live Depth Simulator
+          <ArrowDownCircle size={16} color="var(--status-normal)" />
+          <h2 style={{ fontSize: '0.85rem', fontWeight: 700,  color: 'var(--text-muted)' }}>
+            Live depth simulator
           </h2>
         </div>
         <span className={`badge ${isInAnyHazardZone ? 'badge-elevated' : 'badge-simulated'}`} style={{ fontSize: '0.62rem' }}>
@@ -79,16 +79,16 @@ export default function DepthSimulator({ depth, onUpdateDepth, currentFormation,
       </div>
 
       {/* Depth & Formation Banner */}
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', background: '#0a0e17', padding: '10px 14px', borderRadius: '8px', border: '1px solid #1f2937' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', background: 'var(--bg-page)', padding: '10px 14px', borderRadius: '8px', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)' }}>
         <div>
-          <span style={{ fontSize: '0.7rem', color: '#6b7280', textTransform: 'uppercase' }}>Bit Depth (MD)</span>
-          <div className="mono" style={{ fontSize: '1.4rem', fontWeight: 800, color: isInAnyHazardZone ? '#f87171' : '#34d399' }}>
-            {localDepth.toFixed(1)} <span style={{ fontSize: '0.85rem', fontWeight: 500, color: '#9ca3af' }}>m</span>
+          <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)',  }}>Bit depth (MD)</span>
+          <div className="mono" style={{ fontSize: '1.4rem', fontWeight: 800, color: isInAnyHazardZone ? 'var(--status-caution)' : 'var(--status-normal)' }}>
+            {localDepth.toFixed(1)} <span style={{ fontSize: '0.85rem', fontWeight: 500, color: 'var(--text-muted)' }}>m</span>
           </div>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <span style={{ fontSize: '0.7rem', color: '#6b7280', textTransform: 'uppercase' }}>Active Formation</span>
-          <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#38bdf8' }}>
+          <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)',  }}>Active formation</span>
+          <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--accent-brand)' }}>
             {currentFormation || 'Hugin'}
           </div>
         </div>
@@ -105,11 +105,11 @@ export default function DepthSimulator({ depth, onUpdateDepth, currentFormation,
           onChange={handleSliderChange}
           onMouseUp={handleSliderCommit}
           onTouchEnd={handleSliderCommit}
-          style={{ width: '100%', accentColor: isInAnyHazardZone ? '#ef4444' : '#10b981', cursor: 'pointer' }}
+          style={{ width: '100%', accentColor: isInAnyHazardZone ? 'var(--status-caution)' : 'var(--status-normal)', cursor: 'pointer' }}
         />
-        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.65rem', color: '#6b7280', marginTop: '2px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '2px' }}>
           <span>{minDepth}m</span>
-          <span style={{ color: isInAnyHazardZone ? '#f87171' : '#f59e0b' }}>{hazardLabel}</span>
+          <span style={{ color: isInAnyHazardZone ? 'var(--status-caution)' : 'var(--status-caution)' }}>{hazardLabel}</span>
           <span>{maxDepth}m</span>
         </div>
       </div>
@@ -123,7 +123,7 @@ export default function DepthSimulator({ depth, onUpdateDepth, currentFormation,
           style={{ width: '100%', padding: '4px 8px', fontSize: '0.7rem', justifyContent: 'space-between' }}
         >
           <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-            <Zap size={11} color="#06b6d4" /> Jump to Hazard Benchmarks
+            <Zap size={11} color="var(--accent-brand)" /> Jump to Hazard Benchmarks
           </span>
           {showBenchmarks ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
         </button>

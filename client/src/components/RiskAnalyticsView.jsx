@@ -9,73 +9,97 @@ export default function RiskAnalyticsView({ riskAnalytics, depthWindow }) {
   }
 
   const categoryLabels = {
-    mud_loss: 'Mud Loss',
-    stuck_pipe: 'Stuck Pipe',
+    mud_loss: 'Mud loss',
+    stuck_pipe: 'Stuck pipe',
     overpressure: 'Overpressure',
-    torque_spike: 'Torque Spikes',
+    torque_spike: 'Torque spikes',
     cementing: 'Cementing',
-    kick: 'Well Kick',
-    fishing: 'Fishing Ops',
-    npt: 'NPT Events'
+    kick: 'Well kick',
+    fishing: 'Fishing operations',
+    npt: 'NPT events'
   };
+  const elevatedRisks = riskAnalytics.filter(item => item.flag === 'elevated');
+  const normalRisks = riskAnalytics.filter(item => item.flag !== 'elevated');
+  const normalHistory = normalRisks.filter(item => item.matched_count === 0);
+  const belowThreshold = normalRisks.filter(item => item.matched_count > 0);
+  const normalSummary = [
+    normalHistory.length > 0 && `No nearby history for ${normalHistory.map(item => (categoryLabels[item.risk_category] || item.risk_category).toLowerCase()).join(', ')}.`,
+    ...belowThreshold.map(item => {
+      const count = item.matched_count;
+      const label = (categoryLabels[item.risk_category] || item.risk_category).toLowerCase();
+      return `${count} ${label} event${count === 1 ? '' : 's'} recorded below the alert threshold.`;
+    }),
+    normalRisks.length > 0 && 'All other categories normal.'
+  ].filter(Boolean).join(' ');
+  const normalCounts = normalRisks.map(item => {
+    const label = categoryLabels[item.risk_category] || item.risk_category;
+    return `${label}: ${item.matched_count} events across ${item.affected_wells_count || 0}/${item.total_nearby_wells || 0} wells`;
+  }).join('\n');
 
   return (
     <div className="glass-panel" style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <BarChart3 size={16} color="#06b6d4" />
-          <h2 style={{ fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#9ca3af' }}>
-            Risk Analytics Signal (Offset Frequency)
+          <BarChart3 size={16} color="var(--accent-brand)" />
+          <h2 style={{ fontSize: '0.85rem', fontWeight: 700,  color: 'var(--text-muted)' }}>
+            Risk signals from nearby wells
           </h2>
         </div>
         {depthWindow && (
-          <span className="mono" style={{ fontSize: '0.72rem', color: '#38bdf8', fontWeight: 600 }}>
+          <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--accent-brand)', fontWeight: 600 }}>
             Window: ±50m ({depthWindow.start?.toFixed(0)} - {depthWindow.end?.toFixed(0)}m MD)
           </span>
         )}
       </div>
 
-      {/* KPI Cards (Always Front & Center) */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '8px' }}>
-        {riskAnalytics.map(item => {
-          const isElevated = item.flag === 'elevated';
+      {elevatedRisks.length > 0 && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '8px' }}>
+          {elevatedRisks.map(item => {
           const label = categoryLabels[item.risk_category] || item.risk_category;
 
           return (
             <div
               key={item.risk_category}
               style={{
-                background: isElevated ? 'rgba(239, 68, 68, 0.1)' : '#111827',
-                border: isElevated ? '1px solid rgba(239, 68, 68, 0.4)' : '1px solid #1f2937',
+                background: 'var(--bg-panel)',
                 borderRadius: '8px',
                 padding: '8px 10px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '4px'
+                gap: '4px',
+                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)',
+                borderLeft: '3px solid var(--status-caution)'
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '0.75rem', fontWeight: 600, color: isElevated ? '#fca5a5' : '#9ca3af' }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-primary)' }}>
                   {label}
                 </span>
-                <span className={`badge ${isElevated ? 'badge-elevated' : 'badge-normal'}`} style={{ fontSize: '0.6rem', padding: '1px 5px' }}>
+                <span className="badge badge-elevated" style={{ fontSize: '0.6rem', padding: '1px 5px' }}>
                   {item.flag}
                 </span>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginTop: '2px' }}>
-                <span className="mono" style={{ fontSize: '1.1rem', fontWeight: 800, color: isElevated ? '#f87171' : '#f3f4f6' }}>
-                  {item.matched_count}
+                <span className="mono" style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--status-caution)' }}>
+                  {item.affected_wells_count || 0} of {item.total_nearby_wells || 0}
                 </span>
-                <span style={{ fontSize: '0.68rem', color: '#6b7280' }}>
-                  in {item.affected_wells_count || 0}/{item.total_nearby_wells || 0} wells
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }} title={`${item.matched_count} matched events`}>
+                  nearby wells
                 </span>
               </div>
             </div>
           );
-        })}
-      </div>
+          })}
+        </div>
+      )}
+
+      {normalRisks.length > 0 && (
+        <div title={normalCounts} style={{ background: 'var(--bg-page)', borderRadius: '6px', padding: '8px 10px', color: 'var(--text-muted)', fontSize: '0.72rem', lineHeight: 1.5 }}>
+          {normalSummary}
+        </div>
+      )}
 
       {/* Button for Side Info (Methodology & Logic) */}
       <button
@@ -85,15 +109,15 @@ export default function RiskAnalyticsView({ riskAnalytics, depthWindow }) {
         style={{ padding: '3px 8px', fontSize: '0.68rem', justifyContent: 'space-between', width: 'fit-content' }}
       >
         <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-          <Info size={11} color="#06b6d4" /> Correlation Logic & Rules
+          <Info size={11} color="var(--accent-brand)" /> Correlation Logic & Rules
         </span>
         {showMethodology ? <ChevronUp size={11} /> : <ChevronDown size={11} />}
       </button>
 
       {/* Collapsible Methodology Panel */}
       {showMethodology && (
-        <div style={{ background: '#0a0e17', padding: '8px 10px', borderRadius: '6px', border: '1px solid #1f2937', fontSize: '0.72rem', color: '#9ca3af', lineHeight: 1.4 }}>
-          <strong style={{ color: '#e5e7eb' }}>Deterministic Aggregation:</strong> Flags as <span style={{ color: '#f87171' }}>elevated</span> if ≥1 offset well encountered the incident within the active correlation depth window (±50m) and matched lithology/formation synonym. No black-box model is used for alert gating.
+        <div style={{ background: 'var(--bg-page)', padding: '8px 10px', borderRadius: '6px', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+          <strong style={{ color: 'var(--text-primary)' }}>Deterministic Aggregation:</strong> Flags as <span style={{ color: 'var(--status-caution)' }}>elevated</span> if ≥1 offset well encountered the incident within the active correlation depth window (±50m) and matched lithology/formation synonym. No black-box model is used for alert gating.
         </div>
       )}
     </div>

@@ -48,9 +48,9 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
     <div className="glass-panel" style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Sparkles size={18} color="#06b6d4" />
-          <h2 style={{ fontSize: '0.9rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#f3f4f6' }}>
-            Historical Offset Knowledge Retrieval (RAG)
+          <Sparkles size={18} color="var(--accent-brand)" />
+          <h2 style={{ fontSize: '0.9rem', fontWeight: 700,  color: 'var(--text-primary)' }}>
+            Historical offset knowledge retrieval (RAG)
           </h2>
         </div>
         <span className="badge badge-normal" style={{ fontSize: '0.65rem' }}>
@@ -70,7 +70,7 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
             onKeyDown={handleKeyDown}
             style={{ paddingLeft: '34px', fontSize: '0.85rem' }}
           />
-          <Search size={16} color="#6b7280" style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }} />
+          <Search size={16} color="var(--text-muted)" style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }} />
         </div>
         <button
           onClick={() => handleSearch()}
@@ -92,7 +92,7 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
           style={{ padding: '3px 8px', fontSize: '0.68rem', justifyContent: 'space-between', width: 'fit-content' }}
         >
           <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-            <Quote size={11} color="#06b6d4" /> Suggested Queries
+            <Quote size={11} color="var(--accent-brand)" /> Suggested queries
           </span>
           {showSuggestions ? <ChevronUp size={11} /> : <ChevronDown size={11} />}
         </button>
@@ -118,38 +118,38 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
 
       {/* Error state */}
       {error && (
-        <div style={{ padding: '8px 12px', background: 'rgba(239, 68, 68, 0.15)', border: '1px solid rgba(239, 68, 68, 0.4)', borderRadius: '8px', color: '#fca5a5', fontSize: '0.8rem' }}>
+        <div style={{ padding: '8px 12px', background: 'color-mix(in srgb, var(--status-caution) 15%, transparent)', border: '1px solid color-mix(in srgb, var(--status-caution) 40%, transparent)', borderRadius: '8px', color: 'var(--status-caution)', fontSize: '0.8rem' }}>
           {error}
         </div>
       )}
 
       {/* Search Result Box (Summary Front & Center) */}
       {result && (
-        <div style={{ background: '#0a0e17', border: '1px solid #1f2937', borderRadius: '10px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <div style={{ background: 'var(--bg-page)', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)', borderRadius: '10px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
           {result.cached_fallback_used && (
-            <div style={{ fontSize: '0.72rem', color: '#fbbf24', background: 'rgba(245, 158, 11, 0.1)', padding: '4px 8px', borderRadius: '4px', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
+            <div style={{ fontSize: '0.72rem', color: 'var(--status-caution)', background: 'color-mix(in srgb, var(--status-caution) 10%, transparent)', padding: '4px 8px', borderRadius: '4px', border: '1px solid color-mix(in srgb, var(--status-caution) 30%, transparent)' }}>
               ⚡ Offline cached demo verification loaded (Zero hallucination fallback guarantee)
             </div>
           )}
 
           {/* Grounded Summary (Front & Center) */}
           <div>
-            <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#38bdf8', textTransform: 'uppercase', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <BookOpen size={14} /> Grounded Synthesis
+            <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent-brand)',  marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '5px' }}>
+              <BookOpen size={14} /> Grounded synthesis
             </div>
-            <p style={{ fontSize: '0.85rem', color: '#e5e7eb', lineHeight: 1.6 }}>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: 1.6 }}>
               {result.summary}
             </p>
           </div>
 
           {/* Citations List (Side Info under button) */}
           {result.citations && result.citations.length > 0 && (
-            <div style={{ borderTop: '1px solid #1f2937', paddingTop: '8px' }}>
+            <div style={{ borderTop: '1px solid var(--bg-panel)', paddingTop: '8px' }}>
               <button
                 type="button"
                 onClick={() => setShowCitations(!showCitations)}
                 className="btn btn-secondary"
-                style={{ padding: '3px 8px', fontSize: '0.7rem', justifyContent: 'space-between', width: '100%', background: '#111827' }}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', justifyContent: 'space-between', width: '100%', background: 'var(--bg-panel)' }}
               >
                 <span>Claim-Level Source Citations ({result.citations.length})</span>
                 {showCitations ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
@@ -160,15 +160,15 @@ export default function SearchBox({ activeWellId, radiusMeters, onInspectEvidenc
                   {result.citations.map((cite, i) => (
                     <div
                       key={i}
-                      style={{ background: '#111827', border: '1px solid #273549', borderRadius: '6px', padding: '8px 10px', fontSize: '0.75rem' }}
+                      style={{ background: 'var(--bg-panel)', border: 'none', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)', borderRadius: '6px', padding: '8px 10px', fontSize: '0.75rem' }}
                     >
-                      <div style={{ display: 'flex', justifyContent: 'space-between', color: '#38bdf8', fontWeight: 600, marginBottom: '2px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--accent-brand)', fontWeight: 600, marginBottom: '2px' }}>
                         <span>Well {cite.source_well} @ {cite.depth ? `${cite.depth}m` : 'MD'} ({cite.formation || 'Target'})</span>
                       </div>
-                      <div style={{ color: '#d1d5db', marginBottom: '4px' }}>
+                      <div style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>
                         {cite.claim}
                       </div>
-                      <div style={{ color: '#9ca3af', fontStyle: 'italic', fontSize: '0.7rem', borderLeft: '2px solid #0ea5e9', paddingLeft: '6px' }}>
+                      <div style={{ color: 'var(--text-muted)', fontStyle: 'italic', fontSize: '0.7rem', borderLeft: '2px solid var(--accent-brand)', paddingLeft: '6px' }}>
                         "{cite.source_excerpt}"
                       </div>
                     </div>
