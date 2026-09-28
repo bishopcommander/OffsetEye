@@ -23,7 +23,10 @@ export const AuthProvider = ({ children }) => {
       return { success: true };
     } catch (err) {
       console.error('Login error:', err);
-      const msg = err.response?.data?.error || 'Invalid credentials or server offline';
+      const apiError = err.response?.data?.error;
+      const msg = typeof apiError === 'string'
+        ? apiError
+        : apiError?.message || 'Invalid credentials or server offline';
       return { success: false, error: msg };
     } finally {
       setLoading(false);
