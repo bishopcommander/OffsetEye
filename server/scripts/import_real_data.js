@@ -27,6 +27,7 @@ const pool = new Pool({
   database: process.env.PGDATABASE || process.env.DB_NAME     || 'ertmac_nwis',
   user:     process.env.PGUSER     || process.env.DB_USER     || 'postgres',
   password: process.env.PGPASSWORD || process.env.DB_PASSWORD,
+  ssl:      process.env.PGSSL === 'true' ? { rejectUnauthorized: false } : undefined,
 });
 const q = (sql, params) => pool.query(sql, params);
 

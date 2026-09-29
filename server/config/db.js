@@ -16,6 +16,7 @@ const pool = new Pool({
   database: process.env.PGDATABASE || 'ertmac_nwis',
   user:     process.env.PGUSER     || 'postgres',
   password: process.env.PGPASSWORD,
+  ssl:      process.env.PGSSL === 'true' ? { rejectUnauthorized: false } : undefined,
   // Keep a modest pool for a prototype; tune for production
   max:      10,
   idleTimeoutMillis: 30000,
